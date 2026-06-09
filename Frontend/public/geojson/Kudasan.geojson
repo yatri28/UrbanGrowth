@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Kudasan",
+        "source": "grid_centroid_derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.61999999999999,
+              23.179499999999997
+            ],
+            [
+              72.633,
+              23.179499999999997
+            ],
+            [
+              72.633,
+              23.1905
+            ],
+            [
+              72.61999999999999,
+              23.1905
+            ],
+            [
+              72.61999999999999,
+              23.179499999999997
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

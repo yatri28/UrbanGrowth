@@ -1,0 +1,613 @@
+﻿area_name,year,analysis
+Bhundiya,2016,Built-up area: 6.3% (low growth class). | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low (0.6).
+Bhundiya,2017,Built-up area: 6.6% (low growth class). | Built-up largely unchanged from 2016 (change: +0.3 pp). | Vegetation cover: high (NDVI 0.51). | Night-time light intensity: low (0.9).
+Bhundiya,2018,Built-up area: 5.9% (low growth class). | Built-up largely unchanged from 2017 (change: -0.6 pp). | Vegetation cover: high (NDVI 0.56). | Night-time light intensity: low (1.0).
+Bhundiya,2019,Built-up area: 6.5% (low growth class). | Built-up largely unchanged from 2018 (change: +0.6 pp). | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low (1.2).
+Bhundiya,2020,Built-up area: 6.3% (low growth class). | Built-up largely unchanged from 2019 (change: -0.3 pp). | Vegetation cover: high (NDVI 0.51). | Night-time light intensity: low (1.2).
+Bhundiya,2021,Built-up area: 7.0% (low growth class). | Built-up largely unchanged from 2020 (change: +0.8 pp). | Vegetation cover: high (NDVI 0.51). | Night-time light intensity: low (1.3).
+Bhundiya,2022,Built-up area: 7.6% (low growth class). | Built-up largely unchanged from 2021 (change: +0.5 pp). | Vegetation cover: high (NDVI 0.52). | Night-time light intensity: low (1.4).
+Bhundiya,2023,Built-up area: 7.8% (low growth class). | Built-up largely unchanged from 2022 (change: +0.3 pp). | Vegetation cover: high (NDVI 0.54). | Night-time light intensity: low (1.6).
+Bhundiya,2024,Built-up area: 8.2% (low growth class). | Built-up largely unchanged from 2023 (change: +0.4 pp). | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low (1.7).
+Bhundiya Fringe,2016,Built-up area: 5.4% (low growth class). | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low (0.8).
+Bhundiya Fringe,2017,Built-up area: 6.8% (low growth class). | Built-up increased by 1.3 pp from 2016. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (1.1).
+Bhundiya Fringe,2018,Built-up area: 6.0% (low growth class). | Built-up largely unchanged from 2017 (change: -0.7 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (1.4).
+Bhundiya Fringe,2019,Built-up area: 6.7% (low growth class). | Built-up largely unchanged from 2018 (change: +0.7 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (1.4).
+Bhundiya Fringe,2020,Built-up area: 6.2% (low growth class). | Built-up largely unchanged from 2019 (change: -0.5 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (1.4).
+Bhundiya Fringe,2021,Built-up area: 6.8% (low growth class). | Built-up largely unchanged from 2020 (change: +0.7 pp). | Vegetation cover: high (NDVI 0.45). | Night-time light intensity: low (1.6).
+Bhundiya Fringe,2022,Built-up area: 7.7% (low growth class). | Built-up largely unchanged from 2021 (change: +0.9 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (1.8).
+Bhundiya Fringe,2023,Built-up area: 8.2% (low growth class). | Built-up largely unchanged from 2022 (change: +0.5 pp). | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low (2.1).
+Bhundiya Fringe,2024,Built-up area: 7.8% (low growth class). | Built-up largely unchanged from 2023 (change: -0.4 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (2.3).
+Borij,2016,Built-up area: 42.6% (high growth class). | Vegetation cover: low (NDVI 0.21). | Night-time light intensity: low-moderate (10.7).
+Borij,2017,Built-up area: 44.8% (high growth class). | Built-up increased by 2.2 pp from 2016. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (11.6).
+Borij,2018,Built-up area: 48.2% (high growth class). | Built-up increased by 3.4 pp from 2017. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (11.3).
+Borij,2019,Built-up area: 44.9% (high growth class). | Built-up decreased by 3.3 pp from 2018. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (13.0).
+Borij,2020,Built-up area: 45.3% (medium growth class). | Built-up largely unchanged from 2019 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (12.2).
+Borij,2021,Built-up area: 46.2% (medium growth class). | Built-up largely unchanged from 2020 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (13.6).
+Borij,2022,Built-up area: 47.7% (high growth class). | Built-up increased by 1.5 pp from 2021. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (14.6).
+Borij,2023,Built-up area: 47.1% (high growth class). | Built-up largely unchanged from 2022 (change: -0.6 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (16.1).
+Borij,2024,Built-up area: 46.2% (high growth class). | Built-up largely unchanged from 2023 (change: -0.9 pp). | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low-moderate (16.6).
+Chiloda,2016,Built-up area: 18.0% (low growth class). | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: low (2.5).
+Chiloda,2017,Built-up area: 20.4% (low growth class). | Built-up increased by 2.4 pp from 2016. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (2.7).
+Chiloda,2018,Built-up area: 21.0% (low growth class). | Built-up largely unchanged from 2017 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (3.0).
+Chiloda,2019,Built-up area: 21.7% (medium growth class). | Built-up largely unchanged from 2018 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (3.2).
+Chiloda,2020,Built-up area: 21.3% (low growth class). | Built-up largely unchanged from 2019 (change: -0.4 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (3.2).
+Chiloda,2021,Built-up area: 22.3% (low growth class). | Built-up largely unchanged from 2020 (change: +1.0 pp). | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (6.2).
+Chiloda,2022,Built-up area: 23.2% (low growth class). | Built-up largely unchanged from 2021 (change: +1.0 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (8.8).
+Chiloda,2023,Built-up area: 24.6% (medium growth class). | Built-up increased by 1.4 pp from 2022. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (9.1).
+Chiloda,2024,Built-up area: 24.6% (medium growth class). | Built-up largely unchanged from 2023 (change: +0.0 pp). | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low-moderate (8.5).
+Dashela,2016,Built-up area: 18.0% (low growth class). | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: low (1.6).
+Dashela,2017,Built-up area: 20.1% (medium growth class). | Built-up increased by 2.1 pp from 2016. | Vegetation cover: moderate (NDVI 0.45). | Night-time light intensity: low (2.0).
+Dashela,2018,Built-up area: 21.6% (medium growth class). | Built-up increased by 1.5 pp from 2017. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (3.0).
+Dashela,2019,Built-up area: 20.1% (medium growth class). | Built-up decreased by 1.5 pp from 2018. | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (2.7).
+Dashela,2020,Built-up area: 21.6% (low growth class). | Built-up increased by 1.5 pp from 2019. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (2.7).
+Dashela,2021,Built-up area: 22.0% (low growth class). | Built-up largely unchanged from 2020 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (3.4).
+Dashela,2022,Built-up area: 22.6% (medium growth class). | Built-up largely unchanged from 2021 (change: +0.6 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (3.9).
+Dashela,2023,Built-up area: 23.1% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (5.2).
+Dashela,2024,Built-up area: 24.1% (medium growth class). | Built-up largely unchanged from 2023 (change: +1.0 pp). | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (6.2).
+Dholakuva,2016,Built-up area: 21.8% (medium growth class). | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: low (5.0).
+Dholakuva,2017,Built-up area: 22.2% (medium growth class). | Built-up largely unchanged from 2016 (change: +0.4 pp). | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low (6.0).
+Dholakuva,2018,Built-up area: 25.3% (medium growth class). | Built-up increased by 3.0 pp from 2017. | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (5.9).
+Dholakuva,2019,Built-up area: 22.9% (medium growth class). | Built-up decreased by 2.3 pp from 2018. | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (6.6).
+Dholakuva,2020,Built-up area: 24.0% (medium growth class). | Built-up increased by 1.0 pp from 2019. | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (6.9).
+Dholakuva,2021,Built-up area: 24.1% (medium growth class). | Built-up largely unchanged from 2020 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low-moderate (9.0).
+Dholakuva,2022,Built-up area: 25.2% (medium growth class). | Built-up increased by 1.1 pp from 2021. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low-moderate (11.9).
+Dholakuva,2023,Built-up area: 25.7% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.5 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low-moderate (11.7).
+Dholakuva,2024,Built-up area: 25.2% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.5 pp). | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low-moderate (12.2).
+GIDC Electronic Estate,2016,Built-up area: 39.8% (medium growth class). | Vegetation cover: low (NDVI 0.19). | Night-time light intensity: low (7.6).
+GIDC Electronic Estate,2017,Built-up area: 43.0% (high growth class). | Built-up increased by 3.2 pp from 2016. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (8.8).
+GIDC Electronic Estate,2018,Built-up area: 43.1% (high growth class). | Built-up largely unchanged from 2017 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (9.2).
+GIDC Electronic Estate,2019,Built-up area: 42.8% (high growth class). | Built-up largely unchanged from 2018 (change: -0.3 pp). | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (10.0).
+GIDC Electronic Estate,2020,Built-up area: 42.3% (medium growth class). | Built-up largely unchanged from 2019 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (8.5).
+GIDC Electronic Estate,2021,Built-up area: 43.5% (medium growth class). | Built-up increased by 1.2 pp from 2020. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (8.6).
+GIDC Electronic Estate,2022,Built-up area: 44.6% (medium growth class). | Built-up increased by 1.1 pp from 2021. | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (10.2).
+GIDC Electronic Estate,2023,Built-up area: 46.1% (high growth class). | Built-up increased by 1.5 pp from 2022. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (11.3).
+GIDC Electronic Estate,2024,Built-up area: 45.1% (high growth class). | Built-up largely unchanged from 2023 (change: -1.0 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (12.9).
+Green City,2016,Built-up area: 56.5% (high growth class). | Vegetation cover: very low (NDVI 0.15). | Night-time light intensity: low-moderate (11.7).
+Green City,2017,Built-up area: 62.2% (high growth class). | Built-up increased by 5.7 pp from 2016. | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low-moderate (15.6).
+Green City,2018,Built-up area: 62.9% (high growth class). | Built-up largely unchanged from 2017 (change: +0.7 pp). | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low-moderate (13.7).
+Green City,2019,Built-up area: 61.6% (high growth class). | Built-up decreased by 1.3 pp from 2018. | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: low-moderate (15.1).
+Green City,2020,Built-up area: 61.7% (high growth class). | Built-up largely unchanged from 2019 (change: +0.1 pp). | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low-moderate (14.5).
+Green City,2021,Built-up area: 62.8% (high growth class). | Built-up increased by 1.2 pp from 2020. | Vegetation cover: low (NDVI 0.25). | Night-time light intensity: low-moderate (15.0).
+Green City,2022,Built-up area: 62.5% (high growth class). | Built-up largely unchanged from 2021 (change: -0.3 pp). | Vegetation cover: low (NDVI 0.25). | Night-time light intensity: low-moderate (16.5).
+Green City,2023,Built-up area: 64.0% (high growth class). | Built-up increased by 1.5 pp from 2022. | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low-moderate (17.2).
+Green City,2024,Built-up area: 63.3% (high growth class). | Built-up largely unchanged from 2023 (change: -0.7 pp). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low-moderate (19.0).
+Gujarat International Finance Tec-City,2016,Built-up area: 22.3% (low growth class). | Vegetation cover: low (NDVI 0.20). | Night-time light intensity: low (2.7).
+Gujarat International Finance Tec-City,2017,Built-up area: 24.9% (low growth class). | Built-up increased by 2.6 pp from 2016. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (4.1).
+Gujarat International Finance Tec-City,2018,Built-up area: 26.6% (medium growth class). | Built-up increased by 1.7 pp from 2017. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (4.5).
+Gujarat International Finance Tec-City,2019,Built-up area: 25.8% (medium growth class). | Built-up largely unchanged from 2018 (change: -0.8 pp). | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low (4.7).
+Gujarat International Finance Tec-City,2020,Built-up area: 27.4% (low growth class). | Built-up increased by 1.6 pp from 2019. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (6.2).
+Gujarat International Finance Tec-City,2021,Built-up area: 28.3% (medium growth class). | Built-up largely unchanged from 2020 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (6.4).
+Gujarat International Finance Tec-City,2022,Built-up area: 30.1% (medium growth class). | Built-up increased by 1.8 pp from 2021. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (6.9).
+Gujarat International Finance Tec-City,2023,Built-up area: 30.6% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low-moderate (9.0).
+Gujarat International Finance Tec-City,2024,Built-up area: 31.6% (medium growth class). | Built-up increased by 1.0 pp from 2023. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (11.0).
+Indroda,2016,Built-up area: 5.5% (low growth class). | Vegetation cover: very low (NDVI 0.18). | Night-time light intensity: low (2.6).
+Indroda,2017,Built-up area: 5.7% (low growth class). | Built-up largely unchanged from 2016 (change: +0.2 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (3.6).
+Indroda,2018,Built-up area: 7.1% (medium growth class). | Built-up increased by 1.4 pp from 2017. | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (3.9).
+Indroda,2019,Built-up area: 6.1% (medium growth class). | Built-up largely unchanged from 2018 (change: -1.0 pp). | Vegetation cover: low (NDVI 0.30). | Night-time light intensity: low (4.5).
+Indroda,2020,Built-up area: 6.4% (low growth class). | Built-up largely unchanged from 2019 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (4.7).
+Indroda,2021,Built-up area: 6.5% (low growth class). | Built-up largely unchanged from 2020 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (5.2).
+Indroda,2022,Built-up area: 6.6% (medium growth class). | Built-up largely unchanged from 2021 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (5.5).
+Indroda,2023,Built-up area: 6.2% (low growth class). | Built-up largely unchanged from 2022 (change: -0.4 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (6.2).
+Indroda,2024,Built-up area: 6.2% (low growth class). | Built-up largely unchanged from 2023 (change: +0.0 pp). | Vegetation cover: moderate (NDVI 0.45). | Night-time light intensity: low (6.8).
+Infocity,2016,Built-up area: 32.5% (high growth class). | Vegetation cover: low (NDVI 0.21). | Night-time light intensity: low-moderate (10.3).
+Infocity,2017,Built-up area: 34.7% (high growth class). | Built-up increased by 2.2 pp from 2016. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low-moderate (12.8).
+Infocity,2018,Built-up area: 37.0% (high growth class). | Built-up increased by 2.3 pp from 2017. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low-moderate (11.6).
+Infocity,2019,Built-up area: 34.6% (high growth class). | Built-up decreased by 2.4 pp from 2018. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low-moderate (13.8).
+Infocity,2020,Built-up area: 35.1% (high growth class). | Built-up largely unchanged from 2019 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.45). | Night-time light intensity: low-moderate (13.6).
+Infocity,2021,Built-up area: 36.9% (high growth class). | Built-up increased by 1.8 pp from 2020. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low-moderate (19.0).
+Infocity,2022,Built-up area: 41.0% (high growth class). | Built-up increased by 4.1 pp from 2021. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: moderate (30.0).
+Infocity,2023,Built-up area: 42.9% (high growth class). | Built-up increased by 1.9 pp from 2022. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: moderate (30.0).
+Infocity,2024,Built-up area: 42.4% (high growth class). | Built-up largely unchanged from 2023 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: moderate (31.4).
+Kolavda,2016,Built-up area: 9.3% (low growth class). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low (1.1).
+Kolavda,2017,Built-up area: 9.8% (low growth class). | Built-up largely unchanged from 2016 (change: +0.5 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (1.7).
+Kolavda,2018,Built-up area: 10.5% (low growth class). | Built-up largely unchanged from 2017 (change: +0.8 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (1.7).
+Kolavda,2019,Built-up area: 10.6% (low growth class). | Built-up largely unchanged from 2018 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (1.9).
+Kolavda,2020,Built-up area: 10.7% (low growth class). | Built-up largely unchanged from 2019 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.45). | Night-time light intensity: low (2.0).
+Kolavda,2021,Built-up area: 11.2% (low growth class). | Built-up largely unchanged from 2020 (change: +0.6 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (2.2).
+Kolavda,2022,Built-up area: 11.2% (low growth class). | Built-up largely unchanged from 2021 (change: +0.0 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (2.3).
+Kolavda,2023,Built-up area: 12.1% (low growth class). | Built-up largely unchanged from 2022 (change: +0.8 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (2.6).
+Kolavda,2024,Built-up area: 11.6% (low growth class). | Built-up largely unchanged from 2023 (change: -0.4 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (3.1).
+Kudasan,2016,Built-up area: 38.9% (high growth class). | Vegetation cover: low (NDVI 0.19). | Night-time light intensity: low-moderate (12.2).
+Kudasan,2017,Built-up area: 43.4% (high growth class). | Built-up increased by 4.5 pp from 2016. | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low-moderate (15.2).
+Kudasan,2018,Built-up area: 46.4% (high growth class). | Built-up increased by 3.0 pp from 2017. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low-moderate (15.2).
+Kudasan,2019,Built-up area: 46.5% (high growth class). | Built-up largely unchanged from 2018 (change: +0.1 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (19.3).
+Kudasan,2020,Built-up area: 48.4% (high growth class). | Built-up increased by 1.8 pp from 2019. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: moderate (23.9).
+Kudasan,2021,Built-up area: 50.2% (high growth class). | Built-up increased by 1.9 pp from 2020. | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: moderate (25.0).
+Kudasan,2022,Built-up area: 51.0% (high growth class). | Built-up largely unchanged from 2021 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: moderate (28.5).
+Kudasan,2023,Built-up area: 52.7% (high growth class). | Built-up increased by 1.8 pp from 2022. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: moderate (30.6).
+Kudasan,2024,Built-up area: 52.0% (high growth class). | Built-up largely unchanged from 2023 (change: -0.7 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: moderate (37.4).
+Lekawada,2016,Built-up area: 16.2% (low growth class). | Vegetation cover: low (NDVI 0.21). | Night-time light intensity: low (0.8).
+Lekawada,2017,Built-up area: 17.5% (low growth class). | Built-up increased by 1.3 pp from 2016. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (1.0).
+Lekawada,2018,Built-up area: 18.6% (low growth class). | Built-up increased by 1.1 pp from 2017. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (1.2).
+Lekawada,2019,Built-up area: 18.6% (low growth class). | Built-up largely unchanged from 2018 (change: -0.1 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (1.5).
+Lekawada,2020,Built-up area: 19.1% (low growth class). | Built-up largely unchanged from 2019 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (1.5).
+Lekawada,2021,Built-up area: 19.9% (low growth class). | Built-up largely unchanged from 2020 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (1.6).
+Lekawada,2022,Built-up area: 21.3% (low growth class). | Built-up increased by 1.4 pp from 2021. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (1.7).
+Lekawada,2023,Built-up area: 21.7% (low growth class). | Built-up largely unchanged from 2022 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (2.0).
+Lekawada,2024,Built-up area: 21.0% (low growth class). | Built-up largely unchanged from 2023 (change: -0.7 pp). | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (2.2).
+Lekawada village,2016,Built-up area: 6.8% (low growth class). | Vegetation cover: low (NDVI 0.25). | Night-time light intensity: low (1.0).
+Lekawada village,2017,Built-up area: 8.2% (low growth class). | Built-up increased by 1.5 pp from 2016. | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low (1.4).
+Lekawada village,2018,Built-up area: 9.3% (low growth class). | Built-up increased by 1.1 pp from 2017. | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low (1.6).
+Lekawada village,2019,Built-up area: 10.1% (low growth class). | Built-up largely unchanged from 2018 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.45). | Night-time light intensity: low (1.8).
+Lekawada village,2020,Built-up area: 9.7% (low growth class). | Built-up largely unchanged from 2019 (change: -0.4 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (1.9).
+Lekawada village,2021,Built-up area: 10.7% (low growth class). | Built-up increased by 1.0 pp from 2020. | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (2.2).
+Lekawada village,2022,Built-up area: 10.9% (low growth class). | Built-up largely unchanged from 2021 (change: +0.2 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (2.4).
+Lekawada village,2023,Built-up area: 11.3% (low growth class). | Built-up largely unchanged from 2022 (change: +0.4 pp). | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low (3.0).
+Lekawada village,2024,Built-up area: 10.3% (low growth class). | Built-up largely unchanged from 2023 (change: -1.0 pp). | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low (3.4).
+NH-8,2016,Built-up area: 16.4% (low growth class). | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low (1.0).
+NH-8,2017,Built-up area: 18.4% (low growth class). | Built-up increased by 2.0 pp from 2016. | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low (1.5).
+NH-8,2018,Built-up area: 18.4% (low growth class). | Built-up largely unchanged from 2017 (change: -0.0 pp). | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low (2.0).
+NH-8,2019,Built-up area: 19.1% (low growth class). | Built-up largely unchanged from 2018 (change: +0.7 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (2.3).
+NH-8,2020,Built-up area: 18.4% (low growth class). | Built-up largely unchanged from 2019 (change: -0.7 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (2.1).
+NH-8,2021,Built-up area: 19.0% (low growth class). | Built-up largely unchanged from 2020 (change: +0.7 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (2.2).
+NH-8,2022,Built-up area: 19.0% (low growth class). | Built-up largely unchanged from 2021 (change: -0.0 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (2.5).
+NH-8,2023,Built-up area: 19.7% (low growth class). | Built-up largely unchanged from 2022 (change: +0.7 pp). | Vegetation cover: high (NDVI 0.51). | Night-time light intensity: low (2.6).
+NH-8,2024,Built-up area: 19.4% (low growth class). | Built-up largely unchanged from 2023 (change: -0.3 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (2.8).
+Nabhoi,2016,Built-up area: 14.7% (low growth class). | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: low (3.1).
+Nabhoi,2017,Built-up area: 16.3% (low growth class). | Built-up increased by 1.5 pp from 2016. | Vegetation cover: high (NDVI 0.45). | Night-time light intensity: low (3.7).
+Nabhoi,2018,Built-up area: 19.4% (low growth class). | Built-up increased by 3.2 pp from 2017. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (3.9).
+Nabhoi,2019,Built-up area: 17.9% (medium growth class). | Built-up decreased by 1.5 pp from 2018. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (4.6).
+Nabhoi,2020,Built-up area: 18.3% (low growth class). | Built-up largely unchanged from 2019 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (4.3).
+Nabhoi,2021,Built-up area: 18.3% (low growth class). | Built-up largely unchanged from 2020 (change: -0.1 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (6.5).
+Nabhoi,2022,Built-up area: 19.6% (low growth class). | Built-up increased by 1.4 pp from 2021. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (7.8).
+Nabhoi,2023,Built-up area: 20.2% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.6 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low-moderate (9.2).
+Nabhoi,2024,Built-up area: 19.4% (low growth class). | Built-up largely unchanged from 2023 (change: -0.8 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low-moderate (8.5).
+Nana Chiloda Gam,2016,Built-up area: 20.5% (low growth class). | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: low (2.8).
+Nana Chiloda Gam,2017,Built-up area: 22.2% (low growth class). | Built-up increased by 1.8 pp from 2016. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (3.2).
+Nana Chiloda Gam,2018,Built-up area: 24.0% (medium growth class). | Built-up increased by 1.8 pp from 2017. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (3.5).
+Nana Chiloda Gam,2019,Built-up area: 23.5% (medium growth class). | Built-up largely unchanged from 2018 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (4.2).
+Nana Chiloda Gam,2020,Built-up area: 24.9% (low growth class). | Built-up increased by 1.3 pp from 2019. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (4.1).
+Nana Chiloda Gam,2021,Built-up area: 25.7% (medium growth class). | Built-up largely unchanged from 2020 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (5.0).
+Nana Chiloda Gam,2022,Built-up area: 28.5% (medium growth class). | Built-up increased by 2.8 pp from 2021. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (6.3).
+Nana Chiloda Gam,2023,Built-up area: 31.3% (high growth class). | Built-up increased by 2.9 pp from 2022. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (7.2).
+Nana Chiloda Gam,2024,Built-up area: 31.1% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (7.8).
+New Indiranagar,2016,Built-up area: 16.2% (low growth class). | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low (0.9).
+New Indiranagar,2017,Built-up area: 17.2% (low growth class). | Built-up largely unchanged from 2016 (change: +0.9 pp). | Vegetation cover: high (NDVI 0.52). | Night-time light intensity: low (1.2).
+New Indiranagar,2018,Built-up area: 17.4% (low growth class). | Built-up largely unchanged from 2017 (change: +0.3 pp). | Vegetation cover: high (NDVI 0.54). | Night-time light intensity: low (1.5).
+New Indiranagar,2019,Built-up area: 17.8% (low growth class). | Built-up largely unchanged from 2018 (change: +0.4 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (1.6).
+New Indiranagar,2020,Built-up area: 17.9% (low growth class). | Built-up largely unchanged from 2019 (change: +0.0 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (1.6).
+New Indiranagar,2021,Built-up area: 18.5% (low growth class). | Built-up largely unchanged from 2020 (change: +0.7 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (1.8).
+New Indiranagar,2022,Built-up area: 19.8% (low growth class). | Built-up increased by 1.3 pp from 2021. | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low (2.0).
+New Indiranagar,2023,Built-up area: 20.4% (low growth class). | Built-up largely unchanged from 2022 (change: +0.7 pp). | Vegetation cover: high (NDVI 0.52). | Night-time light intensity: low (2.1).
+New Indiranagar,2024,Built-up area: 20.0% (low growth class). | Built-up largely unchanged from 2023 (change: -0.5 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (2.3).
+Pethapur,2016,Built-up area: 26.7% (low growth class). | Vegetation cover: low (NDVI 0.20). | Night-time light intensity: low (4.1).
+Pethapur,2017,Built-up area: 30.2% (medium growth class). | Built-up increased by 3.5 pp from 2016. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (5.0).
+Pethapur,2018,Built-up area: 31.3% (medium growth class). | Built-up increased by 1.2 pp from 2017. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (5.7).
+Pethapur,2019,Built-up area: 31.0% (high growth class). | Built-up largely unchanged from 2018 (change: -0.4 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low (6.1).
+Pethapur,2020,Built-up area: 31.3% (medium growth class). | Built-up largely unchanged from 2019 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low (6.1).
+Pethapur,2021,Built-up area: 32.7% (medium growth class). | Built-up increased by 1.4 pp from 2020. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low (6.8).
+Pethapur,2022,Built-up area: 34.0% (medium growth class). | Built-up increased by 1.3 pp from 2021. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (8.0).
+Pethapur,2023,Built-up area: 35.6% (high growth class). | Built-up increased by 1.6 pp from 2022. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (9.7).
+Pethapur,2024,Built-up area: 35.9% (medium growth class). | Built-up largely unchanged from 2023 (change: +0.2 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (10.3).
+Randesan,2016,Built-up area: 29.8% (high growth class). | Vegetation cover: very low (NDVI 0.18). | Night-time light intensity: low (6.1).
+Randesan,2017,Built-up area: 32.1% (high growth class). | Built-up increased by 2.3 pp from 2016. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (8.6).
+Randesan,2018,Built-up area: 35.4% (high growth class). | Built-up increased by 3.3 pp from 2017. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (8.7).
+Randesan,2019,Built-up area: 34.8% (high growth class). | Built-up largely unchanged from 2018 (change: -0.6 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (10.0).
+Randesan,2020,Built-up area: 37.0% (high growth class). | Built-up increased by 2.2 pp from 2019. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (14.4).
+Randesan,2021,Built-up area: 39.5% (high growth class). | Built-up increased by 2.5 pp from 2020. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (17.5).
+Randesan,2022,Built-up area: 41.8% (high growth class). | Built-up increased by 2.2 pp from 2021. | Vegetation cover: moderate (NDVI 0.30). | Night-time light intensity: low-moderate (20.0).
+Randesan,2023,Built-up area: 43.5% (high growth class). | Built-up increased by 1.8 pp from 2022. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: moderate (23.9).
+Randesan,2024,Built-up area: 42.9% (high growth class). | Built-up largely unchanged from 2023 (change: -0.6 pp). | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: moderate (29.3).
+Randheja,2016,Built-up area: 12.4% (low growth class). | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: low (2.1).
+Randheja,2017,Built-up area: 15.0% (low growth class). | Built-up increased by 2.7 pp from 2016. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (2.4).
+Randheja,2018,Built-up area: 14.5% (low growth class). | Built-up largely unchanged from 2017 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (2.5).
+Randheja,2019,Built-up area: 15.4% (low growth class). | Built-up largely unchanged from 2018 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (2.7).
+Randheja,2020,Built-up area: 16.5% (low growth class). | Built-up increased by 1.1 pp from 2019. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (2.8).
+Randheja,2021,Built-up area: 18.3% (low growth class). | Built-up increased by 1.8 pp from 2020. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (3.5).
+Randheja,2022,Built-up area: 19.6% (medium growth class). | Built-up increased by 1.2 pp from 2021. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (5.0).
+Randheja,2023,Built-up area: 21.3% (medium growth class). | Built-up increased by 1.7 pp from 2022. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (6.3).
+Randheja,2024,Built-up area: 21.9% (medium growth class). | Built-up largely unchanged from 2023 (change: +0.6 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (7.0).
+Rural Fringe,2016,Built-up area: 12.1% (low growth class). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low (2.0).
+Rural Fringe,2017,Built-up area: 14.5% (low growth class). | Built-up increased by 2.5 pp from 2016. | Vegetation cover: high (NDVI 0.45). | Night-time light intensity: low (2.2).
+Rural Fringe,2018,Built-up area: 14.2% (low growth class). | Built-up largely unchanged from 2017 (change: -0.4 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (2.4).
+Rural Fringe,2019,Built-up area: 15.2% (low growth class). | Built-up increased by 1.0 pp from 2018. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (2.7).
+Rural Fringe,2020,Built-up area: 15.0% (low growth class). | Built-up largely unchanged from 2019 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (2.8).
+Rural Fringe,2021,Built-up area: 16.2% (low growth class). | Built-up increased by 1.2 pp from 2020. | Vegetation cover: high (NDVI 0.45). | Night-time light intensity: low (3.2).
+Rural Fringe,2022,Built-up area: 17.3% (low growth class). | Built-up increased by 1.1 pp from 2021. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (3.4).
+Rural Fringe,2023,Built-up area: 18.7% (low growth class). | Built-up increased by 1.4 pp from 2022. | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low (4.2).
+Rural Fringe,2024,Built-up area: 18.2% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.5 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (4.7).
+Sargasan,2016,Built-up area: 22.1% (medium growth class). | Vegetation cover: low (NDVI 0.20). | Night-time light intensity: low (5.1).
+Sargasan,2017,Built-up area: 26.1% (high growth class). | Built-up increased by 4.0 pp from 2016. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (7.6).
+Sargasan,2018,Built-up area: 27.9% (high growth class). | Built-up increased by 1.7 pp from 2017. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low-moderate (8.0).
+Sargasan,2019,Built-up area: 30.5% (high growth class). | Built-up increased by 2.7 pp from 2018. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (10.4).
+Sargasan,2020,Built-up area: 32.2% (high growth class). | Built-up increased by 1.7 pp from 2019. | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (11.9).
+Sargasan,2021,Built-up area: 35.2% (high growth class). | Built-up increased by 2.9 pp from 2020. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (13.4).
+Sargasan,2022,Built-up area: 39.4% (high growth class). | Built-up increased by 4.2 pp from 2021. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (16.9).
+Sargasan,2023,Built-up area: 45.1% (high growth class). | Built-up increased by 5.7 pp from 2022. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (19.8).
+Sargasan,2024,Built-up area: 48.1% (high growth class). | Built-up increased by 2.9 pp from 2023. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: moderate (24.2).
+Sector 1,2016,Built-up area: 9.1% (low growth class). | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: low (2.1).
+Sector 1,2017,Built-up area: 10.6% (low growth class). | Built-up increased by 1.5 pp from 2016. | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (2.8).
+Sector 1,2018,Built-up area: 11.7% (low growth class). | Built-up increased by 1.0 pp from 2017. | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (2.8).
+Sector 1,2019,Built-up area: 12.0% (low growth class). | Built-up largely unchanged from 2018 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (3.0).
+Sector 1,2020,Built-up area: 12.9% (low growth class). | Built-up largely unchanged from 2019 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (3.8).
+Sector 1,2021,Built-up area: 14.8% (medium growth class). | Built-up increased by 2.0 pp from 2020. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (5.0).
+Sector 1,2022,Built-up area: 16.1% (medium growth class). | Built-up increased by 1.3 pp from 2021. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (5.6).
+Sector 1,2023,Built-up area: 17.9% (medium growth class). | Built-up increased by 1.8 pp from 2022. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (8.0).
+Sector 1,2024,Built-up area: 21.1% (medium growth class). | Built-up increased by 3.3 pp from 2023. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (14.0).
+Sector 10A,2016,Built-up area: 42.0% (high growth class). | Vegetation cover: low (NDVI 0.18). | Night-time light intensity: moderate (21.9).
+Sector 10A,2017,Built-up area: 46.3% (high growth class). | Built-up increased by 4.3 pp from 2016. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: moderate (27.2).
+Sector 10A,2018,Built-up area: 48.2% (high growth class). | Built-up increased by 1.9 pp from 2017. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: moderate (22.1).
+Sector 10A,2019,Built-up area: 46.8% (high growth class). | Built-up decreased by 1.4 pp from 2018. | Vegetation cover: moderate (NDVI 0.30). | Night-time light intensity: moderate (25.5).
+Sector 10A,2020,Built-up area: 47.4% (high growth class). | Built-up largely unchanged from 2019 (change: +0.6 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: moderate (24.7).
+Sector 10A,2021,Built-up area: 48.5% (high growth class). | Built-up increased by 1.1 pp from 2020. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: moderate (22.6).
+Sector 10A,2022,Built-up area: 50.1% (high growth class). | Built-up increased by 1.6 pp from 2021. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: moderate (25.6).
+Sector 10A,2023,Built-up area: 50.1% (high growth class). | Built-up largely unchanged from 2022 (change: -0.0 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: moderate (26.8).
+Sector 10A,2024,Built-up area: 51.1% (high growth class). | Built-up largely unchanged from 2023 (change: +1.0 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: moderate (30.2).
+Sector 11,2016,Built-up area: 11.5% (low growth class). | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: low (3.8).
+Sector 11,2017,Built-up area: 13.3% (low growth class). | Built-up increased by 1.8 pp from 2016. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (4.5).
+Sector 11,2018,Built-up area: 14.1% (low growth class). | Built-up largely unchanged from 2017 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.45). | Night-time light intensity: low (5.1).
+Sector 11,2019,Built-up area: 15.2% (medium growth class). | Built-up increased by 1.0 pp from 2018. | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (6.1).
+Sector 11,2020,Built-up area: 15.8% (low growth class). | Built-up largely unchanged from 2019 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (5.6).
+Sector 11,2021,Built-up area: 17.1% (medium growth class). | Built-up increased by 1.3 pp from 2020. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (6.2).
+Sector 11,2022,Built-up area: 16.9% (low growth class). | Built-up largely unchanged from 2021 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (6.9).
+Sector 11,2023,Built-up area: 18.0% (medium growth class). | Built-up increased by 1.1 pp from 2022. | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low-moderate (10.3).
+Sector 11,2024,Built-up area: 17.5% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.5 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low-moderate (11.1).
+Sector 12B,2016,Built-up area: 52.0% (high growth class). | Vegetation cover: low (NDVI 0.19). | Night-time light intensity: low-moderate (19.7).
+Sector 12B,2017,Built-up area: 55.9% (high growth class). | Built-up increased by 3.9 pp from 2016. | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: moderate (22.7).
+Sector 12B,2018,Built-up area: 56.4% (high growth class). | Built-up largely unchanged from 2017 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low-moderate (17.7).
+Sector 12B,2019,Built-up area: 54.8% (high growth class). | Built-up decreased by 1.6 pp from 2018. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: moderate (21.2).
+Sector 12B,2020,Built-up area: 55.4% (high growth class). | Built-up largely unchanged from 2019 (change: +0.6 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low-moderate (17.3).
+Sector 12B,2021,Built-up area: 56.0% (high growth class). | Built-up largely unchanged from 2020 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (16.5).
+Sector 12B,2022,Built-up area: 55.5% (high growth class). | Built-up largely unchanged from 2021 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: moderate (21.9).
+Sector 12B,2023,Built-up area: 56.4% (high growth class). | Built-up largely unchanged from 2022 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: moderate (24.3).
+Sector 12B,2024,Built-up area: 54.0% (high growth class). | Built-up decreased by 2.5 pp from 2023. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: moderate (29.4).
+Sector 13,2016,Built-up area: 50.9% (high growth class). | Vegetation cover: low (NDVI 0.18). | Night-time light intensity: moderate (20.3).
+Sector 13,2017,Built-up area: 54.1% (high growth class). | Built-up increased by 3.2 pp from 2016. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: moderate (25.2).
+Sector 13,2018,Built-up area: 54.0% (high growth class). | Built-up largely unchanged from 2017 (change: -0.0 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (19.5).
+Sector 13,2019,Built-up area: 53.0% (high growth class). | Built-up decreased by 1.0 pp from 2018. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: moderate (21.9).
+Sector 13,2020,Built-up area: 53.3% (high growth class). | Built-up largely unchanged from 2019 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (19.3).
+Sector 13,2021,Built-up area: 53.3% (high growth class). | Built-up largely unchanged from 2020 (change: -0.0 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (19.1).
+Sector 13,2022,Built-up area: 54.2% (high growth class). | Built-up largely unchanged from 2021 (change: +1.0 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: moderate (25.2).
+Sector 13,2023,Built-up area: 52.7% (high growth class). | Built-up decreased by 1.6 pp from 2022. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: moderate (25.0).
+Sector 13,2024,Built-up area: 51.9% (high growth class). | Built-up largely unchanged from 2023 (change: -0.8 pp). | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: moderate (30.5).
+Sector 13B,2016,Built-up area: 44.1% (high growth class). | Vegetation cover: very low (NDVI 0.17). | Night-time light intensity: low-moderate (11.2).
+Sector 13B,2017,Built-up area: 48.0% (high growth class). | Built-up increased by 3.9 pp from 2016. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (13.8).
+Sector 13B,2018,Built-up area: 48.9% (high growth class). | Built-up largely unchanged from 2017 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (13.6).
+Sector 13B,2019,Built-up area: 48.4% (high growth class). | Built-up largely unchanged from 2018 (change: -0.4 pp). | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low-moderate (15.3).
+Sector 13B,2020,Built-up area: 49.7% (high growth class). | Built-up increased by 1.2 pp from 2019. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (14.0).
+Sector 13B,2021,Built-up area: 50.7% (high growth class). | Built-up increased by 1.1 pp from 2020. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (16.1).
+Sector 13B,2022,Built-up area: 52.2% (high growth class). | Built-up increased by 1.4 pp from 2021. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (19.5).
+Sector 13B,2023,Built-up area: 54.3% (high growth class). | Built-up increased by 2.1 pp from 2022. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: moderate (21.7).
+Sector 13B,2024,Built-up area: 52.7% (high growth class). | Built-up decreased by 1.6 pp from 2023. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: moderate (24.7).
+Sector 14,2016,Built-up area: 7.5% (low growth class). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low (1.7).
+Sector 14,2017,Built-up area: 8.2% (low growth class). | Built-up largely unchanged from 2016 (change: +0.6 pp). | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (2.0).
+Sector 14,2018,Built-up area: 8.2% (low growth class). | Built-up largely unchanged from 2017 (change: +0.0 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (2.3).
+Sector 14,2019,Built-up area: 9.3% (low growth class). | Built-up increased by 1.1 pp from 2018. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (2.5).
+Sector 14,2020,Built-up area: 8.8% (low growth class). | Built-up largely unchanged from 2019 (change: -0.5 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (2.4).
+Sector 14,2021,Built-up area: 9.5% (low growth class). | Built-up largely unchanged from 2020 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (4.1).
+Sector 14,2022,Built-up area: 10.3% (low growth class). | Built-up largely unchanged from 2021 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (4.1).
+Sector 14,2023,Built-up area: 10.7% (low growth class). | Built-up largely unchanged from 2022 (change: +0.4 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (4.7).
+Sector 14,2024,Built-up area: 10.1% (low growth class). | Built-up largely unchanged from 2023 (change: -0.7 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (5.0).
+Sector 15,2016,Built-up area: 18.8% (low growth class). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low (3.2).
+Sector 15,2017,Built-up area: 21.5% (low growth class). | Built-up increased by 2.7 pp from 2016. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (3.0).
+Sector 15,2018,Built-up area: 22.5% (medium growth class). | Built-up largely unchanged from 2017 (change: +1.0 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (3.9).
+Sector 15,2019,Built-up area: 23.6% (medium growth class). | Built-up increased by 1.1 pp from 2018. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (4.1).
+Sector 15,2020,Built-up area: 22.5% (low growth class). | Built-up decreased by 1.0 pp from 2019. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (3.2).
+Sector 15,2021,Built-up area: 22.7% (low growth class). | Built-up largely unchanged from 2020 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (9.9).
+Sector 15,2022,Built-up area: 23.2% (medium growth class). | Built-up largely unchanged from 2021 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (12.1).
+Sector 15,2023,Built-up area: 25.3% (medium growth class). | Built-up increased by 2.2 pp from 2022. | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low-moderate (12.4).
+Sector 15,2024,Built-up area: 25.2% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (11.1).
+Sector 16,2016,Built-up area: 11.0% (low growth class). | Vegetation cover: low (NDVI 0.20). | Night-time light intensity: low (3.3).
+Sector 16,2017,Built-up area: 13.0% (medium growth class). | Built-up increased by 2.0 pp from 2016. | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (4.3).
+Sector 16,2018,Built-up area: 13.8% (medium growth class). | Built-up largely unchanged from 2017 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (4.4).
+Sector 16,2019,Built-up area: 16.4% (medium growth class). | Built-up increased by 2.6 pp from 2018. | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low (5.2).
+Sector 16,2020,Built-up area: 16.6% (medium growth class). | Built-up largely unchanged from 2019 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (5.5).
+Sector 16,2021,Built-up area: 17.6% (medium growth class). | Built-up increased by 1.0 pp from 2020. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (6.7).
+Sector 16,2022,Built-up area: 19.3% (medium growth class). | Built-up increased by 1.7 pp from 2021. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low (8.0).
+Sector 16,2023,Built-up area: 21.9% (high growth class). | Built-up increased by 2.5 pp from 2022. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (9.3).
+Sector 16,2024,Built-up area: 22.3% (high growth class). | Built-up largely unchanged from 2023 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (10.5).
+Sector 17,2016,Built-up area: 31.4% (high growth class). | Vegetation cover: low (NDVI 0.19). | Night-time light intensity: low-moderate (10.4).
+Sector 17,2017,Built-up area: 33.0% (medium growth class). | Built-up increased by 1.6 pp from 2016. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low-moderate (9.5).
+Sector 17,2018,Built-up area: 36.8% (high growth class). | Built-up increased by 3.8 pp from 2017. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low-moderate (8.9).
+Sector 17,2019,Built-up area: 34.2% (high growth class). | Built-up decreased by 2.6 pp from 2018. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (10.2).
+Sector 17,2020,Built-up area: 33.8% (high growth class). | Built-up largely unchanged from 2019 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low-moderate (11.2).
+Sector 17,2021,Built-up area: 33.9% (low growth class). | Built-up largely unchanged from 2020 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low-moderate (12.2).
+Sector 17,2022,Built-up area: 35.1% (medium growth class). | Built-up increased by 1.2 pp from 2021. | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low-moderate (12.1).
+Sector 17,2023,Built-up area: 35.4% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low-moderate (14.3).
+Sector 17,2024,Built-up area: 36.6% (medium growth class). | Built-up increased by 1.2 pp from 2023. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low-moderate (14.8).
+Sector 17/ GEB Colony,2016,Built-up area: 36.3% (high growth class). | Vegetation cover: very low (NDVI 0.17). | Night-time light intensity: low-moderate (15.4).
+Sector 17/ GEB Colony,2017,Built-up area: 37.2% (high growth class). | Built-up largely unchanged from 2016 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (14.5).
+Sector 17/ GEB Colony,2018,Built-up area: 41.6% (high growth class). | Built-up increased by 4.4 pp from 2017. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (14.2).
+Sector 17/ GEB Colony,2019,Built-up area: 38.7% (high growth class). | Built-up decreased by 2.9 pp from 2018. | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (17.3).
+Sector 17/ GEB Colony,2020,Built-up area: 39.9% (high growth class). | Built-up increased by 1.2 pp from 2019. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (16.9).
+Sector 17/ GEB Colony,2021,Built-up area: 39.4% (medium growth class). | Built-up largely unchanged from 2020 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (18.0).
+Sector 17/ GEB Colony,2022,Built-up area: 41.0% (high growth class). | Built-up increased by 1.6 pp from 2021. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (17.5).
+Sector 17/ GEB Colony,2023,Built-up area: 41.8% (high growth class). | Built-up largely unchanged from 2022 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: moderate (21.0).
+Sector 17/ GEB Colony,2024,Built-up area: 42.2% (high growth class). | Built-up largely unchanged from 2023 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low-moderate (19.9).
+Sector 17/TPS,2016,Built-up area: 27.6% (high growth class). | Vegetation cover: very low (NDVI 0.17). | Night-time light intensity: low-moderate (11.2).
+Sector 17/TPS,2017,Built-up area: 28.3% (high growth class). | Built-up largely unchanged from 2016 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (11.9).
+Sector 17/TPS,2018,Built-up area: 31.6% (high growth class). | Built-up increased by 3.3 pp from 2017. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (10.7).
+Sector 17/TPS,2019,Built-up area: 29.0% (high growth class). | Built-up decreased by 2.6 pp from 2018. | Vegetation cover: moderate (NDVI 0.30). | Night-time light intensity: low-moderate (14.6).
+Sector 17/TPS,2020,Built-up area: 29.8% (high growth class). | Built-up largely unchanged from 2019 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (15.5).
+Sector 17/TPS,2021,Built-up area: 30.0% (medium growth class). | Built-up largely unchanged from 2020 (change: +0.2 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (17.0).
+Sector 17/TPS,2022,Built-up area: 30.3% (high growth class). | Built-up largely unchanged from 2021 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (16.9).
+Sector 17/TPS,2023,Built-up area: 29.9% (medium growth class). | Built-up largely unchanged from 2022 (change: -0.4 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (17.7).
+Sector 17/TPS,2024,Built-up area: 31.1% (high growth class). | Built-up increased by 1.2 pp from 2023. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (18.3).
+Sector 18,2016,Built-up area: 18.8% (medium growth class). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low-moderate (13.6).
+Sector 18,2017,Built-up area: 20.0% (high growth class). | Built-up increased by 1.1 pp from 2016. | Vegetation cover: high (NDVI 0.54). | Night-time light intensity: low-moderate (15.3).
+Sector 18,2018,Built-up area: 23.0% (high growth class). | Built-up increased by 3.1 pp from 2017. | Vegetation cover: high (NDVI 0.54). | Night-time light intensity: low-moderate (13.1).
+Sector 18,2019,Built-up area: 20.3% (high growth class). | Built-up decreased by 2.8 pp from 2018. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (16.3).
+Sector 18,2020,Built-up area: 20.6% (medium growth class). | Built-up largely unchanged from 2019 (change: +0.3 pp). | Vegetation cover: high (NDVI 0.53). | Night-time light intensity: low-moderate (16.6).
+Sector 18,2021,Built-up area: 20.3% (medium growth class). | Built-up largely unchanged from 2020 (change: -0.2 pp). | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low-moderate (16.3).
+Sector 18,2022,Built-up area: 21.5% (high growth class). | Built-up increased by 1.1 pp from 2021. | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low-moderate (17.8).
+Sector 18,2023,Built-up area: 21.3% (high growth class). | Built-up largely unchanged from 2022 (change: -0.2 pp). | Vegetation cover: high (NDVI 0.51). | Night-time light intensity: low-moderate (18.3).
+Sector 18,2024,Built-up area: 21.0% (high growth class). | Built-up largely unchanged from 2023 (change: -0.3 pp). | Vegetation cover: high (NDVI 0.55). | Night-time light intensity: low-moderate (20.0).
+Sector 19,2016,Built-up area: 54.2% (high growth class). | Vegetation cover: low (NDVI 0.21). | Night-time light intensity: low-moderate (17.0).
+Sector 19,2017,Built-up area: 58.2% (high growth class). | Built-up increased by 4.0 pp from 2016. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (18.7).
+Sector 19,2018,Built-up area: 60.6% (high growth class). | Built-up increased by 2.4 pp from 2017. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low-moderate (16.0).
+Sector 19,2019,Built-up area: 58.4% (high growth class). | Built-up decreased by 2.2 pp from 2018. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (18.2).
+Sector 19,2020,Built-up area: 57.9% (high growth class). | Built-up largely unchanged from 2019 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (17.1).
+Sector 19,2021,Built-up area: 58.9% (high growth class). | Built-up largely unchanged from 2020 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low-moderate (18.1).
+Sector 19,2022,Built-up area: 60.3% (high growth class). | Built-up increased by 1.4 pp from 2021. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: moderate (20.7).
+Sector 19,2023,Built-up area: 59.3% (high growth class). | Built-up largely unchanged from 2022 (change: -1.0 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: moderate (24.8).
+Sector 19,2024,Built-up area: 57.7% (high growth class). | Built-up decreased by 1.6 pp from 2023. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: moderate (26.8).
+Sector 2,2016,Built-up area: 4.9% (low growth class). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low (1.4).
+Sector 2,2017,Built-up area: 5.2% (low growth class). | Built-up largely unchanged from 2016 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (1.7).
+Sector 2,2018,Built-up area: 5.3% (low growth class). | Built-up largely unchanged from 2017 (change: +0.1 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (2.0).
+Sector 2,2019,Built-up area: 6.1% (low growth class). | Built-up largely unchanged from 2018 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (2.2).
+Sector 2,2020,Built-up area: 5.3% (low growth class). | Built-up largely unchanged from 2019 (change: -0.8 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (2.3).
+Sector 2,2021,Built-up area: 5.7% (low growth class). | Built-up largely unchanged from 2020 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (3.0).
+Sector 2,2022,Built-up area: 5.9% (low growth class). | Built-up largely unchanged from 2021 (change: +0.2 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (3.1).
+Sector 2,2023,Built-up area: 5.9% (low growth class). | Built-up largely unchanged from 2022 (change: +0.0 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (4.9).
+Sector 2,2024,Built-up area: 5.7% (low growth class). | Built-up largely unchanged from 2023 (change: -0.3 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (6.0).
+Sector 20,2016,Built-up area: 27.6% (medium growth class). | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: low (7.0).
+Sector 20,2017,Built-up area: 29.2% (medium growth class). | Built-up increased by 1.7 pp from 2016. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (6.8).
+Sector 20,2018,Built-up area: 31.9% (medium growth class). | Built-up increased by 2.6 pp from 2017. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (7.2).
+Sector 20,2019,Built-up area: 31.2% (medium growth class). | Built-up largely unchanged from 2018 (change: -0.7 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low-moderate (8.3).
+Sector 20,2020,Built-up area: 32.5% (medium growth class). | Built-up increased by 1.3 pp from 2019. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low-moderate (8.8).
+Sector 20,2021,Built-up area: 33.7% (medium growth class). | Built-up increased by 1.2 pp from 2020. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (9.5).
+Sector 20,2022,Built-up area: 35.7% (medium growth class). | Built-up increased by 1.9 pp from 2021. | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low-moderate (10.5).
+Sector 20,2023,Built-up area: 36.0% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.3 pp). | Vegetation cover: high (NDVI 0.45). | Night-time light intensity: low-moderate (11.9).
+Sector 20,2024,Built-up area: 34.3% (medium growth class). | Built-up decreased by 1.7 pp from 2023. | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low-moderate (12.4).
+Sector 21,2016,Built-up area: 20.7% (low growth class). | Vegetation cover: low (NDVI 0.19). | Night-time light intensity: low (5.0).
+Sector 21,2017,Built-up area: 24.8% (medium growth class). | Built-up increased by 4.2 pp from 2016. | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (5.8).
+Sector 21,2018,Built-up area: 29.6% (high growth class). | Built-up increased by 4.7 pp from 2017. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low (7.1).
+Sector 21,2019,Built-up area: 32.0% (high growth class). | Built-up increased by 2.4 pp from 2018. | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (8.5).
+Sector 21,2020,Built-up area: 35.2% (high growth class). | Built-up increased by 3.2 pp from 2019. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (9.2).
+Sector 21,2021,Built-up area: 34.1% (medium growth class). | Built-up decreased by 1.1 pp from 2020. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (11.1).
+Sector 21,2022,Built-up area: 34.0% (medium growth class). | Built-up largely unchanged from 2021 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (13.6).
+Sector 21,2023,Built-up area: 36.4% (medium growth class). | Built-up increased by 2.4 pp from 2022. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low-moderate (16.1).
+Sector 21,2024,Built-up area: 34.2% (medium growth class). | Built-up decreased by 2.2 pp from 2023. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low-moderate (16.7).
+Sector 22,2016,Built-up area: 60.5% (high growth class). | Vegetation cover: very low (NDVI 0.17). | Night-time light intensity: low-moderate (12.2).
+Sector 22,2017,Built-up area: 64.5% (high growth class). | Built-up increased by 4.0 pp from 2016. | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (15.2).
+Sector 22,2018,Built-up area: 66.6% (high growth class). | Built-up increased by 2.1 pp from 2017. | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (13.9).
+Sector 22,2019,Built-up area: 65.4% (high growth class). | Built-up decreased by 1.1 pp from 2018. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (15.0).
+Sector 22,2020,Built-up area: 64.0% (high growth class). | Built-up decreased by 1.5 pp from 2019. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (13.5).
+Sector 22,2021,Built-up area: 65.8% (high growth class). | Built-up increased by 1.9 pp from 2020. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (14.8).
+Sector 22,2022,Built-up area: 66.2% (high growth class). | Built-up largely unchanged from 2021 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (18.0).
+Sector 22,2023,Built-up area: 65.4% (high growth class). | Built-up largely unchanged from 2022 (change: -0.8 pp). | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (19.7).
+Sector 22,2024,Built-up area: 64.4% (high growth class). | Built-up largely unchanged from 2023 (change: -1.0 pp). | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: moderate (21.6).
+Sector 23,2016,Built-up area: 8.8% (low growth class). | Vegetation cover: low (NDVI 0.25). | Night-time light intensity: low (2.0).
+Sector 23,2017,Built-up area: 10.0% (low growth class). | Built-up increased by 1.3 pp from 2016. | Vegetation cover: high (NDVI 0.45). | Night-time light intensity: low (2.3).
+Sector 23,2018,Built-up area: 11.2% (low growth class). | Built-up increased by 1.1 pp from 2017. | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (2.7).
+Sector 23,2019,Built-up area: 12.8% (medium growth class). | Built-up increased by 1.6 pp from 2018. | Vegetation cover: high (NDVI 0.45). | Night-time light intensity: low (3.0).
+Sector 23,2020,Built-up area: 12.2% (low growth class). | Built-up largely unchanged from 2019 (change: -0.6 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (3.2).
+Sector 23,2021,Built-up area: 13.5% (medium growth class). | Built-up increased by 1.3 pp from 2020. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (3.9).
+Sector 23,2022,Built-up area: 13.7% (low growth class). | Built-up largely unchanged from 2021 (change: +0.2 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (4.5).
+Sector 23,2023,Built-up area: 15.8% (medium growth class). | Built-up increased by 2.1 pp from 2022. | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low (5.3).
+Sector 23,2024,Built-up area: 15.5% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.3 pp). | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (5.6).
+Sector 24,2016,Built-up area: 16.5% (low growth class). | Vegetation cover: very low (NDVI 0.18). | Night-time light intensity: low (3.6).
+Sector 24,2017,Built-up area: 17.7% (medium growth class). | Built-up increased by 1.2 pp from 2016. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low (4.3).
+Sector 24,2018,Built-up area: 20.8% (medium growth class). | Built-up increased by 3.2 pp from 2017. | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low (4.6).
+Sector 24,2019,Built-up area: 19.7% (medium growth class). | Built-up decreased by 1.1 pp from 2018. | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low (5.4).
+Sector 24,2020,Built-up area: 20.7% (medium growth class). | Built-up largely unchanged from 2019 (change: +1.0 pp). | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: low (5.1).
+Sector 24,2021,Built-up area: 21.5% (low growth class). | Built-up largely unchanged from 2020 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low (6.2).
+Sector 24,2022,Built-up area: 22.6% (medium growth class). | Built-up increased by 1.1 pp from 2021. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low (7.1).
+Sector 24,2023,Built-up area: 24.4% (medium growth class). | Built-up increased by 1.9 pp from 2022. | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low-moderate (10.7).
+Sector 24,2024,Built-up area: 23.9% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.5 pp). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low-moderate (10.8).
+Sector 25,2016,Built-up area: 49.4% (high growth class). | Vegetation cover: very low (NDVI 0.17). | Night-time light intensity: low-moderate (14.2).
+Sector 25,2017,Built-up area: 54.1% (high growth class). | Built-up increased by 4.7 pp from 2016. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (17.3).
+Sector 25,2018,Built-up area: 55.8% (high growth class). | Built-up increased by 1.7 pp from 2017. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (15.5).
+Sector 25,2019,Built-up area: 54.8% (high growth class). | Built-up decreased by 1.0 pp from 2018. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (16.5).
+Sector 25,2020,Built-up area: 54.3% (high growth class). | Built-up largely unchanged from 2019 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (16.0).
+Sector 25,2021,Built-up area: 55.2% (high growth class). | Built-up largely unchanged from 2020 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (16.5).
+Sector 25,2022,Built-up area: 55.6% (high growth class). | Built-up largely unchanged from 2021 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (17.4).
+Sector 25,2023,Built-up area: 57.1% (high growth class). | Built-up increased by 1.5 pp from 2022. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (17.3).
+Sector 25,2024,Built-up area: 56.8% (high growth class). | Built-up largely unchanged from 2023 (change: -0.4 pp). | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: moderate (20.3).
+Sector 26,2016,Built-up area: 19.4% (low growth class). | Vegetation cover: low (NDVI 0.21). | Night-time light intensity: low (4.5).
+Sector 26,2017,Built-up area: 22.3% (medium growth class). | Built-up increased by 2.9 pp from 2016. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (6.1).
+Sector 26,2018,Built-up area: 22.1% (medium growth class). | Built-up largely unchanged from 2017 (change: -0.2 pp). | Vegetation cover: high (NDVI 0.45). | Night-time light intensity: low (5.8).
+Sector 26,2019,Built-up area: 21.8% (medium growth class). | Built-up largely unchanged from 2018 (change: -0.4 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (6.3).
+Sector 26,2020,Built-up area: 22.6% (medium growth class). | Built-up largely unchanged from 2019 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (7.3).
+Sector 26,2021,Built-up area: 25.4% (medium growth class). | Built-up increased by 2.9 pp from 2020. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low-moderate (8.6).
+Sector 26,2022,Built-up area: 27.4% (medium growth class). | Built-up increased by 2.0 pp from 2021. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low-moderate (10.1).
+Sector 26,2023,Built-up area: 28.2% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low-moderate (11.9).
+Sector 26,2024,Built-up area: 29.4% (medium growth class). | Built-up increased by 1.2 pp from 2023. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low-moderate (13.1).
+Sector 27,2016,Built-up area: 15.3% (low growth class). | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: low (2.6).
+Sector 27,2017,Built-up area: 16.8% (low growth class). | Built-up increased by 1.4 pp from 2016. | Vegetation cover: high (NDVI 0.50). | Night-time light intensity: low (3.1).
+Sector 27,2018,Built-up area: 20.4% (low growth class). | Built-up increased by 3.6 pp from 2017. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (3.5).
+Sector 27,2019,Built-up area: 17.2% (low growth class). | Built-up decreased by 3.2 pp from 2018. | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (3.7).
+Sector 27,2020,Built-up area: 18.4% (low growth class). | Built-up increased by 1.2 pp from 2019. | Vegetation cover: high (NDVI 0.48). | Night-time light intensity: low (3.4).
+Sector 27,2021,Built-up area: 18.8% (low growth class). | Built-up largely unchanged from 2020 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.45). | Night-time light intensity: low (4.5).
+Sector 27,2022,Built-up area: 20.1% (medium growth class). | Built-up increased by 1.2 pp from 2021. | Vegetation cover: moderate (NDVI 0.45). | Night-time light intensity: low (5.3).
+Sector 27,2023,Built-up area: 20.4% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.3 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (6.5).
+Sector 27,2024,Built-up area: 19.7% (low growth class). | Built-up largely unchanged from 2023 (change: -0.7 pp). | Vegetation cover: high (NDVI 0.52). | Night-time light intensity: low (6.9).
+Sector 28,2016,Built-up area: 30.6% (low growth class). | Vegetation cover: low (NDVI 0.20). | Night-time light intensity: low (5.9).
+Sector 28,2017,Built-up area: 33.4% (high growth class). | Built-up increased by 2.8 pp from 2016. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (7.2).
+Sector 28,2018,Built-up area: 34.1% (high growth class). | Built-up largely unchanged from 2017 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (6.9).
+Sector 28,2019,Built-up area: 34.3% (medium growth class). | Built-up largely unchanged from 2018 (change: +0.2 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low (8.0).
+Sector 28,2020,Built-up area: 34.0% (low growth class). | Built-up largely unchanged from 2019 (change: -0.3 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (7.6).
+Sector 28,2021,Built-up area: 34.8% (high growth class). | Built-up largely unchanged from 2020 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low-moderate (8.3).
+Sector 28,2022,Built-up area: 35.1% (medium growth class). | Built-up largely unchanged from 2021 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low-moderate (9.6).
+Sector 28,2023,Built-up area: 36.1% (medium growth class). | Built-up largely unchanged from 2022 (change: +1.0 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low-moderate (10.6).
+Sector 28,2024,Built-up area: 35.5% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low-moderate (10.7).
+Sector 28 GIDC,2016,Built-up area: 56.7% (high growth class). | Vegetation cover: very low (NDVI 0.16). | Night-time light intensity: low-moderate (11.9).
+Sector 28 GIDC,2017,Built-up area: 61.2% (high growth class). | Built-up increased by 4.5 pp from 2016. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (15.0).
+Sector 28 GIDC,2018,Built-up area: 62.3% (high growth class). | Built-up increased by 1.2 pp from 2017. | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (13.9).
+Sector 28 GIDC,2019,Built-up area: 61.4% (high growth class). | Built-up largely unchanged from 2018 (change: -1.0 pp). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low-moderate (16.2).
+Sector 28 GIDC,2020,Built-up area: 60.7% (high growth class). | Built-up largely unchanged from 2019 (change: -0.7 pp). | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (15.8).
+Sector 28 GIDC,2021,Built-up area: 62.0% (high growth class). | Built-up increased by 1.3 pp from 2020. | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (16.8).
+Sector 28 GIDC,2022,Built-up area: 62.2% (high growth class). | Built-up largely unchanged from 2021 (change: +0.2 pp). | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (16.8).
+Sector 28 GIDC,2023,Built-up area: 63.3% (high growth class). | Built-up increased by 1.1 pp from 2022. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (17.3).
+Sector 28 GIDC,2024,Built-up area: 61.8% (high growth class). | Built-up decreased by 1.5 pp from 2023. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (17.6).
+Sector 29,2016,Built-up area: 51.6% (high growth class). | Vegetation cover: low (NDVI 0.19). | Night-time light intensity: low-moderate (12.8).
+Sector 29,2017,Built-up area: 53.8% (high growth class). | Built-up increased by 2.2 pp from 2016. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (13.7).
+Sector 29,2018,Built-up area: 58.5% (high growth class). | Built-up increased by 4.7 pp from 2017. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (13.4).
+Sector 29,2019,Built-up area: 56.2% (high growth class). | Built-up decreased by 2.3 pp from 2018. | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (17.7).
+Sector 29,2020,Built-up area: 56.0% (high growth class). | Built-up largely unchanged from 2019 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low-moderate (17.6).
+Sector 29,2021,Built-up area: 55.6% (high growth class). | Built-up largely unchanged from 2020 (change: -0.4 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (17.2).
+Sector 29,2022,Built-up area: 56.8% (high growth class). | Built-up increased by 1.3 pp from 2021. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (17.5).
+Sector 29,2023,Built-up area: 56.6% (high growth class). | Built-up largely unchanged from 2022 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low-moderate (18.0).
+Sector 29,2024,Built-up area: 56.1% (high growth class). | Built-up largely unchanged from 2023 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (18.7).
+Sector 30,2016,Built-up area: 35.7% (high growth class). | Vegetation cover: low (NDVI 0.18). | Night-time light intensity: low-moderate (9.7).
+Sector 30,2017,Built-up area: 37.6% (high growth class). | Built-up increased by 1.9 pp from 2016. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (10.6).
+Sector 30,2018,Built-up area: 40.6% (high growth class). | Built-up increased by 3.0 pp from 2017. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (10.4).
+Sector 30,2019,Built-up area: 38.0% (high growth class). | Built-up decreased by 2.6 pp from 2018. | Vegetation cover: low (NDVI 0.30). | Night-time light intensity: low-moderate (11.6).
+Sector 30,2020,Built-up area: 37.6% (high growth class). | Built-up largely unchanged from 2019 (change: -0.4 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (10.7).
+Sector 30,2021,Built-up area: 38.8% (high growth class). | Built-up increased by 1.2 pp from 2020. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (11.6).
+Sector 30,2022,Built-up area: 40.6% (high growth class). | Built-up increased by 1.8 pp from 2021. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (12.9).
+Sector 30,2023,Built-up area: 40.7% (high growth class). | Built-up largely unchanged from 2022 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (15.7).
+Sector 30,2024,Built-up area: 40.4% (high growth class). | Built-up largely unchanged from 2023 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (16.8).
+Sector 3B,2016,Built-up area: 55.5% (high growth class). | Vegetation cover: very low (NDVI 0.16). | Night-time light intensity: low-moderate (8.8).
+Sector 3B,2017,Built-up area: 60.6% (high growth class). | Built-up increased by 5.1 pp from 2016. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (13.7).
+Sector 3B,2018,Built-up area: 60.2% (high growth class). | Built-up largely unchanged from 2017 (change: -0.4 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (12.0).
+Sector 3B,2019,Built-up area: 59.4% (high growth class). | Built-up largely unchanged from 2018 (change: -0.8 pp). | Vegetation cover: low (NDVI 0.25). | Night-time light intensity: low-moderate (13.4).
+Sector 3B,2020,Built-up area: 58.7% (high growth class). | Built-up largely unchanged from 2019 (change: -0.7 pp). | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (12.4).
+Sector 3B,2021,Built-up area: 60.2% (high growth class). | Built-up increased by 1.5 pp from 2020. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (14.4).
+Sector 3B,2022,Built-up area: 60.6% (high growth class). | Built-up largely unchanged from 2021 (change: +0.4 pp). | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (14.9).
+Sector 3B,2023,Built-up area: 61.1% (high growth class). | Built-up largely unchanged from 2022 (change: +0.4 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (16.8).
+Sector 3B,2024,Built-up area: 60.4% (high growth class). | Built-up largely unchanged from 2023 (change: -0.7 pp). | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (18.5).
+Sector 4,2016,Built-up area: 6.8% (low growth class). | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: low (1.5).
+Sector 4,2017,Built-up area: 8.1% (low growth class). | Built-up increased by 1.3 pp from 2016. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (1.8).
+Sector 4,2018,Built-up area: 8.0% (low growth class). | Built-up largely unchanged from 2017 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (2.1).
+Sector 4,2019,Built-up area: 8.7% (low growth class). | Built-up largely unchanged from 2018 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (2.2).
+Sector 4,2020,Built-up area: 8.1% (low growth class). | Built-up largely unchanged from 2019 (change: -0.6 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (2.2).
+Sector 4,2021,Built-up area: 9.2% (low growth class). | Built-up increased by 1.1 pp from 2020. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (5.7).
+Sector 4,2022,Built-up area: 10.4% (low growth class). | Built-up increased by 1.2 pp from 2021. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (5.5).
+Sector 4,2023,Built-up area: 11.9% (medium growth class). | Built-up increased by 1.5 pp from 2022. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (6.3).
+Sector 4,2024,Built-up area: 11.2% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.7 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (5.9).
+Sector 5A,2016,Built-up area: 50.6% (high growth class). | Vegetation cover: very low (NDVI 0.17). | Night-time light intensity: low-moderate (8.6).
+Sector 5A,2017,Built-up area: 54.7% (high growth class). | Built-up increased by 4.2 pp from 2016. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (11.9).
+Sector 5A,2018,Built-up area: 54.8% (high growth class). | Built-up largely unchanged from 2017 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (10.6).
+Sector 5A,2019,Built-up area: 53.9% (high growth class). | Built-up largely unchanged from 2018 (change: -1.0 pp). | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (12.1).
+Sector 5A,2020,Built-up area: 54.0% (high growth class). | Built-up largely unchanged from 2019 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.32). | Night-time light intensity: low-moderate (12.2).
+Sector 5A,2021,Built-up area: 55.6% (high growth class). | Built-up increased by 1.6 pp from 2020. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (12.8).
+Sector 5A,2022,Built-up area: 56.3% (high growth class). | Built-up largely unchanged from 2021 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (12.6).
+Sector 5A,2023,Built-up area: 56.3% (high growth class). | Built-up largely unchanged from 2022 (change: +0.0 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (14.2).
+Sector 5A,2024,Built-up area: 55.8% (high growth class). | Built-up largely unchanged from 2023 (change: -0.6 pp). | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (15.1).
+Sector 6,2016,Built-up area: 56.1% (high growth class). | Vegetation cover: very low (NDVI 0.16). | Night-time light intensity: low-moderate (12.9).
+Sector 6,2017,Built-up area: 60.6% (high growth class). | Built-up increased by 4.5 pp from 2016. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (16.6).
+Sector 6,2018,Built-up area: 60.2% (high growth class). | Built-up largely unchanged from 2017 (change: -0.4 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (14.2).
+Sector 6,2019,Built-up area: 59.2% (high growth class). | Built-up decreased by 1.1 pp from 2018. | Vegetation cover: low (NDVI 0.25). | Night-time light intensity: low-moderate (15.8).
+Sector 6,2020,Built-up area: 58.8% (high growth class). | Built-up largely unchanged from 2019 (change: -0.3 pp). | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (14.6).
+Sector 6,2021,Built-up area: 60.2% (high growth class). | Built-up increased by 1.3 pp from 2020. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (16.0).
+Sector 6,2022,Built-up area: 60.5% (high growth class). | Built-up largely unchanged from 2021 (change: +0.3 pp). | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (18.1).
+Sector 6,2023,Built-up area: 61.4% (high growth class). | Built-up largely unchanged from 2022 (change: +0.9 pp). | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (19.5).
+Sector 6,2024,Built-up area: 60.0% (high growth class). | Built-up decreased by 1.3 pp from 2023. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: moderate (21.9).
+Sector 7,2016,Built-up area: 11.9% (medium growth class). | Vegetation cover: very low (NDVI 0.17). | Night-time light intensity: low (7.3).
+Sector 7,2017,Built-up area: 14.0% (medium growth class). | Built-up increased by 2.0 pp from 2016. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (8.1).
+Sector 7,2018,Built-up area: 14.6% (medium growth class). | Built-up largely unchanged from 2017 (change: +0.7 pp). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low-moderate (8.2).
+Sector 7,2019,Built-up area: 13.7% (medium growth class). | Built-up largely unchanged from 2018 (change: -1.0 pp). | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (9.7).
+Sector 7,2020,Built-up area: 14.4% (medium growth class). | Built-up largely unchanged from 2019 (change: +0.7 pp). | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: low-moderate (10.5).
+Sector 7,2021,Built-up area: 14.9% (low growth class). | Built-up largely unchanged from 2020 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (10.0).
+Sector 7,2022,Built-up area: 15.5% (medium growth class). | Built-up largely unchanged from 2021 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (10.5).
+Sector 7,2023,Built-up area: 15.1% (medium growth class). | Built-up largely unchanged from 2022 (change: -0.5 pp). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low-moderate (11.3).
+Sector 7,2024,Built-up area: 14.4% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.6 pp). | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low-moderate (11.3).
+Sector 7/B,2016,Built-up area: 56.8% (high growth class). | Vegetation cover: very low (NDVI 0.16). | Night-time light intensity: low-moderate (16.5).
+Sector 7/B,2017,Built-up area: 61.2% (high growth class). | Built-up increased by 4.4 pp from 2016. | Vegetation cover: moderate (NDVI 0.30). | Night-time light intensity: low-moderate (19.5).
+Sector 7/B,2018,Built-up area: 61.7% (high growth class). | Built-up largely unchanged from 2017 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (16.9).
+Sector 7/B,2019,Built-up area: 60.9% (high growth class). | Built-up largely unchanged from 2018 (change: -0.7 pp). | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (19.8).
+Sector 7/B,2020,Built-up area: 59.5% (high growth class). | Built-up decreased by 1.4 pp from 2019. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (18.1).
+Sector 7/B,2021,Built-up area: 61.4% (high growth class). | Built-up increased by 1.9 pp from 2020. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (18.2).
+Sector 7/B,2022,Built-up area: 62.1% (high growth class). | Built-up largely unchanged from 2021 (change: +0.7 pp). | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: moderate (21.4).
+Sector 7/B,2023,Built-up area: 62.5% (high growth class). | Built-up largely unchanged from 2022 (change: +0.4 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: moderate (24.7).
+Sector 7/B,2024,Built-up area: 61.9% (high growth class). | Built-up largely unchanged from 2023 (change: -0.6 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: moderate (28.5).
+Sector 8,2016,Built-up area: 42.8% (high growth class). | Vegetation cover: very low (NDVI 0.18). | Night-time light intensity: low-moderate (11.2).
+Sector 8,2017,Built-up area: 46.2% (high growth class). | Built-up increased by 3.4 pp from 2016. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (13.1).
+Sector 8,2018,Built-up area: 48.7% (high growth class). | Built-up increased by 2.4 pp from 2017. | Vegetation cover: moderate (NDVI 0.35). | Night-time light intensity: low-moderate (12.5).
+Sector 8,2019,Built-up area: 45.4% (high growth class). | Built-up decreased by 3.3 pp from 2018. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (13.8).
+Sector 8,2020,Built-up area: 45.8% (high growth class). | Built-up largely unchanged from 2019 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (14.0).
+Sector 8,2021,Built-up area: 47.4% (medium growth class). | Built-up increased by 1.6 pp from 2020. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (14.4).
+Sector 8,2022,Built-up area: 49.7% (high growth class). | Built-up increased by 2.3 pp from 2021. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low-moderate (15.9).
+Sector 8,2023,Built-up area: 50.6% (high growth class). | Built-up largely unchanged from 2022 (change: +0.9 pp). | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low-moderate (16.2).
+Sector 8,2024,Built-up area: 49.5% (high growth class). | Built-up decreased by 1.1 pp from 2023. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low-moderate (16.5).
+Sector 9,2016,Built-up area: 19.3% (low growth class). | Vegetation cover: low (NDVI 0.19). | Night-time light intensity: low (3.3).
+Sector 9,2017,Built-up area: 21.6% (low growth class). | Built-up increased by 2.3 pp from 2016. | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (4.0).
+Sector 9,2018,Built-up area: 26.5% (medium growth class). | Built-up increased by 4.9 pp from 2017. | Vegetation cover: moderate (NDVI 0.34). | Night-time light intensity: low (4.8).
+Sector 9,2019,Built-up area: 25.9% (medium growth class). | Built-up largely unchanged from 2018 (change: -0.6 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low (5.4).
+Sector 9,2020,Built-up area: 27.1% (low growth class). | Built-up increased by 1.2 pp from 2019. | Vegetation cover: moderate (NDVI 0.36). | Night-time light intensity: low (5.0).
+Sector 9,2021,Built-up area: 26.9% (low growth class). | Built-up largely unchanged from 2020 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (5.6).
+Sector 9,2022,Built-up area: 26.7% (low growth class). | Built-up largely unchanged from 2021 (change: -0.3 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (5.7).
+Sector 9,2023,Built-up area: 27.3% (low growth class). | Built-up largely unchanged from 2022 (change: +0.6 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low (7.6).
+Sector 9,2024,Built-up area: 26.9% (low growth class). | Built-up largely unchanged from 2023 (change: -0.3 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low-moderate (8.2).
+Shiholi-Village,2016,Built-up area: 24.0% (low growth class). | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: low (2.1).
+Shiholi-Village,2017,Built-up area: 26.5% (low growth class). | Built-up increased by 2.5 pp from 2016. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (2.5).
+Shiholi-Village,2018,Built-up area: 28.2% (low growth class). | Built-up increased by 1.7 pp from 2017. | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (3.2).
+Shiholi-Village,2019,Built-up area: 28.7% (medium growth class). | Built-up largely unchanged from 2018 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (3.4).
+Shiholi-Village,2020,Built-up area: 28.5% (low growth class). | Built-up largely unchanged from 2019 (change: -0.2 pp). | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (3.1).
+Shiholi-Village,2021,Built-up area: 30.3% (low growth class). | Built-up increased by 1.8 pp from 2020. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (3.4).
+Shiholi-Village,2022,Built-up area: 32.1% (medium growth class). | Built-up increased by 1.9 pp from 2021. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (4.0).
+Shiholi-Village,2023,Built-up area: 33.8% (medium growth class). | Built-up increased by 1.6 pp from 2022. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (4.7).
+Shiholi-Village,2024,Built-up area: 33.8% (medium growth class). | Built-up largely unchanged from 2023 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (5.2).
+Vavol,2016,Built-up area: 23.3% (high growth class). | Vegetation cover: low (NDVI 0.18). | Night-time light intensity: low (5.8).
+Vavol,2017,Built-up area: 27.4% (high growth class). | Built-up increased by 4.1 pp from 2016. | Vegetation cover: moderate (NDVI 0.33). | Night-time light intensity: low (7.4).
+Vavol,2018,Built-up area: 28.2% (high growth class). | Built-up largely unchanged from 2017 (change: +0.8 pp). | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low-moderate (8.6).
+Vavol,2019,Built-up area: 30.5% (high growth class). | Built-up increased by 2.3 pp from 2018. | Vegetation cover: low (NDVI 0.26). | Night-time light intensity: low-moderate (8.8).
+Vavol,2020,Built-up area: 31.5% (high growth class). | Built-up largely unchanged from 2019 (change: +1.0 pp). | Vegetation cover: low (NDVI 0.30). | Night-time light intensity: low (8.0).
+Vavol,2021,Built-up area: 31.7% (high growth class). | Built-up largely unchanged from 2020 (change: +0.2 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (11.5).
+Vavol,2022,Built-up area: 32.5% (high growth class). | Built-up largely unchanged from 2021 (change: +0.8 pp). | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (14.5).
+Vavol,2023,Built-up area: 35.6% (high growth class). | Built-up increased by 3.1 pp from 2022. | Vegetation cover: low (NDVI 0.29). | Night-time light intensity: low-moderate (15.4).
+Vavol,2024,Built-up area: 35.8% (high growth class). | Built-up largely unchanged from 2023 (change: +0.2 pp). | Vegetation cover: moderate (NDVI 0.30). | Night-time light intensity: low-moderate (17.1).
+kalyanpura,2016,Built-up area: 13.7% (low growth class). | Vegetation cover: low (NDVI 0.25). | Night-time light intensity: low (1.3).
+kalyanpura,2017,Built-up area: 14.8% (low growth class). | Built-up increased by 1.1 pp from 2016. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (1.5).
+kalyanpura,2018,Built-up area: 16.5% (low growth class). | Built-up increased by 1.7 pp from 2017. | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (1.5).
+kalyanpura,2019,Built-up area: 17.3% (low growth class). | Built-up largely unchanged from 2018 (change: +0.8 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (1.6).
+kalyanpura,2020,Built-up area: 17.7% (low growth class). | Built-up largely unchanged from 2019 (change: +0.4 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (1.7).
+kalyanpura,2021,Built-up area: 18.2% (low growth class). | Built-up largely unchanged from 2020 (change: +0.5 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (2.6).
+kalyanpura,2022,Built-up area: 20.8% (medium growth class). | Built-up increased by 2.6 pp from 2021. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (2.7).
+kalyanpura,2023,Built-up area: 21.5% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.7 pp). | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low (3.1).
+kalyanpura,2024,Built-up area: 20.5% (medium growth class). | Built-up largely unchanged from 2023 (change: -1.0 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (3.3).
+por,2016,Built-up area: 13.3% (low growth class). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low (1.9).
+por,2017,Built-up area: 16.0% (low growth class). | Built-up increased by 2.7 pp from 2016. | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (2.2).
+por,2018,Built-up area: 17.5% (low growth class). | Built-up increased by 1.5 pp from 2017. | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (2.4).
+por,2019,Built-up area: 17.8% (low growth class). | Built-up largely unchanged from 2018 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (2.6).
+por,2020,Built-up area: 17.9% (low growth class). | Built-up largely unchanged from 2019 (change: +0.1 pp). | Vegetation cover: moderate (NDVI 0.43). | Night-time light intensity: low (2.4).
+por,2021,Built-up area: 18.2% (low growth class). | Built-up largely unchanged from 2020 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (6.0).
+por,2022,Built-up area: 18.6% (low growth class). | Built-up largely unchanged from 2021 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (7.2).
+por,2023,Built-up area: 20.4% (low growth class). | Built-up increased by 1.8 pp from 2022. | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (7.6).
+por,2024,Built-up area: 21.0% (medium growth class). | Built-up largely unchanged from 2023 (change: +0.6 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (6.9).
+por / nabhoi,2016,Built-up area: 13.1% (low growth class). | Vegetation cover: low (NDVI 0.24). | Night-time light intensity: low (1.5).
+por / nabhoi,2017,Built-up area: 15.2% (low growth class). | Built-up increased by 2.2 pp from 2016. | Vegetation cover: moderate (NDVI 0.44). | Night-time light intensity: low (1.8).
+por / nabhoi,2018,Built-up area: 15.7% (low growth class). | Built-up largely unchanged from 2017 (change: +0.5 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (1.8).
+por / nabhoi,2019,Built-up area: 15.9% (low growth class). | Built-up largely unchanged from 2018 (change: +0.2 pp). | Vegetation cover: high (NDVI 0.45). | Night-time light intensity: low (1.9).
+por / nabhoi,2020,Built-up area: 15.5% (low growth class). | Built-up largely unchanged from 2019 (change: -0.4 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (1.9).
+por / nabhoi,2021,Built-up area: 16.1% (low growth class). | Built-up largely unchanged from 2020 (change: +0.6 pp). | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (3.2).
+por / nabhoi,2022,Built-up area: 17.2% (low growth class). | Built-up increased by 1.0 pp from 2021. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (3.2).
+por / nabhoi,2023,Built-up area: 18.4% (low growth class). | Built-up increased by 1.2 pp from 2022. | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low (3.4).
+por / nabhoi,2024,Built-up area: 19.3% (medium growth class). | Built-up largely unchanged from 2023 (change: +0.9 pp). | Vegetation cover: high (NDVI 0.47). | Night-time light intensity: low (3.9).
+sector 1,2016,Built-up area: 5.8% (low growth class). | Vegetation cover: low (NDVI 0.25). | Night-time light intensity: low (1.6).
+sector 1,2017,Built-up area: 6.4% (low growth class). | Built-up largely unchanged from 2016 (change: +0.6 pp). | Vegetation cover: high (NDVI 0.53). | Night-time light intensity: low (2.0).
+sector 1,2018,Built-up area: 7.9% (low growth class). | Built-up increased by 1.4 pp from 2017. | Vegetation cover: high (NDVI 0.52). | Night-time light intensity: low (2.3).
+sector 1,2019,Built-up area: 7.3% (low growth class). | Built-up largely unchanged from 2018 (change: -0.5 pp). | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (2.6).
+sector 1,2020,Built-up area: 8.4% (low growth class). | Built-up increased by 1.1 pp from 2019. | Vegetation cover: high (NDVI 0.53). | Night-time light intensity: low (2.8).
+sector 1,2021,Built-up area: 8.3% (low growth class). | Built-up largely unchanged from 2020 (change: -0.1 pp). | Vegetation cover: high (NDVI 0.49). | Night-time light intensity: low (3.5).
+sector 1,2022,Built-up area: 10.4% (medium growth class). | Built-up increased by 2.1 pp from 2021. | Vegetation cover: high (NDVI 0.46). | Night-time light intensity: low (3.6).
+sector 1,2023,Built-up area: 11.2% (low growth class). | Built-up largely unchanged from 2022 (change: +0.8 pp). | Vegetation cover: high (NDVI 0.51). | Night-time light intensity: low (6.0).
+sector 1,2024,Built-up area: 11.0% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.2 pp). | Vegetation cover: high (NDVI 0.54). | Night-time light intensity: low-moderate (8.2).
+sector 2,2016,Built-up area: 13.5% (low growth class). | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: low (1.7).
+sector 2,2017,Built-up area: 15.1% (low growth class). | Built-up increased by 1.6 pp from 2016. | Vegetation cover: moderate (NDVI 0.41). | Night-time light intensity: low (2.2).
+sector 2,2018,Built-up area: 16.5% (low growth class). | Built-up increased by 1.4 pp from 2017. | Vegetation cover: moderate (NDVI 0.42). | Night-time light intensity: low (2.4).
+sector 2,2019,Built-up area: 17.5% (low growth class). | Built-up increased by 1.0 pp from 2018. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (2.7).
+sector 2,2020,Built-up area: 17.4% (low growth class). | Built-up largely unchanged from 2019 (change: -0.1 pp). | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (2.8).
+sector 2,2021,Built-up area: 18.5% (low growth class). | Built-up increased by 1.1 pp from 2020. | Vegetation cover: moderate (NDVI 0.39). | Night-time light intensity: low (5.8).
+sector 2,2022,Built-up area: 18.9% (low growth class). | Built-up largely unchanged from 2021 (change: +0.4 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low (5.9).
+sector 2,2023,Built-up area: 20.6% (medium growth class). | Built-up increased by 1.7 pp from 2022. | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (7.3).
+sector 2,2024,Built-up area: 21.0% (medium growth class). | Built-up largely unchanged from 2023 (change: +0.3 pp). | Vegetation cover: moderate (NDVI 0.40). | Night-time light intensity: low (7.4).
+sector 20,2016,Built-up area: 12.3% (low growth class). | Vegetation cover: low (NDVI 0.18). | Night-time light intensity: low (6.6).
+sector 20,2017,Built-up area: 13.0% (low growth class). | Built-up largely unchanged from 2016 (change: +0.7 pp). | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low (7.4).
+sector 20,2018,Built-up area: 14.8% (medium growth class). | Built-up increased by 1.7 pp from 2017. | Vegetation cover: moderate (NDVI 0.31). | Night-time light intensity: low (7.9).
+sector 20,2019,Built-up area: 12.5% (medium growth class). | Built-up decreased by 2.3 pp from 2018. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (9.1).
+sector 20,2020,Built-up area: 13.5% (medium growth class). | Built-up increased by 1.1 pp from 2019. | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (8.7).
+sector 20,2021,Built-up area: 14.0% (low growth class). | Built-up largely unchanged from 2020 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.37). | Night-time light intensity: low-moderate (9.3).
+sector 20,2022,Built-up area: 14.6% (medium growth class). | Built-up largely unchanged from 2021 (change: +0.5 pp). | Vegetation cover: moderate (NDVI 0.38). | Night-time light intensity: low-moderate (9.6).
+sector 20,2023,Built-up area: 14.7% (medium growth class). | Built-up largely unchanged from 2022 (change: +0.1 pp). | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (11.1).
+sector 20,2024,Built-up area: 14.0% (medium growth class). | Built-up largely unchanged from 2023 (change: -0.7 pp). | Vegetation cover: moderate (NDVI 0.30). | Night-time light intensity: low-moderate (10.9).
+somnath park society,2016,Built-up area: 49.6% (high growth class). | Vegetation cover: very low (NDVI 0.15). | Night-time light intensity: low-moderate (10.1).
+somnath park society,2017,Built-up area: 53.9% (high growth class). | Built-up increased by 4.4 pp from 2016. | Vegetation cover: low (NDVI 0.28). | Night-time light intensity: low-moderate (15.4).
+somnath park society,2018,Built-up area: 55.2% (high growth class). | Built-up increased by 1.2 pp from 2017. | Vegetation cover: low (NDVI 0.27). | Night-time light intensity: low-moderate (15.4).
+somnath park society,2019,Built-up area: 57.1% (high growth class). | Built-up increased by 2.0 pp from 2018. | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: moderate (21.2).
+somnath park society,2020,Built-up area: 58.2% (high growth class). | Built-up increased by 1.1 pp from 2019. | Vegetation cover: low (NDVI 0.23). | Night-time light intensity: moderate (23.5).
+somnath park society,2021,Built-up area: 59.7% (high growth class). | Built-up increased by 1.4 pp from 2020. | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: moderate (26.3).
+somnath park society,2022,Built-up area: 60.0% (high growth class). | Built-up largely unchanged from 2021 (change: +0.4 pp). | Vegetation cover: low (NDVI 0.22). | Night-time light intensity: moderate (30.2).
+somnath park society,2023,Built-up area: 62.9% (high growth class). | Built-up increased by 2.9 pp from 2022. | Vegetation cover: low (NDVI 0.21). | Night-time light intensity: moderate (33.8).
+somnath park society,2024,Built-up area: 62.5% (high growth class). | Built-up largely unchanged from 2023 (change: -0.3 pp). | Vegetation cover: low (NDVI 0.21). | Night-time light intensity: moderate (38.1).

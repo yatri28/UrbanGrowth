@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Por",
+        "source": "grid_centroid_derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.711,
+              23.1895
+            ],
+            [
+              72.724,
+              23.1895
+            ],
+            [
+              72.724,
+              23.2005
+            ],
+            [
+              72.711,
+              23.2005
+            ],
+            [
+              72.711,
+              23.1895
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sector 9",
+        "source": "grid_centroid_derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.672,
+              23.199499999999997
+            ],
+            [
+              72.685,
+              23.199499999999997
+            ],
+            [
+              72.685,
+              23.2105
+            ],
+            [
+              72.672,
+              23.2105
+            ],
+            [
+              72.672,
+              23.199499999999997
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}

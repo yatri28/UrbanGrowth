@@ -1,0 +1,1601 @@
+grid_id,area_name,year,growth_class,confidence
+grid_0_0,Sargasan,2025,high,0.925
+grid_0_1,Kudasan,2025,high,0.979
+grid_0_2,Randesan,2025,high,0.951
+grid_0_3,Randesan,2025,medium,0.986
+grid_0_4,Gujarat International Finance Tec-City,2025,medium,0.996
+grid_0_5,Sector 1,2025,medium,0.963
+grid_0_6,sector 2,2025,low,0.804
+grid_0_7,sector 2 ,2025,medium,0.985
+grid_0_8,Nabhoi,2025,low,0.908
+grid_0_9,kalyanpura,2025,medium,0.841
+grid_1_0,somnath park society,2025,high,0.798
+grid_1_1,Infocity,2025,medium,0.976
+grid_1_2,Infocity,2025,high,0.995
+grid_1_3,Dholakuva,2025,medium,0.759
+grid_1_4,Indroda,2025,medium,0.972
+grid_1_5,sector 1,2025,medium,0.978
+grid_1_6,Sector 2,2025,medium,0.974
+grid_1_7,Sector 4,2025,medium,0.882
+grid_1_8,por,2025,medium,0.922
+grid_1_9,por / nabhoi,2025,low,0.737
+grid_2_0,Sargasan,2025,high,0.745
+grid_2_1,Sector 3B,2025,high,0.978
+grid_2_2,Sector 6,2025,high,0.985
+grid_2_3,Sector 8,2025,high,0.993
+grid_2_4,Sector 7,2025,medium,0.644
+grid_2_5,Sector 9,2025,high,0.667
+grid_2_6,Sector 11,2025,medium,0.923
+grid_2_7,Sector 14,2025,low,0.972
+grid_2_8,Sector 15,2025,medium,0.97
+grid_2_9,por,2025,low,0.981
+grid_3_0,Sector 16,2025,medium,0.945
+grid_3_1,Sector 5A,2025,high,0.958
+grid_3_2,Sector 7/B,2025,high,0.988
+grid_3_3,Sector 10A,2025,high,0.99
+grid_3_4,Sector 18,2025,medium,0.986
+grid_3_5,sector 20,2025,medium,0.951
+grid_3_6,Sector 21,2025,high,0.824
+grid_3_7,Sector 23,2025,low,0.951
+grid_3_8,Chiloda,2025,low,0.951
+grid_3_9,Chiloda,2025,medium,0.631
+grid_4_0,Vavol,2025,high,0.914
+grid_4_1,Sector 13B,2025,high,0.991
+grid_4_2,Sector 12B,2025,high,0.972
+grid_4_3,Sector 13,2025,high,0.989
+grid_4_4,Sector 19,2025,high,0.986
+grid_4_5,Borij,2025,high,0.981
+grid_4_6,Sector 24,2025,medium,0.975
+grid_4_7,Sector 27,2025,medium,0.979
+grid_4_8,Sector 27,2025,medium,0.543
+grid_4_9,Chiloda,2025,high,0.736
+grid_5_0,Sector 16,2025,medium,0.935
+grid_5_1,Vavol,2025,high,0.988
+grid_5_2,Sector 6,2025,high,0.988
+grid_5_3,Sector 22,2025,high,0.981
+grid_5_4,Sector 30,2025,high,0.98
+grid_5_5,Borij,2025,high,0.841
+grid_5_6,Sector 30,2025,medium,0.65
+grid_5_7,Nabhoi,2025,medium,0.987
+grid_5_8,Nana Chiloda Gam,2025,medium,0.96
+grid_5_9,Nana Chiloda Gam,2025,medium,0.859
+grid_6_0,Vavol,2025,low,0.998
+grid_6_1,GIDC Electronic Estate,2025,high,0.935
+grid_6_2,Sector 25,2025,high,0.984
+grid_6_3,Sector 28,2025,high,0.985
+grid_6_4,Sector 29,2025,high,0.988
+grid_6_5,Sector 17/TPS,2025,medium,0.868
+grid_6_6,Sector 17,2025,high,0.612
+grid_6_7,Sector 20,2025,medium,0.664
+grid_6_8,Sector 23,2025,low,0.975
+grid_6_9,Shiholi-Village,2025,medium,0.815
+grid_7_0,Pethapur,2025,medium,0.886
+grid_7_1,Pethapur,2025,high,0.561
+grid_7_2,Green City,2025,high,0.975
+grid_7_3,Sector 28 GIDC,2025,high,0.983
+grid_7_4,Sector 17/ GEB Colony,2025,high,0.916
+grid_7_5,Sector 17,2025,high,0.941
+grid_7_6,Sector 17,2025,medium,0.916
+grid_7_7,Rural Fringe,2025,medium,0.662
+grid_7_8,Rural Fringe,2025,low,0.984
+grid_7_9,Chiloda ,2025,low,0.999
+grid_8_0,Sector 28,2025,medium,0.777
+grid_8_1,Sector 28,2025,low,0.998
+grid_8_2,Sector 26,2025,medium,0.966
+grid_8_3,Pethapur,2025,medium,0.766
+grid_8_4,Pethapur,2025,high,0.992
+grid_8_5,Pethapur,2025,high,0.862
+grid_8_6,Pethapur,2025,medium,0.935
+grid_8_7,Lekawada village,2025,low,0.996
+grid_8_8,Bhundiya Fringe,2025,low,0.999
+grid_8_9,NH-8,2025,low,0.958
+grid_9_0,Kolavda ,2025,low,0.997
+grid_9_1,Kolavda ,2025,low,0.998
+grid_9_2,Randheja,2025,low,0.937
+grid_9_3,Randheja,2025,low,0.742
+grid_9_4,Dashela,2025,medium,0.671
+grid_9_5,Dashela,2025,medium,0.527
+grid_9_6,Dashela,2025,low,0.997
+grid_9_7,Lekawada ,2025,low,0.929
+grid_9_8,Bhundiya  ,2025,low,0.999
+grid_9_9,New Indiranagar,2025,low,0.951
+grid_0_0,Sargasan,2026,high,0.811
+grid_0_1,Kudasan,2026,high,0.961
+grid_0_2,Randesan,2026,high,0.97
+grid_0_3,Randesan,2026,medium,0.995
+grid_0_4,Gujarat International Finance Tec-City,2026,medium,0.996
+grid_0_5,Sector 1,2026,medium,0.986
+grid_0_6,sector 2,2026,low,0.725
+grid_0_7,sector 2 ,2026,medium,0.994
+grid_0_8,Nabhoi,2026,low,0.504
+grid_0_9,kalyanpura,2026,medium,0.806
+grid_1_0,somnath park society,2026,high,0.583
+grid_1_1,Infocity,2026,medium,0.989
+grid_1_2,Infocity,2026,high,0.99
+grid_1_3,Dholakuva,2026,medium,0.714
+grid_1_4,Indroda,2026,medium,0.972
+grid_1_5,sector 1,2026,medium,0.982
+grid_1_6,Sector 2,2026,medium,0.974
+grid_1_7,Sector 4,2026,medium,0.926
+grid_1_8,por,2026,medium,0.954
+grid_1_9,por / nabhoi,2026,low,0.586
+grid_2_0,Sargasan,2026,high,0.56
+grid_2_1,Sector 3B,2026,high,0.982
+grid_2_2,Sector 6,2026,high,0.988
+grid_2_3,Sector 8,2026,high,0.994
+grid_2_4,Sector 7,2026,medium,0.65
+grid_2_5,Sector 9,2026,high,0.689
+grid_2_6,Sector 11,2026,medium,0.954
+grid_2_7,Sector 14,2026,low,0.973
+grid_2_8,Sector 15,2026,medium,0.988
+grid_2_9,por,2026,low,0.967
+grid_3_0,Sector 16,2026,medium,0.99
+grid_3_1,Sector 5A,2026,high,0.967
+grid_3_2,Sector 7/B,2026,high,0.99
+grid_3_3,Sector 10A,2026,high,0.986
+grid_3_4,Sector 18,2026,medium,0.985
+grid_3_5,sector 20,2026,medium,0.951
+grid_3_6,Sector 21,2026,high,0.675
+grid_3_7,Sector 23,2026,low,0.921
+grid_3_8,Chiloda,2026,low,0.931
+grid_3_9,Chiloda,2026,medium,0.911
+grid_4_0,Vavol,2026,high,0.824
+grid_4_1,Sector 13B,2026,high,0.986
+grid_4_2,Sector 12B,2026,high,0.987
+grid_4_3,Sector 13,2026,high,0.989
+grid_4_4,Sector 19,2026,high,0.99
+grid_4_5,Borij,2026,high,0.981
+grid_4_6,Sector 24,2026,medium,0.986
+grid_4_7,Sector 27,2026,medium,0.978
+grid_4_8,Sector 27,2026,medium,0.918
+grid_4_9,Chiloda,2026,high,0.518
+grid_5_0,Sector 16,2026,medium,0.955
+grid_5_1,Vavol,2026,high,0.983
+grid_5_2,Sector 6,2026,high,0.992
+grid_5_3,Sector 22,2026,high,0.98
+grid_5_4,Sector 30,2026,high,0.981
+grid_5_5,Borij,2026,high,0.906
+grid_5_6,Sector 30,2026,medium,0.638
+grid_5_7,Nabhoi,2026,medium,0.987
+grid_5_8,Nana Chiloda Gam,2026,medium,0.973
+grid_5_9,Nana Chiloda Gam,2026,medium,0.944
+grid_6_0,Vavol,2026,low,0.998
+grid_6_1,GIDC Electronic Estate,2026,high,0.936
+grid_6_2,Sector 25,2026,high,0.991
+grid_6_3,Sector 28,2026,high,0.989
+grid_6_4,Sector 29,2026,high,0.988
+grid_6_5,Sector 17/TPS,2026,medium,0.836
+grid_6_6,Sector 17,2026,high,0.869
+grid_6_7,Sector 20,2026,medium,0.656
+grid_6_8,Sector 23,2026,low,0.858
+grid_6_9,Shiholi-Village,2026,medium,0.875
+grid_7_0,Pethapur,2026,medium,0.951
+grid_7_1,Pethapur,2026,high,0.742
+grid_7_2,Green City,2026,high,0.98
+grid_7_3,Sector 28 GIDC,2026,high,0.986
+grid_7_4,Sector 17/ GEB Colony,2026,high,0.966
+grid_7_5,Sector 17,2026,high,0.954
+grid_7_6,Sector 17,2026,medium,0.804
+grid_7_7,Rural Fringe,2026,medium,0.764
+grid_7_8,Rural Fringe,2026,low,0.98
+grid_7_9,Chiloda ,2026,low,0.998
+grid_8_0,Sector 28,2026,medium,0.83
+grid_8_1,Sector 28,2026,low,0.997
+grid_8_2,Sector 26,2026,medium,0.944
+grid_8_3,Pethapur,2026,medium,0.916
+grid_8_4,Pethapur,2026,high,0.992
+grid_8_5,Pethapur,2026,high,0.925
+grid_8_6,Pethapur,2026,medium,0.958
+grid_8_7,Lekawada village,2026,low,0.995
+grid_8_8,Bhundiya Fringe,2026,low,0.999
+grid_8_9,NH-8,2026,low,0.953
+grid_9_0,Kolavda ,2026,low,0.997
+grid_9_1,Kolavda ,2026,low,0.998
+grid_9_2,Randheja,2026,low,0.874
+grid_9_3,Randheja,2026,low,0.528
+grid_9_4,Dashela,2026,medium,0.654
+grid_9_5,Dashela,2026,medium,0.583
+grid_9_6,Dashela,2026,low,0.997
+grid_9_7,Lekawada ,2026,low,0.931
+grid_9_8,Bhundiya  ,2026,low,0.999
+grid_9_9,New Indiranagar,2026,low,0.961
+grid_0_0,Sargasan,2027,high,0.906
+grid_0_1,Kudasan,2027,high,0.979
+grid_0_2,Randesan,2027,high,0.985
+grid_0_3,Randesan,2027,medium,0.994
+grid_0_4,Gujarat International Finance Tec-City,2027,medium,0.987
+grid_0_5,Sector 1,2027,medium,0.996
+grid_0_6,sector 2,2027,low,0.608
+grid_0_7,sector 2 ,2027,medium,0.99
+grid_0_8,Nabhoi,2027,low,0.514
+grid_0_9,kalyanpura,2027,medium,0.799
+grid_1_0,somnath park society,2027,high,0.777
+grid_1_1,Infocity,2027,medium,0.99
+grid_1_2,Infocity,2027,high,0.995
+grid_1_3,Dholakuva,2027,medium,0.783
+grid_1_4,Indroda,2027,medium,0.974
+grid_1_5,sector 1,2027,medium,0.986
+grid_1_6,Sector 2,2027,medium,0.976
+grid_1_7,Sector 4,2027,medium,0.9
+grid_1_8,por,2027,medium,0.959
+grid_1_9,por / nabhoi,2027,medium,0.744
+grid_2_0,Sargasan,2027,high,0.743
+grid_2_1,Sector 3B,2027,high,0.989
+grid_2_2,Sector 6,2027,high,0.992
+grid_2_3,Sector 8,2027,high,0.996
+grid_2_4,Sector 7,2027,high,0.494
+grid_2_5,Sector 9,2027,high,0.828
+grid_2_6,Sector 11,2027,medium,0.903
+grid_2_7,Sector 14,2027,low,0.965
+grid_2_8,Sector 15,2027,medium,0.984
+grid_2_9,por,2027,low,0.965
+grid_3_0,Sector 16,2027,medium,0.986
+grid_3_1,Sector 5A,2027,high,0.985
+grid_3_2,Sector 7/B,2027,high,0.994
+grid_3_3,Sector 10A,2027,high,0.994
+grid_3_4,Sector 18,2027,medium,0.988
+grid_3_5,sector 20,2027,medium,0.916
+grid_3_6,Sector 21,2027,high,0.857
+grid_3_7,Sector 23,2027,low,0.896
+grid_3_8,Chiloda,2027,low,0.932
+grid_3_9,Chiloda,2027,medium,0.887
+grid_4_0,Vavol,2027,high,0.904
+grid_4_1,Sector 13B,2027,high,0.991
+grid_4_2,Sector 12B,2027,high,0.994
+grid_4_3,Sector 13,2027,high,0.994
+grid_4_4,Sector 19,2027,high,0.994
+grid_4_5,Borij,2027,high,0.99
+grid_4_6,Sector 24,2027,medium,0.98
+grid_4_7,Sector 27,2027,medium,0.968
+grid_4_8,Sector 27,2027,medium,0.884
+grid_4_9,Chiloda,2027,high,0.642
+grid_5_0,Sector 16,2027,medium,0.966
+grid_5_1,Vavol,2027,high,0.988
+grid_5_2,Sector 6,2027,high,0.996
+grid_5_3,Sector 22,2027,high,0.989
+grid_5_4,Sector 30,2027,high,0.987
+grid_5_5,Borij,2027,high,0.912
+grid_5_6,Sector 30,2027,medium,0.627
+grid_5_7,Nabhoi,2027,medium,0.983
+grid_5_8,Nana Chiloda Gam,2027,medium,0.945
+grid_5_9,Nana Chiloda Gam,2027,medium,0.9
+grid_6_0,Vavol,2027,low,0.998
+grid_6_1,GIDC Electronic Estate,2027,high,0.962
+grid_6_2,Sector 25,2027,high,0.995
+grid_6_3,Sector 28,2027,high,0.993
+grid_6_4,Sector 29,2027,high,0.993
+grid_6_5,Sector 17/TPS,2027,medium,0.869
+grid_6_6,Sector 17,2027,high,0.921
+grid_6_7,Sector 20,2027,high,0.601
+grid_6_8,Sector 23,2027,low,0.763
+grid_6_9,Shiholi-Village,2027,medium,0.511
+grid_7_0,Pethapur,2027,medium,0.913
+grid_7_1,Pethapur,2027,high,0.815
+grid_7_2,Green City,2027,high,0.985
+grid_7_3,Sector 28 GIDC,2027,high,0.988
+grid_7_4,Sector 17/ GEB Colony,2027,high,0.979
+grid_7_5,Sector 17,2027,high,0.936
+grid_7_6,Sector 17,2027,medium,0.875
+grid_7_7,Rural Fringe,2027,medium,0.766
+grid_7_8,Rural Fringe,2027,low,0.932
+grid_7_9,Chiloda ,2027,low,0.998
+grid_8_0,Sector 28,2027,medium,0.415
+grid_8_1,Sector 28,2027,low,0.997
+grid_8_2,Sector 26,2027,medium,0.939
+grid_8_3,Pethapur,2027,medium,0.903
+grid_8_4,Pethapur,2027,high,0.988
+grid_8_5,Pethapur,2027,high,0.947
+grid_8_6,Pethapur,2027,medium,0.919
+grid_8_7,Lekawada village,2027,low,0.994
+grid_8_8,Bhundiya Fringe,2027,low,0.999
+grid_8_9,NH-8,2027,low,0.97
+grid_9_0,Kolavda ,2027,low,0.996
+grid_9_1,Kolavda ,2027,low,0.999
+grid_9_2,Randheja,2027,low,0.846
+grid_9_3,Randheja,2027,medium,0.518
+grid_9_4,Dashela,2027,medium,0.829
+grid_9_5,Dashela,2027,medium,0.539
+grid_9_6,Dashela,2027,low,0.997
+grid_9_7,Lekawada ,2027,low,0.927
+grid_9_8,Bhundiya  ,2027,low,0.999
+grid_9_9,New Indiranagar,2027,low,0.944
+grid_0_0,Sargasan,2028,high,0.9
+grid_0_1,Kudasan,2028,high,0.949
+grid_0_2,Randesan,2028,high,0.952
+grid_0_3,Randesan,2028,medium,0.989
+grid_0_4,Gujarat International Finance Tec-City,2028,medium,0.983
+grid_0_5,Sector 1,2028,medium,0.992
+grid_0_6,sector 2,2028,low,0.605
+grid_0_7,sector 2 ,2028,medium,0.994
+grid_0_8,Nabhoi,2028,medium,0.799
+grid_0_9,kalyanpura,2028,medium,0.942
+grid_1_0,somnath park society,2028,high,0.508
+grid_1_1,Infocity,2028,medium,0.958
+grid_1_2,Infocity,2028,high,0.986
+grid_1_3,Dholakuva,2028,medium,0.73
+grid_1_4,Indroda,2028,medium,0.973
+grid_1_5,sector 1,2028,medium,0.987
+grid_1_6,Sector 2,2028,medium,0.975
+grid_1_7,Sector 4,2028,medium,0.935
+grid_1_8,por,2028,medium,0.982
+grid_1_9,por / nabhoi,2028,medium,0.774
+grid_2_0,Sargasan,2028,high,0.83
+grid_2_1,Sector 3B,2028,high,0.979
+grid_2_2,Sector 6,2028,high,0.986
+grid_2_3,Sector 8,2028,high,0.993
+grid_2_4,Sector 7,2028,medium,0.654
+grid_2_5,Sector 9,2028,high,0.648
+grid_2_6,Sector 11,2028,medium,0.968
+grid_2_7,Sector 14,2028,low,0.946
+grid_2_8,Sector 15,2028,medium,0.99
+grid_2_9,por,2028,low,0.848
+grid_3_0,Sector 16,2028,medium,0.986
+grid_3_1,Sector 5A,2028,high,0.972
+grid_3_2,Sector 7/B,2028,high,0.988
+grid_3_3,Sector 10A,2028,high,0.987
+grid_3_4,Sector 18,2028,medium,0.984
+grid_3_5,sector 20,2028,medium,0.944
+grid_3_6,Sector 21,2028,high,0.614
+grid_3_7,Sector 23,2028,low,0.916
+grid_3_8,Chiloda,2028,low,0.841
+grid_3_9,Chiloda,2028,medium,0.95
+grid_4_0,Vavol,2028,high,0.912
+grid_4_1,Sector 13B,2028,high,0.983
+grid_4_2,Sector 12B,2028,high,0.99
+grid_4_3,Sector 13,2028,high,0.989
+grid_4_4,Sector 19,2028,high,0.99
+grid_4_5,Borij,2028,high,0.977
+grid_4_6,Sector 24,2028,medium,0.985
+grid_4_7,Sector 27,2028,medium,0.989
+grid_4_8,Sector 27,2028,medium,0.969
+grid_4_9,Chiloda,2028,high,0.51
+grid_5_0,Sector 16,2028,medium,0.941
+grid_5_1,Vavol,2028,high,0.976
+grid_5_2,Sector 6,2028,high,0.992
+grid_5_3,Sector 22,2028,high,0.976
+grid_5_4,Sector 30,2028,high,0.973
+grid_5_5,Borij,2028,high,0.93
+grid_5_6,Sector 30,2028,medium,0.655
+grid_5_7,Nabhoi,2028,medium,0.99
+grid_5_8,Nana Chiloda Gam,2028,medium,0.721
+grid_5_9,Nana Chiloda Gam,2028,medium,0.879
+grid_6_0,Vavol,2028,low,0.998
+grid_6_1,GIDC Electronic Estate,2028,high,0.92
+grid_6_2,Sector 25,2028,high,0.991
+grid_6_3,Sector 28,2028,high,0.987
+grid_6_4,Sector 29,2028,high,0.987
+grid_6_5,Sector 17/TPS,2028,medium,0.848
+grid_6_6,Sector 17,2028,high,0.822
+grid_6_7,Sector 20,2028,medium,0.644
+grid_6_8,Sector 23,2028,medium,0.708
+grid_6_9,Shiholi-Village,2028,medium,0.685
+grid_7_0,Pethapur,2028,medium,0.912
+grid_7_1,Pethapur,2028,high,0.622
+grid_7_2,Green City,2028,high,0.973
+grid_7_3,Sector 28 GIDC,2028,high,0.983
+grid_7_4,Sector 17/ GEB Colony,2028,high,0.98
+grid_7_5,Sector 17,2028,high,0.936
+grid_7_6,Sector 17,2028,medium,0.72
+grid_7_7,Rural Fringe,2028,medium,0.928
+grid_7_8,Rural Fringe,2028,low,0.781
+grid_7_9,Chiloda ,2028,low,0.997
+grid_8_0,Sector 28,2028,medium,0.643
+grid_8_1,Sector 28,2028,low,0.997
+grid_8_2,Sector 26,2028,medium,0.948
+grid_8_3,Pethapur,2028,medium,0.903
+grid_8_4,Pethapur,2028,high,0.983
+grid_8_5,Pethapur,2028,high,0.913
+grid_8_6,Pethapur,2028,medium,0.974
+grid_8_7,Lekawada village,2028,low,0.992
+grid_8_8,Bhundiya Fringe,2028,low,0.999
+grid_8_9,NH-8,2028,low,0.937
+grid_9_0,Kolavda ,2028,low,0.995
+grid_9_1,Kolavda ,2028,low,0.998
+grid_9_2,Randheja,2028,low,0.581
+grid_9_3,Randheja,2028,medium,0.523
+grid_9_4,Dashela,2028,medium,0.674
+grid_9_5,Dashela,2028,medium,0.801
+grid_9_6,Dashela,2028,low,0.997
+grid_9_7,Lekawada ,2028,low,0.86
+grid_9_8,Bhundiya  ,2028,low,0.999
+grid_9_9,New Indiranagar,2028,low,0.932
+grid_0_0,Sargasan,2029,high,0.899
+grid_0_1,Kudasan,2029,high,0.951
+grid_0_2,Randesan,2029,high,0.95
+grid_0_3,Randesan,2029,medium,0.954
+grid_0_4,Gujarat International Finance Tec-City,2029,medium,0.918
+grid_0_5,Sector 1,2029,medium,0.994
+grid_0_6,sector 2,2029,low,0.559
+grid_0_7,sector 2 ,2029,medium,0.992
+grid_0_8,Nabhoi,2029,medium,0.815
+grid_0_9,kalyanpura,2029,medium,0.937
+grid_1_0,somnath park society,2029,high,0.517
+grid_1_1,Infocity,2029,medium,0.949
+grid_1_2,Infocity,2029,high,0.985
+grid_1_3,Dholakuva,2029,medium,0.722
+grid_1_4,Indroda,2029,medium,0.972
+grid_1_5,sector 1,2029,medium,0.987
+grid_1_6,Sector 2,2029,medium,0.975
+grid_1_7,Sector 4,2029,medium,0.938
+grid_1_8,por,2029,medium,0.984
+grid_1_9,por / nabhoi,2029,medium,0.834
+grid_2_0,Sargasan,2029,high,0.907
+grid_2_1,Sector 3B,2029,high,0.979
+grid_2_2,Sector 6,2029,high,0.985
+grid_2_3,Sector 8,2029,high,0.993
+grid_2_4,Sector 7,2029,medium,0.626
+grid_2_5,Sector 9,2029,high,0.644
+grid_2_6,Sector 11,2029,medium,0.971
+grid_2_7,Sector 14,2029,low,0.945
+grid_2_8,Sector 15,2029,medium,0.99
+grid_2_9,por,2029,low,0.716
+grid_3_0,Sector 16,2029,medium,0.976
+grid_3_1,Sector 5A,2029,high,0.972
+grid_3_2,Sector 7/B,2029,high,0.988
+grid_3_3,Sector 10A,2029,high,0.986
+grid_3_4,Sector 18,2029,medium,0.985
+grid_3_5,sector 20,2029,medium,0.944
+grid_3_6,Sector 21,2029,high,0.75
+grid_3_7,Sector 23,2029,low,0.914
+grid_3_8,Chiloda,2029,low,0.712
+grid_3_9,Chiloda,2029,medium,0.951
+grid_4_0,Vavol,2029,high,0.906
+grid_4_1,Sector 13B,2029,high,0.984
+grid_4_2,Sector 12B,2029,high,0.99
+grid_4_3,Sector 13,2029,high,0.989
+grid_4_4,Sector 19,2029,high,0.987
+grid_4_5,Borij,2029,high,0.978
+grid_4_6,Sector 24,2029,medium,0.983
+grid_4_7,Sector 27,2029,medium,0.989
+grid_4_8,Sector 27,2029,medium,0.969
+grid_4_9,Chiloda,2029,high,0.51
+grid_5_0,Sector 16,2029,medium,0.944
+grid_5_1,Vavol,2029,high,0.966
+grid_5_2,Sector 6,2029,high,0.992
+grid_5_3,Sector 22,2029,high,0.975
+grid_5_4,Sector 30,2029,high,0.974
+grid_5_5,Borij,2029,high,0.93
+grid_5_6,Sector 30,2029,medium,0.703
+grid_5_7,Nabhoi,2029,medium,0.99
+grid_5_8,Nana Chiloda Gam,2029,medium,0.67
+grid_5_9,Nana Chiloda Gam,2029,medium,0.869
+grid_6_0,Vavol,2029,low,0.997
+grid_6_1,GIDC Electronic Estate,2029,high,0.92
+grid_6_2,Sector 25,2029,high,0.992
+grid_6_3,Sector 28,2029,high,0.986
+grid_6_4,Sector 29,2029,high,0.987
+grid_6_5,Sector 17/TPS,2029,medium,0.764
+grid_6_6,Sector 17,2029,high,0.826
+grid_6_7,Sector 20,2029,medium,0.644
+grid_6_8,Sector 23,2029,medium,0.784
+grid_6_9,Shiholi-Village,2029,medium,0.706
+grid_7_0,Pethapur,2029,medium,0.896
+grid_7_1,Pethapur,2029,high,0.705
+grid_7_2,Green City,2029,high,0.972
+grid_7_3,Sector 28 GIDC,2029,high,0.982
+grid_7_4,Sector 17/ GEB Colony,2029,high,0.98
+grid_7_5,Sector 17,2029,high,0.936
+grid_7_6,Sector 17,2029,high,0.717
+grid_7_7,Rural Fringe,2029,medium,0.939
+grid_7_8,Rural Fringe,2029,low,0.635
+grid_7_9,Chiloda ,2029,low,0.997
+grid_8_0,Sector 28,2029,medium,0.614
+grid_8_1,Sector 28,2029,low,0.997
+grid_8_2,Sector 26,2029,medium,0.922
+grid_8_3,Pethapur,2029,medium,0.907
+grid_8_4,Pethapur,2029,high,0.984
+grid_8_5,Pethapur,2029,high,0.913
+grid_8_6,Pethapur,2029,medium,0.978
+grid_8_7,Lekawada village,2029,low,0.992
+grid_8_8,Bhundiya Fringe,2029,low,0.999
+grid_8_9,NH-8,2029,low,0.931
+grid_9_0,Kolavda ,2029,low,0.996
+grid_9_1,Kolavda ,2029,low,0.999
+grid_9_2,Randheja,2029,low,0.532
+grid_9_3,Randheja,2029,medium,0.665
+grid_9_4,Dashela,2029,medium,0.593
+grid_9_5,Dashela,2029,medium,0.807
+grid_9_6,Dashela,2029,low,0.997
+grid_9_7,Lekawada ,2029,low,0.86
+grid_9_8,Bhundiya  ,2029,low,0.999
+grid_9_9,New Indiranagar,2029,low,0.933
+grid_0_0,Sargasan,2030,high,0.838
+grid_0_1,Kudasan,2030,high,0.952
+grid_0_2,Randesan,2030,high,0.946
+grid_0_3,Randesan,2030,medium,0.738
+grid_0_4,Gujarat International Finance Tec-City,2030,medium,0.915
+grid_0_5,Sector 1,2030,medium,0.993
+grid_0_6,sector 2,2030,medium,0.508
+grid_0_7,sector 2 ,2030,medium,0.992
+grid_0_8,Nabhoi,2030,medium,0.869
+grid_0_9,kalyanpura,2030,medium,0.941
+grid_1_0,somnath park society,2030,high,0.522
+grid_1_1,Infocity,2030,medium,0.687
+grid_1_2,Infocity,2030,high,0.986
+grid_1_3,Dholakuva,2030,medium,0.73
+grid_1_4,Indroda,2030,medium,0.971
+grid_1_5,sector 1,2030,medium,0.988
+grid_1_6,Sector 2,2030,medium,0.974
+grid_1_7,Sector 4,2030,medium,0.939
+grid_1_8,por,2030,medium,0.985
+grid_1_9,por / nabhoi,2030,medium,0.872
+grid_2_0,Sargasan,2030,high,0.907
+grid_2_1,Sector 3B,2030,high,0.977
+grid_2_2,Sector 6,2030,high,0.985
+grid_2_3,Sector 8,2030,high,0.993
+grid_2_4,Sector 7,2030,medium,0.597
+grid_2_5,Sector 9,2030,high,0.663
+grid_2_6,Sector 11,2030,medium,0.972
+grid_2_7,Sector 14,2030,low,0.933
+grid_2_8,Sector 15,2030,medium,0.989
+grid_2_9,por,2030,low,0.677
+grid_3_0,Sector 16,2030,medium,0.98
+grid_3_1,Sector 5A,2030,high,0.972
+grid_3_2,Sector 7/B,2030,high,0.988
+grid_3_3,Sector 10A,2030,high,0.986
+grid_3_4,Sector 18,2030,medium,0.985
+grid_3_5,sector 20,2030,medium,0.942
+grid_3_6,Sector 21,2030,high,0.835
+grid_3_7,Sector 23,2030,low,0.91
+grid_3_8,Chiloda,2030,low,0.508
+grid_3_9,Chiloda,2030,medium,0.95
+grid_4_0,Vavol,2030,high,0.9
+grid_4_1,Sector 13B,2030,high,0.983
+grid_4_2,Sector 12B,2030,high,0.99
+grid_4_3,Sector 13,2030,high,0.989
+grid_4_4,Sector 19,2030,high,0.986
+grid_4_5,Borij,2030,high,0.978
+grid_4_6,Sector 24,2030,medium,0.983
+grid_4_7,Sector 27,2030,medium,0.989
+grid_4_8,Sector 27,2030,medium,0.973
+grid_4_9,Chiloda,2030,high,0.515
+grid_5_0,Sector 16,2030,medium,0.971
+grid_5_1,Vavol,2030,high,0.967
+grid_5_2,Sector 6,2030,high,0.992
+grid_5_3,Sector 22,2030,high,0.975
+grid_5_4,Sector 30,2030,high,0.975
+grid_5_5,Borij,2030,high,0.93
+grid_5_6,Sector 30,2030,medium,0.718
+grid_5_7,Nabhoi,2030,medium,0.99
+grid_5_8,Nana Chiloda Gam,2030,medium,0.613
+grid_5_9,Nana Chiloda Gam,2030,medium,0.512
+grid_6_0,Vavol,2030,low,0.997
+grid_6_1,GIDC Electronic Estate,2030,high,0.92
+grid_6_2,Sector 25,2030,high,0.989
+grid_6_3,Sector 28,2030,high,0.986
+grid_6_4,Sector 29,2030,high,0.988
+grid_6_5,Sector 17/TPS,2030,medium,0.764
+grid_6_6,Sector 17,2030,high,0.841
+grid_6_7,Sector 20,2030,medium,0.656
+grid_6_8,Sector 23,2030,medium,0.857
+grid_6_9,Shiholi-Village,2030,medium,0.679
+grid_7_0,Pethapur,2030,medium,0.693
+grid_7_1,Pethapur,2030,high,0.608
+grid_7_2,Green City,2030,high,0.973
+grid_7_3,Sector 28 GIDC,2030,high,0.982
+grid_7_4,Sector 17/ GEB Colony,2030,high,0.981
+grid_7_5,Sector 17,2030,high,0.936
+grid_7_6,Sector 17,2030,high,0.716
+grid_7_7,Rural Fringe,2030,medium,0.902
+grid_7_8,Rural Fringe,2030,medium,0.712
+grid_7_9,Chiloda ,2030,low,0.997
+grid_8_0,Sector 28,2030,medium,0.568
+grid_8_1,Sector 28,2030,low,0.997
+grid_8_2,Sector 26,2030,medium,0.814
+grid_8_3,Pethapur,2030,medium,0.932
+grid_8_4,Pethapur,2030,high,0.983
+grid_8_5,Pethapur,2030,high,0.921
+grid_8_6,Pethapur,2030,medium,0.978
+grid_8_7,Lekawada village,2030,low,0.992
+grid_8_8,Bhundiya Fringe,2030,low,0.999
+grid_8_9,NH-8,2030,low,0.93
+grid_9_0,Kolavda ,2030,low,0.995
+grid_9_1,Kolavda ,2030,low,0.999
+grid_9_2,Randheja,2030,low,0.538
+grid_9_3,Randheja,2030,medium,0.72
+grid_9_4,Dashela,2030,high,0.516
+grid_9_5,Dashela,2030,medium,0.804
+grid_9_6,Dashela,2030,low,0.998
+grid_9_7,Lekawada ,2030,low,0.863
+grid_9_8,Bhundiya  ,2030,low,0.999
+grid_9_9,New Indiranagar,2030,low,0.929
+grid_0_0,Sargasan,2031,high,0.817
+grid_0_1,Kudasan,2031,high,0.941
+grid_0_2,Randesan,2031,high,0.943
+grid_0_3,Randesan,2031,medium,0.73
+grid_0_4,Gujarat International Finance Tec-City,2031,medium,0.892
+grid_0_5,Sector 1,2031,medium,0.996
+grid_0_6,sector 2,2031,medium,0.517
+grid_0_7,sector 2 ,2031,medium,0.99
+grid_0_8,Nabhoi,2031,medium,0.901
+grid_0_9,kalyanpura,2031,medium,0.941
+grid_1_0,somnath park society,2031,high,0.517
+grid_1_1,Infocity,2031,medium,0.675
+grid_1_2,Infocity,2031,high,0.98
+grid_1_3,Dholakuva,2031,medium,0.73
+grid_1_4,Indroda,2031,medium,0.971
+grid_1_5,sector 1,2031,medium,0.987
+grid_1_6,Sector 2,2031,medium,0.974
+grid_1_7,Sector 4,2031,medium,0.947
+grid_1_8,por,2031,medium,0.982
+grid_1_9,por / nabhoi,2031,medium,0.908
+grid_2_0,Sargasan,2031,high,0.891
+grid_2_1,Sector 3B,2031,high,0.976
+grid_2_2,Sector 6,2031,high,0.985
+grid_2_3,Sector 8,2031,high,0.993
+grid_2_4,Sector 7,2031,medium,0.595
+grid_2_5,Sector 9,2031,high,0.663
+grid_2_6,Sector 11,2031,medium,0.97
+grid_2_7,Sector 14,2031,low,0.876
+grid_2_8,Sector 15,2031,medium,0.991
+grid_2_9,por,2031,low,0.545
+grid_3_0,Sector 16,2031,medium,0.988
+grid_3_1,Sector 5A,2031,high,0.972
+grid_3_2,Sector 7/B,2031,high,0.987
+grid_3_3,Sector 10A,2031,high,0.986
+grid_3_4,Sector 18,2031,medium,0.985
+grid_3_5,sector 20,2031,medium,0.942
+grid_3_6,Sector 21,2031,high,0.832
+grid_3_7,Sector 23,2031,low,0.908
+grid_3_8,Chiloda,2031,medium,0.57
+grid_3_9,Chiloda,2031,medium,0.971
+grid_4_0,Vavol,2031,high,0.793
+grid_4_1,Sector 13B,2031,high,0.983
+grid_4_2,Sector 12B,2031,high,0.99
+grid_4_3,Sector 13,2031,high,0.989
+grid_4_4,Sector 19,2031,high,0.986
+grid_4_5,Borij,2031,high,0.978
+grid_4_6,Sector 24,2031,medium,0.98
+grid_4_7,Sector 27,2031,medium,0.988
+grid_4_8,Sector 27,2031,medium,0.975
+grid_4_9,Chiloda,2031,high,0.523
+grid_5_0,Sector 16,2031,medium,0.98
+grid_5_1,Vavol,2031,high,0.968
+grid_5_2,Sector 6,2031,high,0.992
+grid_5_3,Sector 22,2031,high,0.975
+grid_5_4,Sector 30,2031,high,0.975
+grid_5_5,Borij,2031,high,0.93
+grid_5_6,Sector 30,2031,medium,0.831
+grid_5_7,Nabhoi,2031,medium,0.99
+grid_5_8,Nana Chiloda Gam,2031,medium,0.6
+grid_5_9,Nana Chiloda Gam,2031,medium,0.649
+grid_6_0,Vavol,2031,low,0.996
+grid_6_1,GIDC Electronic Estate,2031,high,0.924
+grid_6_2,Sector 25,2031,high,0.989
+grid_6_3,Sector 28,2031,high,0.984
+grid_6_4,Sector 29,2031,high,0.988
+grid_6_5,Sector 17/TPS,2031,medium,0.764
+grid_6_6,Sector 17,2031,high,0.842
+grid_6_7,Sector 20,2031,medium,0.696
+grid_6_8,Sector 23,2031,medium,0.896
+grid_6_9,Shiholi-Village,2031,medium,0.666
+grid_7_0,Pethapur,2031,medium,0.693
+grid_7_1,Pethapur,2031,high,0.784
+grid_7_2,Green City,2031,high,0.973
+grid_7_3,Sector 28 GIDC,2031,high,0.981
+grid_7_4,Sector 17/ GEB Colony,2031,high,0.981
+grid_7_5,Sector 17,2031,high,0.936
+grid_7_6,Sector 17,2031,high,0.785
+grid_7_7,Rural Fringe,2031,medium,0.906
+grid_7_8,Rural Fringe,2031,medium,0.756
+grid_7_9,Chiloda ,2031,low,0.997
+grid_8_0,Sector 28,2031,medium,0.562
+grid_8_1,Sector 28,2031,low,0.997
+grid_8_2,Sector 26,2031,high,0.568
+grid_8_3,Pethapur,2031,medium,0.963
+grid_8_4,Pethapur,2031,high,0.983
+grid_8_5,Pethapur,2031,high,0.948
+grid_8_6,Pethapur,2031,medium,0.975
+grid_8_7,Lekawada village,2031,low,0.991
+grid_8_8,Bhundiya Fringe,2031,low,0.999
+grid_8_9,NH-8,2031,low,0.931
+grid_9_0,Kolavda ,2031,low,0.993
+grid_9_1,Kolavda ,2031,low,0.999
+grid_9_2,Randheja,2031,low,0.553
+grid_9_3,Randheja,2031,medium,0.711
+grid_9_4,Dashela,2031,high,0.579
+grid_9_5,Dashela,2031,medium,0.789
+grid_9_6,Dashela,2031,low,0.998
+grid_9_7,Lekawada ,2031,low,0.87
+grid_9_8,Bhundiya  ,2031,low,0.999
+grid_9_9,New Indiranagar,2031,low,0.899
+grid_0_0,Sargasan,2032,high,0.828
+grid_0_1,Kudasan,2032,high,0.941
+grid_0_2,Randesan,2032,high,0.944
+grid_0_3,Randesan,2032,medium,0.641
+grid_0_4,Gujarat International Finance Tec-City,2032,medium,0.886
+grid_0_5,Sector 1,2032,medium,0.996
+grid_0_6,sector 2,2032,medium,0.585
+grid_0_7,sector 2 ,2032,medium,0.98
+grid_0_8,Nabhoi,2032,medium,0.921
+grid_0_9,kalyanpura,2032,medium,0.936
+grid_1_0,somnath park society,2032,high,0.498
+grid_1_1,Infocity,2032,medium,0.675
+grid_1_2,Infocity,2032,high,0.981
+grid_1_3,Dholakuva,2032,medium,0.723
+grid_1_4,Indroda,2032,medium,0.97
+grid_1_5,sector 1,2032,medium,0.986
+grid_1_6,Sector 2,2032,medium,0.974
+grid_1_7,Sector 4,2032,medium,0.95
+grid_1_8,por,2032,medium,0.975
+grid_1_9,por / nabhoi,2032,medium,0.944
+grid_2_0,Sargasan,2032,high,0.898
+grid_2_1,Sector 3B,2032,high,0.976
+grid_2_2,Sector 6,2032,high,0.986
+grid_2_3,Sector 8,2032,high,0.993
+grid_2_4,Sector 7,2032,medium,0.605
+grid_2_5,Sector 9,2032,high,0.706
+grid_2_6,Sector 11,2032,medium,0.969
+grid_2_7,Sector 14,2032,low,0.866
+grid_2_8,Sector 15,2032,medium,0.991
+grid_2_9,por,2032,medium,0.524
+grid_3_0,Sector 16,2032,medium,0.989
+grid_3_1,Sector 5A,2032,high,0.972
+grid_3_2,Sector 7/B,2032,high,0.987
+grid_3_3,Sector 10A,2032,high,0.986
+grid_3_4,Sector 18,2032,medium,0.985
+grid_3_5,sector 20,2032,medium,0.942
+grid_3_6,Sector 21,2032,high,0.91
+grid_3_7,Sector 23,2032,low,0.893
+grid_3_8,Chiloda,2032,medium,0.713
+grid_3_9,Chiloda,2032,medium,0.973
+grid_4_0,Vavol,2032,high,0.779
+grid_4_1,Sector 13B,2032,high,0.983
+grid_4_2,Sector 12B,2032,high,0.99
+grid_4_3,Sector 13,2032,high,0.989
+grid_4_4,Sector 19,2032,high,0.987
+grid_4_5,Borij,2032,high,0.98
+grid_4_6,Sector 24,2032,medium,0.98
+grid_4_7,Sector 27,2032,medium,0.986
+grid_4_8,Sector 27,2032,medium,0.987
+grid_4_9,Chiloda,2032,high,0.536
+grid_5_0,Sector 16,2032,medium,0.982
+grid_5_1,Vavol,2032,high,0.967
+grid_5_2,Sector 6,2032,high,0.992
+grid_5_3,Sector 22,2032,high,0.975
+grid_5_4,Sector 30,2032,high,0.975
+grid_5_5,Borij,2032,high,0.93
+grid_5_6,Sector 30,2032,medium,0.886
+grid_5_7,Nabhoi,2032,medium,0.989
+grid_5_8,Nana Chiloda Gam,2032,medium,0.6
+grid_5_9,Nana Chiloda Gam,2032,medium,0.591
+grid_6_0,Vavol,2032,low,0.995
+grid_6_1,GIDC Electronic Estate,2032,high,0.926
+grid_6_2,Sector 25,2032,high,0.989
+grid_6_3,Sector 28,2032,high,0.983
+grid_6_4,Sector 29,2032,high,0.988
+grid_6_5,Sector 17/TPS,2032,medium,0.764
+grid_6_6,Sector 17,2032,high,0.89
+grid_6_7,Sector 20,2032,medium,0.588
+grid_6_8,Sector 23,2032,medium,0.924
+grid_6_9,Shiholi-Village,2032,medium,0.618
+grid_7_0,Pethapur,2032,medium,0.693
+grid_7_1,Pethapur,2032,high,0.881
+grid_7_2,Green City,2032,high,0.973
+grid_7_3,Sector 28 GIDC,2032,high,0.978
+grid_7_4,Sector 17/ GEB Colony,2032,high,0.981
+grid_7_5,Sector 17,2032,high,0.936
+grid_7_6,Sector 17,2032,high,0.785
+grid_7_7,Rural Fringe,2032,medium,0.903
+grid_7_8,Rural Fringe,2032,medium,0.804
+grid_7_9,Chiloda ,2032,low,0.996
+grid_8_0,Sector 28,2032,medium,0.562
+grid_8_1,Sector 28,2032,low,0.997
+grid_8_2,Sector 26,2032,high,0.614
+grid_8_3,Pethapur,2032,medium,0.963
+grid_8_4,Pethapur,2032,high,0.981
+grid_8_5,Pethapur,2032,high,0.963
+grid_8_6,Pethapur,2032,medium,0.974
+grid_8_7,Lekawada village,2032,low,0.992
+grid_8_8,Bhundiya Fringe,2032,low,0.999
+grid_8_9,NH-8,2032,low,0.928
+grid_9_0,Kolavda ,2032,low,0.993
+grid_9_1,Kolavda ,2032,low,0.999
+grid_9_2,Randheja,2032,low,0.553
+grid_9_3,Randheja,2032,medium,0.811
+grid_9_4,Dashela,2032,high,0.48
+grid_9_5,Dashela,2032,medium,0.77
+grid_9_6,Dashela,2032,low,0.998
+grid_9_7,Lekawada ,2032,low,0.864
+grid_9_8,Bhundiya  ,2032,low,0.999
+grid_9_9,New Indiranagar,2032,low,0.884
+grid_0_0,Sargasan,2033,high,0.825
+grid_0_1,Kudasan,2033,high,0.941
+grid_0_2,Randesan,2033,high,0.946
+grid_0_3,Randesan,2033,medium,0.625
+grid_0_4,Gujarat International Finance Tec-City,2033,medium,0.891
+grid_0_5,Sector 1,2033,medium,0.996
+grid_0_6,sector 2,2033,medium,0.585
+grid_0_7,sector 2 ,2033,medium,0.921
+grid_0_8,Nabhoi,2033,medium,0.951
+grid_0_9,kalyanpura,2033,medium,0.966
+grid_1_0,somnath park society,2033,high,0.503
+grid_1_1,Infocity,2033,medium,0.639
+grid_1_2,Infocity,2033,high,0.981
+grid_1_3,Dholakuva,2033,medium,0.723
+grid_1_4,Indroda,2033,medium,0.97
+grid_1_5,sector 1,2033,medium,0.989
+grid_1_6,Sector 2,2033,medium,0.976
+grid_1_7,Sector 4,2033,medium,0.951
+grid_1_8,por,2033,medium,0.975
+grid_1_9,por / nabhoi,2033,medium,0.939
+grid_2_0,Sargasan,2033,high,0.89
+grid_2_1,Sector 3B,2033,high,0.975
+grid_2_2,Sector 6,2033,high,0.986
+grid_2_3,Sector 8,2033,high,0.994
+grid_2_4,Sector 7,2033,medium,0.605
+grid_2_5,Sector 9,2033,high,0.714
+grid_2_6,Sector 11,2033,medium,0.97
+grid_2_7,Sector 14,2033,low,0.866
+grid_2_8,Sector 15,2033,medium,0.992
+grid_2_9,por,2033,medium,0.575
+grid_3_0,Sector 16,2033,medium,0.991
+grid_3_1,Sector 5A,2033,high,0.966
+grid_3_2,Sector 7/B,2033,high,0.985
+grid_3_3,Sector 10A,2033,high,0.986
+grid_3_4,Sector 18,2033,medium,0.985
+grid_3_5,sector 20,2033,medium,0.944
+grid_3_6,Sector 21,2033,high,0.937
+grid_3_7,Sector 23,2033,low,0.866
+grid_3_8,Chiloda,2033,medium,0.789
+grid_3_9,Chiloda,2033,medium,0.973
+grid_4_0,Vavol,2033,high,0.752
+grid_4_1,Sector 13B,2033,high,0.984
+grid_4_2,Sector 12B,2033,high,0.99
+grid_4_3,Sector 13,2033,high,0.989
+grid_4_4,Sector 19,2033,high,0.987
+grid_4_5,Borij,2033,high,0.98
+grid_4_6,Sector 24,2033,medium,0.981
+grid_4_7,Sector 27,2033,medium,0.986
+grid_4_8,Sector 27,2033,medium,0.989
+grid_4_9,Chiloda,2033,high,0.536
+grid_5_0,Sector 16,2033,medium,0.981
+grid_5_1,Vavol,2033,high,0.963
+grid_5_2,Sector 6,2033,high,0.992
+grid_5_3,Sector 22,2033,high,0.975
+grid_5_4,Sector 30,2033,high,0.975
+grid_5_5,Borij,2033,high,0.93
+grid_5_6,Sector 30,2033,medium,0.88
+grid_5_7,Nabhoi,2033,medium,0.987
+grid_5_8,Nana Chiloda Gam,2033,medium,0.603
+grid_5_9,Nana Chiloda Gam,2033,medium,0.595
+grid_6_0,Vavol,2033,low,0.995
+grid_6_1,GIDC Electronic Estate,2033,high,0.926
+grid_6_2,Sector 25,2033,high,0.989
+grid_6_3,Sector 28,2033,high,0.984
+grid_6_4,Sector 29,2033,high,0.988
+grid_6_5,Sector 17/TPS,2033,medium,0.764
+grid_6_6,Sector 17,2033,high,0.932
+grid_6_7,Sector 20,2033,medium,0.705
+grid_6_8,Sector 23,2033,medium,0.922
+grid_6_9,Shiholi-Village,2033,medium,0.708
+grid_7_0,Pethapur,2033,medium,0.68
+grid_7_1,Pethapur,2033,high,0.885
+grid_7_2,Green City,2033,high,0.973
+grid_7_3,Sector 28 GIDC,2033,high,0.977
+grid_7_4,Sector 17/ GEB Colony,2033,high,0.982
+grid_7_5,Sector 17,2033,high,0.936
+grid_7_6,Sector 17,2033,high,0.787
+grid_7_7,Rural Fringe,2033,medium,0.945
+grid_7_8,Rural Fringe,2033,medium,0.819
+grid_7_9,Chiloda ,2033,low,0.996
+grid_8_0,Sector 28,2033,medium,0.562
+grid_8_1,Sector 28,2033,low,0.997
+grid_8_2,Sector 26,2033,high,0.659
+grid_8_3,Pethapur,2033,medium,0.96
+grid_8_4,Pethapur,2033,high,0.98
+grid_8_5,Pethapur,2033,high,0.968
+grid_8_6,Pethapur,2033,medium,0.964
+grid_8_7,Lekawada village,2033,low,0.992
+grid_8_8,Bhundiya Fringe,2033,low,0.999
+grid_8_9,NH-8,2033,low,0.888
+grid_9_0,Kolavda ,2033,low,0.989
+grid_9_1,Kolavda ,2033,low,0.999
+grid_9_2,Randheja,2033,low,0.555
+grid_9_3,Randheja,2033,medium,0.781
+grid_9_4,Dashela,2033,high,0.479
+grid_9_5,Dashela,2033,medium,0.77
+grid_9_6,Dashela,2033,low,0.998
+grid_9_7,Lekawada ,2033,low,0.863
+grid_9_8,Bhundiya  ,2033,low,0.999
+grid_9_9,New Indiranagar,2033,low,0.884
+grid_0_0,Sargasan,2034,high,0.828
+grid_0_1,Kudasan,2034,high,0.94
+grid_0_2,Randesan,2034,high,0.946
+grid_0_3,Randesan,2034,medium,0.617
+grid_0_4,Gujarat International Finance Tec-City,2034,medium,0.894
+grid_0_5,Sector 1,2034,medium,0.996
+grid_0_6,sector 2,2034,medium,0.749
+grid_0_7,sector 2 ,2034,medium,0.921
+grid_0_8,Nabhoi,2034,medium,0.951
+grid_0_9,kalyanpura,2034,medium,0.969
+grid_1_0,somnath park society,2034,high,0.502
+grid_1_1,Infocity,2034,medium,0.608
+grid_1_2,Infocity,2034,high,0.979
+grid_1_3,Dholakuva,2034,medium,0.723
+grid_1_4,Indroda,2034,medium,0.97
+grid_1_5,sector 1,2034,medium,0.988
+grid_1_6,Sector 2,2034,medium,0.976
+grid_1_7,Sector 4,2034,medium,0.952
+grid_1_8,por,2034,medium,0.946
+grid_1_9,por / nabhoi,2034,medium,0.934
+grid_2_0,Sargasan,2034,high,0.886
+grid_2_1,Sector 3B,2034,high,0.975
+grid_2_2,Sector 6,2034,high,0.986
+grid_2_3,Sector 8,2034,high,0.994
+grid_2_4,Sector 7,2034,medium,0.605
+grid_2_5,Sector 9,2034,high,0.714
+grid_2_6,Sector 11,2034,medium,0.969
+grid_2_7,Sector 14,2034,low,0.862
+grid_2_8,Sector 15,2034,medium,0.992
+grid_2_9,por,2034,medium,0.713
+grid_3_0,Sector 16,2034,medium,0.992
+grid_3_1,Sector 5A,2034,high,0.964
+grid_3_2,Sector 7/B,2034,high,0.985
+grid_3_3,Sector 10A,2034,high,0.987
+grid_3_4,Sector 18,2034,medium,0.985
+grid_3_5,sector 20,2034,medium,0.944
+grid_3_6,Sector 21,2034,high,0.936
+grid_3_7,Sector 23,2034,low,0.866
+grid_3_8,Chiloda,2034,medium,0.816
+grid_3_9,Chiloda,2034,medium,0.972
+grid_4_0,Vavol,2034,high,0.783
+grid_4_1,Sector 13B,2034,high,0.98
+grid_4_2,Sector 12B,2034,high,0.99
+grid_4_3,Sector 13,2034,high,0.989
+grid_4_4,Sector 19,2034,high,0.987
+grid_4_5,Borij,2034,high,0.981
+grid_4_6,Sector 24,2034,medium,0.981
+grid_4_7,Sector 27,2034,medium,0.983
+grid_4_8,Sector 27,2034,medium,0.988
+grid_4_9,Chiloda,2034,high,0.644
+grid_5_0,Sector 16,2034,medium,0.979
+grid_5_1,Vavol,2034,high,0.959
+grid_5_2,Sector 6,2034,high,0.992
+grid_5_3,Sector 22,2034,high,0.975
+grid_5_4,Sector 30,2034,high,0.975
+grid_5_5,Borij,2034,high,0.93
+grid_5_6,Sector 30,2034,medium,0.906
+grid_5_7,Nabhoi,2034,medium,0.987
+grid_5_8,Nana Chiloda Gam,2034,medium,0.591
+grid_5_9,Nana Chiloda Gam,2034,medium,0.573
+grid_6_0,Vavol,2034,low,0.995
+grid_6_1,GIDC Electronic Estate,2034,high,0.926
+grid_6_2,Sector 25,2034,high,0.989
+grid_6_3,Sector 28,2034,high,0.984
+grid_6_4,Sector 29,2034,high,0.988
+grid_6_5,Sector 17/TPS,2034,medium,0.764
+grid_6_6,Sector 17,2034,high,0.931
+grid_6_7,Sector 20,2034,medium,0.63
+grid_6_8,Sector 23,2034,medium,0.893
+grid_6_9,Shiholi-Village,2034,medium,0.704
+grid_7_0,Pethapur,2034,medium,0.622
+grid_7_1,Pethapur,2034,high,0.927
+grid_7_2,Green City,2034,high,0.973
+grid_7_3,Sector 28 GIDC,2034,high,0.978
+grid_7_4,Sector 17/ GEB Colony,2034,high,0.987
+grid_7_5,Sector 17,2034,high,0.936
+grid_7_6,Sector 17,2034,high,0.8
+grid_7_7,Rural Fringe,2034,medium,0.949
+grid_7_8,Rural Fringe,2034,medium,0.807
+grid_7_9,Chiloda ,2034,low,0.996
+grid_8_0,Sector 28,2034,medium,0.551
+grid_8_1,Sector 28,2034,low,0.997
+grid_8_2,Sector 26,2034,high,0.654
+grid_8_3,Pethapur,2034,medium,0.893
+grid_8_4,Pethapur,2034,high,0.979
+grid_8_5,Pethapur,2034,high,0.969
+grid_8_6,Pethapur,2034,medium,0.947
+grid_8_7,Lekawada village,2034,low,0.992
+grid_8_8,Bhundiya Fringe,2034,low,0.999
+grid_8_9,NH-8,2034,low,0.871
+grid_9_0,Kolavda ,2034,low,0.984
+grid_9_1,Kolavda ,2034,low,0.999
+grid_9_2,Randheja,2034,medium,0.688
+grid_9_3,Randheja,2034,medium,0.779
+grid_9_4,Dashela,2034,high,0.578
+grid_9_5,Dashela,2034,medium,0.759
+grid_9_6,Dashela,2034,low,0.998
+grid_9_7,Lekawada ,2034,low,0.868
+grid_9_8,Bhundiya  ,2034,low,0.999
+grid_9_9,New Indiranagar,2034,low,0.884
+grid_0_0,Sargasan,2035,high,0.825
+grid_0_1,Kudasan,2035,high,0.941
+grid_0_2,Randesan,2035,high,0.946
+grid_0_3,Randesan,2035,medium,0.609
+grid_0_4,Gujarat International Finance Tec-City,2035,medium,0.895
+grid_0_5,Sector 1,2035,medium,0.996
+grid_0_6,sector 2,2035,medium,0.759
+grid_0_7,sector 2 ,2035,medium,0.914
+grid_0_8,Nabhoi,2035,medium,0.949
+grid_0_9,kalyanpura,2035,medium,0.968
+grid_1_0,somnath park society,2035,high,0.508
+grid_1_1,Infocity,2035,medium,0.545
+grid_1_2,Infocity,2035,high,0.978
+grid_1_3,Dholakuva,2035,medium,0.723
+grid_1_4,Indroda,2035,medium,0.97
+grid_1_5,sector 1,2035,medium,0.988
+grid_1_6,Sector 2,2035,medium,0.977
+grid_1_7,Sector 4,2035,medium,0.954
+grid_1_8,por,2035,medium,0.943
+grid_1_9,por / nabhoi,2035,medium,0.933
+grid_2_0,Sargasan,2035,high,0.737
+grid_2_1,Sector 3B,2035,high,0.976
+grid_2_2,Sector 6,2035,high,0.986
+grid_2_3,Sector 8,2035,high,0.993
+grid_2_4,Sector 7,2035,medium,0.601
+grid_2_5,Sector 9,2035,high,0.792
+grid_2_6,Sector 11,2035,medium,0.965
+grid_2_7,Sector 14,2035,low,0.855
+grid_2_8,Sector 15,2035,medium,0.992
+grid_2_9,por,2035,medium,0.744
+grid_3_0,Sector 16,2035,medium,0.99
+grid_3_1,Sector 5A,2035,high,0.966
+grid_3_2,Sector 7/B,2035,high,0.985
+grid_3_3,Sector 10A,2035,high,0.987
+grid_3_4,Sector 18,2035,medium,0.985
+grid_3_5,sector 20,2035,medium,0.943
+grid_3_6,Sector 21,2035,high,0.936
+grid_3_7,Sector 23,2035,low,0.708
+grid_3_8,Chiloda,2035,medium,0.896
+grid_3_9,Chiloda,2035,medium,0.973
+grid_4_0,Vavol,2035,high,0.782
+grid_4_1,Sector 13B,2035,high,0.98
+grid_4_2,Sector 12B,2035,high,0.99
+grid_4_3,Sector 13,2035,high,0.989
+grid_4_4,Sector 19,2035,high,0.987
+grid_4_5,Borij,2035,high,0.981
+grid_4_6,Sector 24,2035,medium,0.982
+grid_4_7,Sector 27,2035,medium,0.983
+grid_4_8,Sector 27,2035,medium,0.988
+grid_4_9,Chiloda,2035,high,0.643
+grid_5_0,Sector 16,2035,medium,0.967
+grid_5_1,Vavol,2035,high,0.954
+grid_5_2,Sector 6,2035,high,0.992
+grid_5_3,Sector 22,2035,high,0.975
+grid_5_4,Sector 30,2035,high,0.976
+grid_5_5,Borij,2035,high,0.93
+grid_5_6,Sector 30,2035,medium,0.921
+grid_5_7,Nabhoi,2035,medium,0.987
+grid_5_8,Nana Chiloda Gam,2035,medium,0.585
+grid_5_9,Nana Chiloda Gam,2035,medium,0.576
+grid_6_0,Vavol,2035,low,0.995
+grid_6_1,GIDC Electronic Estate,2035,high,0.932
+grid_6_2,Sector 25,2035,high,0.989
+grid_6_3,Sector 28,2035,high,0.984
+grid_6_4,Sector 29,2035,high,0.988
+grid_6_5,Sector 17/TPS,2035,medium,0.764
+grid_6_6,Sector 17,2035,high,0.931
+grid_6_7,Sector 20,2035,medium,0.516
+grid_6_8,Sector 23,2035,medium,0.901
+grid_6_9,Shiholi-Village,2035,medium,0.622
+grid_7_0,Pethapur,2035,medium,0.57
+grid_7_1,Pethapur,2035,high,0.948
+grid_7_2,Green City,2035,high,0.972
+grid_7_3,Sector 28 GIDC,2035,high,0.978
+grid_7_4,Sector 17/ GEB Colony,2035,high,0.987
+grid_7_5,Sector 17,2035,high,0.943
+grid_7_6,Sector 17,2035,high,0.814
+grid_7_7,Rural Fringe,2035,medium,0.95
+grid_7_8,Rural Fringe,2035,medium,0.855
+grid_7_9,Chiloda ,2035,low,0.996
+grid_8_0,Sector 28,2035,medium,0.568
+grid_8_1,Sector 28,2035,low,0.997
+grid_8_2,Sector 26,2035,high,0.667
+grid_8_3,Pethapur,2035,medium,0.877
+grid_8_4,Pethapur,2035,high,0.979
+grid_8_5,Pethapur,2035,high,0.969
+grid_8_6,Pethapur,2035,medium,0.943
+grid_8_7,Lekawada village,2035,low,0.992
+grid_8_8,Bhundiya Fringe,2035,low,0.999
+grid_8_9,NH-8,2035,low,0.871
+grid_9_0,Kolavda ,2035,low,0.984
+grid_9_1,Kolavda ,2035,low,0.999
+grid_9_2,Randheja,2035,medium,0.717
+grid_9_3,Randheja,2035,medium,0.612
+grid_9_4,Dashela,2035,high,0.51
+grid_9_5,Dashela,2035,medium,0.746
+grid_9_6,Dashela,2035,low,0.998
+grid_9_7,Lekawada ,2035,low,0.829
+grid_9_8,Bhundiya  ,2035,low,0.999
+grid_9_9,New Indiranagar,2035,low,0.886
+grid_0_0,Sargasan,2036,high,0.822
+grid_0_1,Kudasan,2036,high,0.936
+grid_0_2,Randesan,2036,high,0.943
+grid_0_3,Randesan,2036,medium,0.622
+grid_0_4,Gujarat International Finance Tec-City,2036,medium,0.917
+grid_0_5,Sector 1,2036,medium,0.996
+grid_0_6,sector 2,2036,medium,0.853
+grid_0_7,sector 2 ,2036,medium,0.912
+grid_0_8,Nabhoi,2036,medium,0.949
+grid_0_9,kalyanpura,2036,medium,0.968
+grid_1_0,somnath park society,2036,high,0.515
+grid_1_1,Infocity,2036,medium,0.547
+grid_1_2,Infocity,2036,high,0.976
+grid_1_3,Dholakuva,2036,medium,0.723
+grid_1_4,Indroda,2036,medium,0.97
+grid_1_5,sector 1,2036,medium,0.988
+grid_1_6,Sector 2,2036,medium,0.977
+grid_1_7,Sector 4,2036,medium,0.953
+grid_1_8,por,2036,medium,0.792
+grid_1_9,por / nabhoi,2036,medium,0.931
+grid_2_0,Sargasan,2036,high,0.713
+grid_2_1,Sector 3B,2036,high,0.972
+grid_2_2,Sector 6,2036,high,0.986
+grid_2_3,Sector 8,2036,high,0.994
+grid_2_4,Sector 7,2036,medium,0.603
+grid_2_5,Sector 9,2036,high,0.806
+grid_2_6,Sector 11,2036,medium,0.952
+grid_2_7,Sector 14,2036,low,0.851
+grid_2_8,Sector 15,2036,medium,0.991
+grid_2_9,por,2036,medium,0.772
+grid_3_0,Sector 16,2036,medium,0.99
+grid_3_1,Sector 5A,2036,high,0.966
+grid_3_2,Sector 7/B,2036,high,0.985
+grid_3_3,Sector 10A,2036,high,0.987
+grid_3_4,Sector 18,2036,medium,0.985
+grid_3_5,sector 20,2036,medium,0.943
+grid_3_6,Sector 21,2036,high,0.937
+grid_3_7,Sector 23,2036,low,0.693
+grid_3_8,Chiloda,2036,medium,0.961
+grid_3_9,Chiloda,2036,medium,0.976
+grid_4_0,Vavol,2036,high,0.739
+grid_4_1,Sector 13B,2036,high,0.98
+grid_4_2,Sector 12B,2036,high,0.99
+grid_4_3,Sector 13,2036,high,0.989
+grid_4_4,Sector 19,2036,high,0.987
+grid_4_5,Borij,2036,high,0.981
+grid_4_6,Sector 24,2036,medium,0.982
+grid_4_7,Sector 27,2036,medium,0.981
+grid_4_8,Sector 27,2036,medium,0.987
+grid_4_9,Chiloda,2036,high,0.638
+grid_5_0,Sector 16,2036,medium,0.967
+grid_5_1,Vavol,2036,high,0.954
+grid_5_2,Sector 6,2036,high,0.992
+grid_5_3,Sector 22,2036,high,0.975
+grid_5_4,Sector 30,2036,high,0.976
+grid_5_5,Borij,2036,high,0.93
+grid_5_6,Sector 30,2036,medium,0.923
+grid_5_7,Nabhoi,2036,medium,0.987
+grid_5_8,Nana Chiloda Gam,2036,medium,0.635
+grid_5_9,Nana Chiloda Gam,2036,high,0.494
+grid_6_0,Vavol,2036,low,0.995
+grid_6_1,GIDC Electronic Estate,2036,high,0.932
+grid_6_2,Sector 25,2036,high,0.988
+grid_6_3,Sector 28,2036,high,0.984
+grid_6_4,Sector 29,2036,high,0.988
+grid_6_5,Sector 17/TPS,2036,medium,0.761
+grid_6_6,Sector 17,2036,high,0.942
+grid_6_7,Sector 20,2036,high,0.506
+grid_6_8,Sector 23,2036,medium,0.901
+grid_6_9,Shiholi-Village,2036,medium,0.574
+grid_7_0,Pethapur,2036,medium,0.57
+grid_7_1,Pethapur,2036,high,0.951
+grid_7_2,Green City,2036,high,0.969
+grid_7_3,Sector 28 GIDC,2036,high,0.978
+grid_7_4,Sector 17/ GEB Colony,2036,high,0.991
+grid_7_5,Sector 17,2036,high,0.943
+grid_7_6,Sector 17,2036,high,0.752
+grid_7_7,Rural Fringe,2036,medium,0.949
+grid_7_8,Rural Fringe,2036,medium,0.914
+grid_7_9,Chiloda ,2036,low,0.994
+grid_8_0,Sector 28,2036,medium,0.604
+grid_8_1,Sector 28,2036,low,0.997
+grid_8_2,Sector 26,2036,high,0.669
+grid_8_3,Pethapur,2036,medium,0.712
+grid_8_4,Pethapur,2036,high,0.981
+grid_8_5,Pethapur,2036,high,0.969
+grid_8_6,Pethapur,2036,medium,0.895
+grid_8_7,Lekawada village,2036,low,0.992
+grid_8_8,Bhundiya Fringe,2036,low,0.999
+grid_8_9,NH-8,2036,low,0.871
+grid_9_0,Kolavda ,2036,low,0.984
+grid_9_1,Kolavda ,2036,low,0.999
+grid_9_2,Randheja,2036,medium,0.72
+grid_9_3,Randheja,2036,high,0.74
+grid_9_4,Dashela,2036,high,0.562
+grid_9_5,Dashela,2036,medium,0.687
+grid_9_6,Dashela,2036,low,0.998
+grid_9_7,Lekawada ,2036,low,0.724
+grid_9_8,Bhundiya  ,2036,low,0.999
+grid_9_9,New Indiranagar,2036,low,0.883
+grid_0_0,Sargasan,2037,high,0.843
+grid_0_1,Kudasan,2037,high,0.939
+grid_0_2,Randesan,2037,high,0.943
+grid_0_3,Randesan,2037,medium,0.593
+grid_0_4,Gujarat International Finance Tec-City,2037,medium,0.921
+grid_0_5,Sector 1,2037,medium,0.997
+grid_0_6,sector 2,2037,medium,0.923
+grid_0_7,sector 2 ,2037,medium,0.892
+grid_0_8,Nabhoi,2037,medium,0.946
+grid_0_9,kalyanpura,2037,medium,0.965
+grid_1_0,somnath park society,2037,high,0.513
+grid_1_1,Infocity,2037,medium,0.547
+grid_1_2,Infocity,2037,high,0.971
+grid_1_3,Dholakuva,2037,medium,0.723
+grid_1_4,Indroda,2037,medium,0.97
+grid_1_5,sector 1,2037,medium,0.987
+grid_1_6,Sector 2,2037,medium,0.977
+grid_1_7,Sector 4,2037,medium,0.953
+grid_1_8,por,2037,medium,0.796
+grid_1_9,por / nabhoi,2037,medium,0.93
+grid_2_0,Sargasan,2037,high,0.681
+grid_2_1,Sector 3B,2037,high,0.97
+grid_2_2,Sector 6,2037,high,0.987
+grid_2_3,Sector 8,2037,high,0.994
+grid_2_4,Sector 7,2037,medium,0.602
+grid_2_5,Sector 9,2037,high,0.808
+grid_2_6,Sector 11,2037,medium,0.951
+grid_2_7,Sector 14,2037,low,0.838
+grid_2_8,Sector 15,2037,medium,0.99
+grid_2_9,por,2037,medium,0.777
+grid_3_0,Sector 16,2037,medium,0.989
+grid_3_1,Sector 5A,2037,high,0.966
+grid_3_2,Sector 7/B,2037,high,0.985
+grid_3_3,Sector 10A,2037,high,0.987
+grid_3_4,Sector 18,2037,medium,0.985
+grid_3_5,sector 20,2037,medium,0.945
+grid_3_6,Sector 21,2037,high,0.935
+grid_3_7,Sector 23,2037,low,0.682
+grid_3_8,Chiloda,2037,medium,0.967
+grid_3_9,Chiloda,2037,medium,0.981
+grid_4_0,Vavol,2037,high,0.742
+grid_4_1,Sector 13B,2037,high,0.98
+grid_4_2,Sector 12B,2037,high,0.99
+grid_4_3,Sector 13,2037,high,0.989
+grid_4_4,Sector 19,2037,high,0.987
+grid_4_5,Borij,2037,high,0.981
+grid_4_6,Sector 24,2037,medium,0.981
+grid_4_7,Sector 27,2037,medium,0.981
+grid_4_8,Sector 27,2037,medium,0.988
+grid_4_9,Chiloda,2037,high,0.638
+grid_5_0,Sector 16,2037,medium,0.908
+grid_5_1,Vavol,2037,high,0.956
+grid_5_2,Sector 6,2037,high,0.992
+grid_5_3,Sector 22,2037,high,0.975
+grid_5_4,Sector 30,2037,high,0.976
+grid_5_5,Borij,2037,high,0.93
+grid_5_6,Sector 30,2037,medium,0.939
+grid_5_7,Nabhoi,2037,medium,0.987
+grid_5_8,Nana Chiloda Gam,2037,medium,0.61
+grid_5_9,Nana Chiloda Gam,2037,medium,0.595
+grid_6_0,Vavol,2037,low,0.995
+grid_6_1,GIDC Electronic Estate,2037,high,0.932
+grid_6_2,Sector 25,2037,high,0.988
+grid_6_3,Sector 28,2037,high,0.984
+grid_6_4,Sector 29,2037,high,0.988
+grid_6_5,Sector 17/TPS,2037,medium,0.761
+grid_6_6,Sector 17,2037,high,0.94
+grid_6_7,Sector 20,2037,high,0.643
+grid_6_8,Sector 23,2037,medium,0.943
+grid_6_9,Shiholi-Village,2037,medium,0.563
+grid_7_0,Pethapur,2037,medium,0.57
+grid_7_1,Pethapur,2037,high,0.953
+grid_7_2,Green City,2037,high,0.969
+grid_7_3,Sector 28 GIDC,2037,high,0.978
+grid_7_4,Sector 17/ GEB Colony,2037,high,0.991
+grid_7_5,Sector 17,2037,high,0.944
+grid_7_6,Sector 17,2037,high,0.762
+grid_7_7,Rural Fringe,2037,medium,0.946
+grid_7_8,Rural Fringe,2037,medium,0.908
+grid_7_9,Chiloda ,2037,low,0.994
+grid_8_0,Sector 28,2037,medium,0.65
+grid_8_1,Sector 28,2037,low,0.997
+grid_8_2,Sector 26,2037,high,0.668
+grid_8_3,Pethapur,2037,high,0.773
+grid_8_4,Pethapur,2037,high,0.981
+grid_8_5,Pethapur,2037,high,0.969
+grid_8_6,Pethapur,2037,medium,0.597
+grid_8_7,Lekawada village,2037,low,0.994
+grid_8_8,Bhundiya Fringe,2037,low,0.998
+grid_8_9,NH-8,2037,low,0.855
+grid_9_0,Kolavda ,2037,low,0.973
+grid_9_1,Kolavda ,2037,low,0.999
+grid_9_2,Randheja,2037,medium,0.717
+grid_9_3,Randheja,2037,high,0.746
+grid_9_4,Dashela,2037,high,0.619
+grid_9_5,Dashela,2037,medium,0.682
+grid_9_6,Dashela,2037,low,0.998
+grid_9_7,Lekawada ,2037,low,0.682
+grid_9_8,Bhundiya  ,2037,low,0.999
+grid_9_9,New Indiranagar,2037,low,0.884
+grid_0_0,Sargasan,2038,high,0.833
+grid_0_1,Kudasan,2038,high,0.938
+grid_0_2,Randesan,2038,high,0.944
+grid_0_3,Randesan,2038,medium,0.625
+grid_0_4,Gujarat International Finance Tec-City,2038,medium,0.899
+grid_0_5,Sector 1,2038,medium,0.997
+grid_0_6,sector 2,2038,medium,0.95
+grid_0_7,sector 2 ,2038,medium,0.892
+grid_0_8,Nabhoi,2038,medium,0.94
+grid_0_9,kalyanpura,2038,medium,0.965
+grid_1_0,somnath park society,2038,high,0.503
+grid_1_1,Infocity,2038,medium,0.518
+grid_1_2,Infocity,2038,high,0.971
+grid_1_3,Dholakuva,2038,medium,0.721
+grid_1_4,Indroda,2038,medium,0.97
+grid_1_5,sector 1,2038,medium,0.988
+grid_1_6,Sector 2,2038,medium,0.977
+grid_1_7,Sector 4,2038,medium,0.953
+grid_1_8,por,2038,medium,0.779
+grid_1_9,por / nabhoi,2038,medium,0.923
+grid_2_0,Sargasan,2038,high,0.713
+grid_2_1,Sector 3B,2038,high,0.97
+grid_2_2,Sector 6,2038,high,0.987
+grid_2_3,Sector 8,2038,high,0.994
+grid_2_4,Sector 7,2038,medium,0.602
+grid_2_5,Sector 9,2038,high,0.878
+grid_2_6,Sector 11,2038,medium,0.947
+grid_2_7,Sector 14,2038,low,0.835
+grid_2_8,Sector 15,2038,medium,0.985
+grid_2_9,por,2038,medium,0.825
+grid_3_0,Sector 16,2038,medium,0.982
+grid_3_1,Sector 5A,2038,high,0.966
+grid_3_2,Sector 7/B,2038,high,0.985
+grid_3_3,Sector 10A,2038,high,0.987
+grid_3_4,Sector 18,2038,medium,0.985
+grid_3_5,sector 20,2038,medium,0.945
+grid_3_6,Sector 21,2038,high,0.935
+grid_3_7,Sector 23,2038,low,0.504
+grid_3_8,Chiloda,2038,medium,0.974
+grid_3_9,Chiloda,2038,medium,0.983
+grid_4_0,Vavol,2038,high,0.737
+grid_4_1,Sector 13B,2038,high,0.98
+grid_4_2,Sector 12B,2038,high,0.99
+grid_4_3,Sector 13,2038,high,0.989
+grid_4_4,Sector 19,2038,high,0.987
+grid_4_5,Borij,2038,high,0.98
+grid_4_6,Sector 24,2038,medium,0.976
+grid_4_7,Sector 27,2038,medium,0.979
+grid_4_8,Sector 27,2038,medium,0.985
+grid_4_9,Chiloda,2038,high,0.639
+grid_5_0,Sector 16,2038,medium,0.904
+grid_5_1,Vavol,2038,high,0.956
+grid_5_2,Sector 6,2038,high,0.992
+grid_5_3,Sector 22,2038,high,0.975
+grid_5_4,Sector 30,2038,high,0.976
+grid_5_5,Borij,2038,high,0.93
+grid_5_6,Sector 30,2038,medium,0.956
+grid_5_7,Nabhoi,2038,medium,0.987
+grid_5_8,Nana Chiloda Gam,2038,medium,0.615
+grid_5_9,Nana Chiloda Gam,2038,medium,0.594
+grid_6_0,Vavol,2038,low,0.995
+grid_6_1,GIDC Electronic Estate,2038,high,0.932
+grid_6_2,Sector 25,2038,high,0.988
+grid_6_3,Sector 28,2038,high,0.984
+grid_6_4,Sector 29,2038,high,0.988
+grid_6_5,Sector 17/TPS,2038,medium,0.614
+grid_6_6,Sector 17,2038,high,0.941
+grid_6_7,Sector 20,2038,high,0.744
+grid_6_8,Sector 23,2038,medium,0.944
+grid_6_9,Shiholi-Village,2038,medium,0.481
+grid_7_0,Pethapur,2038,medium,0.573
+grid_7_1,Pethapur,2038,high,0.953
+grid_7_2,Green City,2038,high,0.969
+grid_7_3,Sector 28 GIDC,2038,high,0.978
+grid_7_4,Sector 17/ GEB Colony,2038,high,0.991
+grid_7_5,Sector 17,2038,high,0.944
+grid_7_6,Sector 17,2038,high,0.782
+grid_7_7,Rural Fringe,2038,medium,0.944
+grid_7_8,Rural Fringe,2038,medium,0.893
+grid_7_9,Chiloda ,2038,low,0.985
+grid_8_0,Sector 28,2038,medium,0.639
+grid_8_1,Sector 28,2038,low,0.996
+grid_8_2,Sector 26,2038,high,0.678
+grid_8_3,Pethapur,2038,high,0.779
+grid_8_4,Pethapur,2038,high,0.979
+grid_8_5,Pethapur,2038,high,0.969
+grid_8_6,Pethapur,2038,medium,0.599
+grid_8_7,Lekawada village,2038,low,0.994
+grid_8_8,Bhundiya Fringe,2038,low,0.998
+grid_8_9,NH-8,2038,low,0.836
+grid_9_0,Kolavda ,2038,low,0.972
+grid_9_1,Kolavda ,2038,low,0.999
+grid_9_2,Randheja,2038,medium,0.718
+grid_9_3,Randheja,2038,high,0.759
+grid_9_4,Dashela,2038,high,0.624
+grid_9_5,Dashela,2038,medium,0.671
+grid_9_6,Dashela,2038,low,0.998
+grid_9_7,Lekawada ,2038,low,0.66
+grid_9_8,Bhundiya  ,2038,low,0.999
+grid_9_9,New Indiranagar,2038,low,0.886
+grid_0_0,Sargasan,2039,high,0.758
+grid_0_1,Kudasan,2039,high,0.938
+grid_0_2,Randesan,2039,high,0.945
+grid_0_3,Randesan,2039,medium,0.615
+grid_0_4,Gujarat International Finance Tec-City,2039,medium,0.894
+grid_0_5,Sector 1,2039,medium,0.996
+grid_0_6,sector 2,2039,medium,0.954
+grid_0_7,sector 2 ,2039,medium,0.888
+grid_0_8,Nabhoi,2039,medium,0.94
+grid_0_9,kalyanpura,2039,medium,0.963
+grid_1_0,somnath park society,2039,high,0.503
+grid_1_1,Infocity,2039,medium,0.518
+grid_1_2,Infocity,2039,high,0.974
+grid_1_3,Dholakuva,2039,medium,0.721
+grid_1_4,Indroda,2039,medium,0.97
+grid_1_5,sector 1,2039,medium,0.988
+grid_1_6,Sector 2,2039,medium,0.977
+grid_1_7,Sector 4,2039,medium,0.949
+grid_1_8,por,2039,medium,0.747
+grid_1_9,por / nabhoi,2039,medium,0.934
+grid_2_0,Sargasan,2039,high,0.654
+grid_2_1,Sector 3B,2039,high,0.97
+grid_2_2,Sector 6,2039,high,0.987
+grid_2_3,Sector 8,2039,high,0.994
+grid_2_4,Sector 7,2039,medium,0.596
+grid_2_5,Sector 9,2039,high,0.878
+grid_2_6,Sector 11,2039,medium,0.928
+grid_2_7,Sector 14,2039,low,0.835
+grid_2_8,Sector 15,2039,medium,0.985
+grid_2_9,por,2039,medium,0.832
+grid_3_0,Sector 16,2039,medium,0.982
+grid_3_1,Sector 5A,2039,high,0.966
+grid_3_2,Sector 7/B,2039,high,0.985
+grid_3_3,Sector 10A,2039,high,0.983
+grid_3_4,Sector 18,2039,medium,0.985
+grid_3_5,sector 20,2039,medium,0.943
+grid_3_6,Sector 21,2039,high,0.938
+grid_3_7,Sector 23,2039,medium,0.575
+grid_3_8,Chiloda,2039,medium,0.977
+grid_3_9,Chiloda,2039,medium,0.983
+grid_4_0,Vavol,2039,high,0.716
+grid_4_1,Sector 13B,2039,high,0.98
+grid_4_2,Sector 12B,2039,high,0.99
+grid_4_3,Sector 13,2039,high,0.989
+grid_4_4,Sector 19,2039,high,0.987
+grid_4_5,Borij,2039,high,0.98
+grid_4_6,Sector 24,2039,medium,0.974
+grid_4_7,Sector 27,2039,medium,0.979
+grid_4_8,Sector 27,2039,medium,0.985
+grid_4_9,Chiloda,2039,high,0.646
+grid_5_0,Sector 16,2039,medium,0.575
+grid_5_1,Vavol,2039,high,0.956
+grid_5_2,Sector 6,2039,high,0.992
+grid_5_3,Sector 22,2039,high,0.975
+grid_5_4,Sector 30,2039,high,0.975
+grid_5_5,Borij,2039,high,0.93
+grid_5_6,Sector 30,2039,medium,0.981
+grid_5_7,Nabhoi,2039,medium,0.983
+grid_5_8,Nana Chiloda Gam,2039,high,0.52
+grid_5_9,Nana Chiloda Gam,2039,medium,0.52
+grid_6_0,Vavol,2039,low,0.994
+grid_6_1,GIDC Electronic Estate,2039,high,0.93
+grid_6_2,Sector 25,2039,high,0.988
+grid_6_3,Sector 28,2039,high,0.985
+grid_6_4,Sector 29,2039,high,0.988
+grid_6_5,Sector 17/TPS,2039,medium,0.614
+grid_6_6,Sector 17,2039,high,0.941
+grid_6_7,Sector 20,2039,high,0.77
+grid_6_8,Sector 23,2039,medium,0.951
+grid_6_9,Shiholi-Village,2039,medium,0.481
+grid_7_0,Pethapur,2039,medium,0.566
+grid_7_1,Pethapur,2039,high,0.953
+grid_7_2,Green City,2039,high,0.971
+grid_7_3,Sector 28 GIDC,2039,high,0.979
+grid_7_4,Sector 17/ GEB Colony,2039,high,0.991
+grid_7_5,Sector 17,2039,high,0.944
+grid_7_6,Sector 17,2039,high,0.863
+grid_7_7,Rural Fringe,2039,medium,0.942
+grid_7_8,Rural Fringe,2039,medium,0.893
+grid_7_9,Chiloda ,2039,low,0.986
+grid_8_0,Sector 28,2039,medium,0.593
+grid_8_1,Sector 28,2039,low,0.996
+grid_8_2,Sector 26,2039,high,0.625
+grid_8_3,Pethapur,2039,high,0.789
+grid_8_4,Pethapur,2039,high,0.979
+grid_8_5,Pethapur,2039,high,0.969
+grid_8_6,Pethapur,2039,medium,0.519
+grid_8_7,Lekawada village,2039,low,0.994
+grid_8_8,Bhundiya Fringe,2039,low,0.998
+grid_8_9,NH-8,2039,low,0.836
+grid_9_0,Kolavda ,2039,low,0.967
+grid_9_1,Kolavda ,2039,low,0.999
+grid_9_2,Randheja,2039,medium,0.7
+grid_9_3,Randheja,2039,high,0.804
+grid_9_4,Dashela,2039,high,0.618
+grid_9_5,Dashela,2039,high,0.447
+grid_9_6,Dashela,2039,low,0.998
+grid_9_7,Lekawada ,2039,low,0.66
+grid_9_8,Bhundiya  ,2039,low,0.999
+grid_9_9,New Indiranagar,2039,low,0.886
+grid_0_0,Sargasan,2040,high,0.759
+grid_0_1,Kudasan,2040,high,0.938
+grid_0_2,Randesan,2040,high,0.946
+grid_0_3,Randesan,2040,medium,0.613
+grid_0_4,Gujarat International Finance Tec-City,2040,medium,0.894
+grid_0_5,Sector 1,2040,medium,0.996
+grid_0_6,sector 2,2040,medium,0.968
+grid_0_7,sector 2 ,2040,medium,0.881
+grid_0_8,Nabhoi,2040,medium,0.967
+grid_0_9,kalyanpura,2040,medium,0.962
+grid_1_0,somnath park society,2040,high,0.503
+grid_1_1,Infocity,2040,medium,0.518
+grid_1_2,Infocity,2040,high,0.974
+grid_1_3,Dholakuva,2040,medium,0.719
+grid_1_4,Indroda,2040,medium,0.97
+grid_1_5,sector 1,2040,medium,0.986
+grid_1_6,Sector 2,2040,medium,0.976
+grid_1_7,Sector 4,2040,medium,0.953
+grid_1_8,por,2040,medium,0.747
+grid_1_9,por / nabhoi,2040,medium,0.959
+grid_2_0,Sargasan,2040,high,0.667
+grid_2_1,Sector 3B,2040,high,0.972
+grid_2_2,Sector 6,2040,high,0.987
+grid_2_3,Sector 8,2040,high,0.994
+grid_2_4,Sector 7,2040,medium,0.587
+grid_2_5,Sector 9,2040,high,0.883
+grid_2_6,Sector 11,2040,medium,0.92
+grid_2_7,Sector 14,2040,low,0.822
+grid_2_8,Sector 15,2040,medium,0.985
+grid_2_9,por,2040,medium,0.823
+grid_3_0,Sector 16,2040,medium,0.978
+grid_3_1,Sector 5A,2040,high,0.967
+grid_3_2,Sector 7/B,2040,high,0.985
+grid_3_3,Sector 10A,2040,high,0.983
+grid_3_4,Sector 18,2040,medium,0.985
+grid_3_5,sector 20,2040,medium,0.941
+grid_3_6,Sector 21,2040,high,0.936
+grid_3_7,Sector 23,2040,medium,0.709
+grid_3_8,Chiloda,2040,medium,0.978
+grid_3_9,Chiloda,2040,medium,0.983
+grid_4_0,Vavol,2040,high,0.709
+grid_4_1,Sector 13B,2040,high,0.979
+grid_4_2,Sector 12B,2040,high,0.99
+grid_4_3,Sector 13,2040,high,0.989
+grid_4_4,Sector 19,2040,high,0.987
+grid_4_5,Borij,2040,high,0.98
+grid_4_6,Sector 24,2040,medium,0.949
+grid_4_7,Sector 27,2040,medium,0.979
+grid_4_8,Sector 27,2040,medium,0.984
+grid_4_9,Chiloda,2040,high,0.646
+grid_5_0,Sector 16,2040,medium,0.575
+grid_5_1,Vavol,2040,high,0.956
+grid_5_2,Sector 6,2040,high,0.992
+grid_5_3,Sector 22,2040,high,0.975
+grid_5_4,Sector 30,2040,high,0.975
+grid_5_5,Borij,2040,high,0.952
+grid_5_6,Sector 30,2040,medium,0.983
+grid_5_7,Nabhoi,2040,medium,0.983
+grid_5_8,Nana Chiloda Gam,2040,high,0.658
+grid_5_9,Nana Chiloda Gam,2040,high,0.504
+grid_6_0,Vavol,2040,low,0.994
+grid_6_1,GIDC Electronic Estate,2040,high,0.934
+grid_6_2,Sector 25,2040,high,0.987
+grid_6_3,Sector 28,2040,high,0.985
+grid_6_4,Sector 29,2040,high,0.988
+grid_6_5,Sector 17/TPS,2040,medium,0.543
+grid_6_6,Sector 17,2040,high,0.941
+grid_6_7,Sector 20,2040,high,0.779
+grid_6_8,Sector 23,2040,medium,0.951
+grid_6_9,Shiholi-Village,2040,medium,0.489
+grid_7_0,Pethapur,2040,medium,0.566
+grid_7_1,Pethapur,2040,high,0.953
+grid_7_2,Green City,2040,high,0.971
+grid_7_3,Sector 28 GIDC,2040,high,0.979
+grid_7_4,Sector 17/ GEB Colony,2040,high,0.991
+grid_7_5,Sector 17,2040,high,0.944
+grid_7_6,Sector 17,2040,high,0.915
+grid_7_7,Rural Fringe,2040,medium,0.961
+grid_7_8,Rural Fringe,2040,medium,0.888
+grid_7_9,Chiloda ,2040,low,0.978
+grid_8_0,Sector 28,2040,medium,0.582
+grid_8_1,Sector 28,2040,low,0.996
+grid_8_2,Sector 26,2040,high,0.638
+grid_8_3,Pethapur,2040,high,0.835
+grid_8_4,Pethapur,2040,high,0.98
+grid_8_5,Pethapur,2040,high,0.969
+grid_8_6,Pethapur,2040,high,0.498
+grid_8_7,Lekawada village,2040,low,0.994
+grid_8_8,Bhundiya Fringe,2040,low,0.998
+grid_8_9,NH-8,2040,low,0.838
+grid_9_0,Kolavda ,2040,low,0.967
+grid_9_1,Kolavda ,2040,low,0.999
+grid_9_2,Randheja,2040,medium,0.697
+grid_9_3,Randheja,2040,high,0.806
+grid_9_4,Dashela,2040,high,0.612
+grid_9_5,Dashela,2040,high,0.455
+grid_9_6,Dashela,2040,low,0.998
+grid_9_7,Lekawada ,2040,low,0.645
+grid_9_8,Bhundiya  ,2040,low,0.999
+grid_9_9,New Indiranagar,2040,low,0.886

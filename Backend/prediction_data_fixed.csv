@@ -1,0 +1,601 @@
+grid_id,area_name,year,growth_class,confidence,center_lat,center_lon
+grid_0_0,Sargasan,2026,high,0.99,23.185,72.6135
+grid_0_0,Sargasan,2027,high,0.99,23.185,72.6135
+grid_0_0,Sargasan,2028,high,0.99,23.185,72.6135
+grid_0_0,Sargasan,2029,high,0.99,23.185,72.6135
+grid_0_0,Sargasan,2030,high,0.99,23.185,72.6135
+grid_0_1,Kudasan,2026,high,0.992,23.185,72.6265
+grid_0_1,Kudasan,2027,high,0.991,23.185,72.6265
+grid_0_1,Kudasan,2028,high,0.99,23.185,72.6265
+grid_0_1,Kudasan,2029,high,0.99,23.185,72.6265
+grid_0_1,Kudasan,2030,high,0.99,23.185,72.6265
+grid_0_2,Randesan,2026,high,0.991,23.185,72.6395
+grid_0_2,Randesan,2027,high,0.992,23.185,72.6395
+grid_0_2,Randesan,2028,high,0.991,23.185,72.6395
+grid_0_2,Randesan,2029,high,0.991,23.185,72.6395
+grid_0_2,Randesan,2030,high,0.991,23.185,72.6395
+grid_0_3,Randesan,2026,medium,0.851,23.185,72.6525
+grid_0_3,Randesan,2027,medium,0.598,23.185,72.6525
+grid_0_3,Randesan,2028,high,0.81,23.185,72.6525
+grid_0_3,Randesan,2029,high,0.969,23.185,72.6525
+grid_0_3,Randesan,2030,high,0.97,23.185,72.6525
+grid_0_4,Gujarat International Finance Tec-City,2026,medium,0.642,23.185,72.6655
+grid_0_4,Gujarat International Finance Tec-City,2027,high,0.965,23.185,72.6655
+grid_0_4,Gujarat International Finance Tec-City,2028,high,0.964,23.185,72.6655
+grid_0_4,Gujarat International Finance Tec-City,2029,high,0.961,23.185,72.6655
+grid_0_4,Gujarat International Finance Tec-City,2030,high,0.961,23.185,72.6655
+grid_0_5,Gandhinagar Bypass Road,2026,medium,0.551,23.185,72.6785
+grid_0_5,Gandhinagar Bypass Road,2027,medium,0.919,23.185,72.6785
+grid_0_5,Gandhinagar Bypass Road,2028,medium,0.96,23.185,72.6785
+grid_0_5,Gandhinagar Bypass Road,2029,medium,0.961,23.185,72.6785
+grid_0_5,Gandhinagar Bypass Road,2030,medium,0.974,23.185,72.6785
+grid_0_6,Ratanpur Road,2026,low,0.999,23.185,72.6915
+grid_0_6,Ratanpur Road,2027,low,0.999,23.185,72.6915
+grid_0_6,Ratanpur Road,2028,low,0.999,23.185,72.6915
+grid_0_6,Ratanpur Road,2029,low,0.998,23.185,72.6915
+grid_0_6,Ratanpur Road,2030,low,0.998,23.185,72.6915
+grid_0_7,Block-2,2026,medium,0.971,23.185,72.7045
+grid_0_7,Block-2,2027,medium,0.941,23.185,72.7045
+grid_0_7,Block-2,2028,medium,0.875,23.185,72.7045
+grid_0_7,Block-2,2029,medium,0.714,23.185,72.7045
+grid_0_7,Block-2,2030,high,0.624,23.185,72.7045
+grid_0_8,Unnamed Road,2026,low,0.873,23.185,72.7175
+grid_0_8,Unnamed Road,2027,low,0.512,23.185,72.7175
+grid_0_8,Unnamed Road,2028,medium,0.504,23.185,72.7175
+grid_0_8,Unnamed Road,2029,medium,0.828,23.185,72.7175
+grid_0_8,Unnamed Road,2030,medium,0.937,23.185,72.7175
+grid_0_9,kalyanpura,2026,medium,0.88,23.185,72.7305
+grid_0_9,kalyanpura,2027,medium,0.955,23.185,72.7305
+grid_0_9,kalyanpura,2028,medium,0.955,23.185,72.7305
+grid_0_9,kalyanpura,2029,medium,0.969,23.185,72.7305
+grid_0_9,kalyanpura,2030,medium,0.971,23.185,72.7305
+grid_1_0,somnath park society,2026,high,0.991,23.195,72.6135
+grid_1_0,somnath park society,2027,high,0.991,23.195,72.6135
+grid_1_0,somnath park society,2028,high,0.99,23.195,72.6135
+grid_1_0,somnath park society,2029,high,0.99,23.195,72.6135
+grid_1_0,somnath park society,2030,high,0.99,23.195,72.6135
+grid_1_1,Infocity,2026,high,0.968,23.195,72.6265
+grid_1_1,Infocity,2027,high,0.941,23.195,72.6265
+grid_1_1,Infocity,2028,high,0.991,23.195,72.6265
+grid_1_1,Infocity,2029,high,0.989,23.195,72.6265
+grid_1_1,Infocity,2030,high,0.99,23.195,72.6265
+grid_1_2,Infocity,2026,high,0.994,23.195,72.6395
+grid_1_2,Infocity,2027,high,0.994,23.195,72.6395
+grid_1_2,Infocity,2028,high,0.994,23.195,72.6395
+grid_1_2,Infocity,2029,high,0.994,23.195,72.6395
+grid_1_2,Infocity,2030,high,0.994,23.195,72.6395
+grid_1_3,Dholakuva,2026,medium,0.991,23.195,72.6525
+grid_1_3,Dholakuva,2027,medium,0.99,23.195,72.6525
+grid_1_3,Dholakuva,2028,medium,0.986,23.195,72.6525
+grid_1_3,Dholakuva,2029,medium,0.983,23.195,72.6525
+grid_1_3,Dholakuva,2030,medium,0.973,23.195,72.6525
+grid_1_4,Indroda,2026,low,0.994,23.195,72.6655
+grid_1_4,Indroda,2027,low,0.993,23.195,72.6655
+grid_1_4,Indroda,2028,low,0.993,23.195,72.6655
+grid_1_4,Indroda,2029,low,0.993,23.195,72.6655
+grid_1_4,Indroda,2030,low,0.993,23.195,72.6655
+grid_1_5,Unnamed Road,2026,low,0.996,23.195,72.6785
+grid_1_5,Unnamed Road,2027,low,0.996,23.195,72.6785
+grid_1_5,Unnamed Road,2028,low,0.996,23.195,72.6785
+grid_1_5,Unnamed Road,2029,low,0.996,23.195,72.6785
+grid_1_5,Unnamed Road,2030,low,0.996,23.195,72.6785
+grid_1_6,Unnamed Road,2026,low,0.999,23.195,72.6915
+grid_1_6,Unnamed Road,2027,low,0.999,23.195,72.6915
+grid_1_6,Unnamed Road,2028,low,0.999,23.195,72.6915
+grid_1_6,Unnamed Road,2029,low,0.999,23.195,72.6915
+grid_1_6,Unnamed Road,2030,low,0.999,23.195,72.6915
+grid_1_7,Unnamed Road,2026,low,0.999,23.195,72.7045
+grid_1_7,Unnamed Road,2027,low,0.999,23.195,72.7045
+grid_1_7,Unnamed Road,2028,low,0.999,23.195,72.7045
+grid_1_7,Unnamed Road,2029,low,0.999,23.195,72.7045
+grid_1_7,Unnamed Road,2030,low,0.999,23.195,72.7045
+grid_1_8,Unnamed Road,2026,medium,0.986,23.195,72.7175
+grid_1_8,Unnamed Road,2027,medium,0.982,23.195,72.7175
+grid_1_8,Unnamed Road,2028,medium,0.978,23.195,72.7175
+grid_1_8,Unnamed Road,2029,medium,0.932,23.195,72.7175
+grid_1_8,Unnamed Road,2030,medium,0.934,23.195,72.7175
+grid_1_9,Unnamed Road,2026,low,0.614,23.195,72.7305
+grid_1_9,Unnamed Road,2027,low,0.532,23.195,72.7305
+grid_1_9,Unnamed Road,2028,medium,0.908,23.195,72.7305
+grid_1_9,Unnamed Road,2029,medium,0.925,23.195,72.7305
+grid_1_9,Unnamed Road,2030,medium,0.93,23.195,72.7305
+grid_2_0,Sargasan,2026,high,0.989,23.205,72.6135
+grid_2_0,Sargasan,2027,high,0.988,23.205,72.6135
+grid_2_0,Sargasan,2028,high,0.989,23.205,72.6135
+grid_2_0,Sargasan,2029,high,0.989,23.205,72.6135
+grid_2_0,Sargasan,2030,high,0.989,23.205,72.6135
+grid_2_1,Sector 3B,2026,high,0.994,23.205,72.6265
+grid_2_1,Sector 3B,2027,high,0.994,23.205,72.6265
+grid_2_1,Sector 3B,2028,high,0.993,23.205,72.6265
+grid_2_1,Sector 3B,2029,high,0.993,23.205,72.6265
+grid_2_1,Sector 3B,2030,high,0.993,23.205,72.6265
+grid_2_2,Block D,2026,high,0.994,23.205,72.6395
+grid_2_2,Block D,2027,high,0.994,23.205,72.6395
+grid_2_2,Block D,2028,high,0.994,23.205,72.6395
+grid_2_2,Block D,2029,high,0.994,23.205,72.6395
+grid_2_2,Block D,2030,high,0.994,23.205,72.6395
+grid_2_3,Sector 8,2026,high,0.995,23.205,72.6525
+grid_2_3,Sector 8,2027,high,0.995,23.205,72.6525
+grid_2_3,Sector 8,2028,high,0.995,23.205,72.6525
+grid_2_3,Sector 8,2029,high,0.995,23.205,72.6525
+grid_2_3,Sector 8,2030,high,0.995,23.205,72.6525
+grid_2_4,Sector 7,2026,medium,0.923,23.205,72.6655
+grid_2_4,Sector 7,2027,medium,0.881,23.205,72.6655
+grid_2_4,Sector 7,2028,medium,0.906,23.205,72.6655
+grid_2_4,Sector 7,2029,medium,0.896,23.205,72.6655
+grid_2_4,Sector 7,2030,medium,0.905,23.205,72.6655
+grid_2_5,Unnamed Road,2026,medium,0.989,23.205,72.6785
+grid_2_5,Unnamed Road,2027,medium,0.923,23.205,72.6785
+grid_2_5,Unnamed Road,2028,medium,0.901,23.205,72.6785
+grid_2_5,Unnamed Road,2029,medium,0.901,23.205,72.6785
+grid_2_5,Unnamed Road,2030,medium,0.859,23.205,72.6785
+grid_2_6,Unnamed Road,2026,low,0.89,23.205,72.6915
+grid_2_6,Unnamed Road,2027,low,0.515,23.205,72.6915
+grid_2_6,Unnamed Road,2028,medium,0.551,23.205,72.6915
+grid_2_6,Unnamed Road,2029,medium,0.848,23.205,72.6915
+grid_2_6,Unnamed Road,2030,medium,0.918,23.205,72.6915
+grid_2_7,Unnamed Road,2026,low,0.999,23.205,72.7045
+grid_2_7,Unnamed Road,2027,low,0.999,23.205,72.7045
+grid_2_7,Unnamed Road,2028,low,0.999,23.205,72.7045
+grid_2_7,Unnamed Road,2029,low,0.998,23.205,72.7045
+grid_2_7,Unnamed Road,2030,low,0.997,23.205,72.7045
+grid_2_8,Golden Quadrilateral,2026,medium,0.988,23.205,72.7175
+grid_2_8,Golden Quadrilateral,2027,medium,0.987,23.205,72.7175
+grid_2_8,Golden Quadrilateral,2028,medium,0.981,23.205,72.7175
+grid_2_8,Golden Quadrilateral,2029,medium,0.978,23.205,72.7175
+grid_2_8,Golden Quadrilateral,2030,medium,0.979,23.205,72.7175
+grid_2_9,Unnamed Road,2026,low,0.99,23.205,72.7305
+grid_2_9,Unnamed Road,2027,low,0.924,23.205,72.7305
+grid_2_9,Unnamed Road,2028,low,0.943,23.205,72.7305
+grid_2_9,Unnamed Road,2029,low,0.938,23.205,72.7305
+grid_2_9,Unnamed Road,2030,low,0.924,23.205,72.7305
+grid_3_0,Sector 16,2026,medium,0.995,23.215,72.6135
+grid_3_0,Sector 16,2027,medium,0.996,23.215,72.6135
+grid_3_0,Sector 16,2028,medium,0.997,23.215,72.6135
+grid_3_0,Sector 16,2029,medium,0.998,23.215,72.6135
+grid_3_0,Sector 16,2030,medium,0.997,23.215,72.6135
+grid_3_1,Sector 5A,2026,high,0.996,23.215,72.6265
+grid_3_1,Sector 5A,2027,high,0.996,23.215,72.6265
+grid_3_1,Sector 5A,2028,high,0.995,23.215,72.6265
+grid_3_1,Sector 5A,2029,high,0.994,23.215,72.6265
+grid_3_1,Sector 5A,2030,high,0.994,23.215,72.6265
+grid_3_2,Sector 7/B,2026,high,0.995,23.215,72.6395
+grid_3_2,Sector 7/B,2027,high,0.994,23.215,72.6395
+grid_3_2,Sector 7/B,2028,high,0.994,23.215,72.6395
+grid_3_2,Sector 7/B,2029,high,0.994,23.215,72.6395
+grid_3_2,Sector 7/B,2030,high,0.994,23.215,72.6395
+grid_3_3,Sector 10A,2026,high,0.995,23.215,72.6525
+grid_3_3,Sector 10A,2027,high,0.995,23.215,72.6525
+grid_3_3,Sector 10A,2028,high,0.995,23.215,72.6525
+grid_3_3,Sector 10A,2029,high,0.995,23.215,72.6525
+grid_3_3,Sector 10A,2030,high,0.995,23.215,72.6525
+grid_3_4,Sector 18,2026,medium,0.953,23.215,72.6655
+grid_3_4,Sector 18,2027,medium,0.947,23.215,72.6655
+grid_3_4,Sector 18,2028,medium,0.952,23.215,72.6655
+grid_3_4,Sector 18,2029,medium,0.953,23.215,72.6655
+grid_3_4,Sector 18,2030,medium,0.965,23.215,72.6655
+grid_3_5,6M8H+29,2026,medium,0.884,23.215,72.6785
+grid_3_5,6M8H+29,2027,medium,0.863,23.215,72.6785
+grid_3_5,6M8H+29,2028,medium,0.869,23.215,72.6785
+grid_3_5,6M8H+29,2029,medium,0.864,23.215,72.6785
+grid_3_5,6M8H+29,2030,medium,0.864,23.215,72.6785
+grid_3_6,Diversion Road,2026,high,0.969,23.215,72.6915
+grid_3_6,Diversion Road,2027,high,0.975,23.215,72.6915
+grid_3_6,Diversion Road,2028,high,0.97,23.215,72.6915
+grid_3_6,Diversion Road,2029,high,0.97,23.215,72.6915
+grid_3_6,Diversion Road,2030,high,0.971,23.215,72.6915
+grid_3_7,Unnamed Road,2026,low,0.995,23.215,72.7045
+grid_3_7,Unnamed Road,2027,low,0.994,23.215,72.7045
+grid_3_7,Unnamed Road,2028,low,0.994,23.215,72.7045
+grid_3_7,Unnamed Road,2029,low,0.994,23.215,72.7045
+grid_3_7,Unnamed Road,2030,low,0.994,23.215,72.7045
+grid_3_8,Chiloda,2026,low,0.992,23.215,72.7175
+grid_3_8,Chiloda,2027,low,0.973,23.215,72.7175
+grid_3_8,Chiloda,2028,low,0.965,23.215,72.7175
+grid_3_8,Chiloda,2029,low,0.967,23.215,72.7175
+grid_3_8,Chiloda,2030,low,0.96,23.215,72.7175
+grid_3_9,Unnamed Road,2026,medium,0.938,23.215,72.7305
+grid_3_9,Unnamed Road,2027,medium,0.946,23.215,72.7305
+grid_3_9,Unnamed Road,2028,medium,0.957,23.215,72.7305
+grid_3_9,Unnamed Road,2029,medium,0.966,23.215,72.7305
+grid_3_9,Unnamed Road,2030,medium,0.986,23.215,72.7305
+grid_4_0,Vavol,2026,high,0.993,23.225,72.6135
+grid_4_0,Vavol,2027,high,0.991,23.225,72.6135
+grid_4_0,Vavol,2028,high,0.991,23.225,72.6135
+grid_4_0,Vavol,2029,high,0.991,23.225,72.6135
+grid_4_0,Vavol,2030,high,0.991,23.225,72.6135
+grid_4_1,Sector 13B,2026,high,0.996,23.225,72.6265
+grid_4_1,Sector 13B,2027,high,0.996,23.225,72.6265
+grid_4_1,Sector 13B,2028,high,0.995,23.225,72.6265
+grid_4_1,Sector 13B,2029,high,0.995,23.225,72.6265
+grid_4_1,Sector 13B,2030,high,0.995,23.225,72.6265
+grid_4_2,Sector 12B,2026,high,0.996,23.225,72.6395
+grid_4_2,Sector 12B,2027,high,0.996,23.225,72.6395
+grid_4_2,Sector 12B,2028,high,0.995,23.225,72.6395
+grid_4_2,Sector 12B,2029,high,0.995,23.225,72.6395
+grid_4_2,Sector 12B,2030,high,0.995,23.225,72.6395
+grid_4_3,Sector 13,2026,high,0.995,23.225,72.6525
+grid_4_3,Sector 13,2027,high,0.995,23.225,72.6525
+grid_4_3,Sector 13,2028,high,0.995,23.225,72.6525
+grid_4_3,Sector 13,2029,high,0.995,23.225,72.6525
+grid_4_3,Sector 13,2030,high,0.995,23.225,72.6525
+grid_4_4,Sector 19,2026,high,0.995,23.225,72.6655
+grid_4_4,Sector 19,2027,high,0.996,23.225,72.6655
+grid_4_4,Sector 19,2028,high,0.996,23.225,72.6655
+grid_4_4,Sector 19,2029,high,0.996,23.225,72.6655
+grid_4_4,Sector 19,2030,high,0.996,23.225,72.6655
+grid_4_5,Borij,2026,high,0.996,23.225,72.6785
+grid_4_5,Borij,2027,high,0.996,23.225,72.6785
+grid_4_5,Borij,2028,high,0.996,23.225,72.6785
+grid_4_5,Borij,2029,high,0.996,23.225,72.6785
+grid_4_5,Borij,2030,high,0.996,23.225,72.6785
+grid_4_6,Mahakali Temple,2026,medium,0.969,23.225,72.6915
+grid_4_6,Mahakali Temple,2027,medium,0.986,23.225,72.6915
+grid_4_6,Mahakali Temple,2028,medium,0.986,23.225,72.6915
+grid_4_6,Mahakali Temple,2029,medium,0.983,23.225,72.6915
+grid_4_6,Mahakali Temple,2030,medium,0.977,23.225,72.6915
+grid_4_7,Unnamed Road,2026,medium,0.806,23.225,72.7045
+grid_4_7,Unnamed Road,2027,medium,0.84,23.225,72.7045
+grid_4_7,Unnamed Road,2028,medium,0.852,23.225,72.7045
+grid_4_7,Unnamed Road,2029,medium,0.851,23.225,72.7045
+grid_4_7,Unnamed Road,2030,medium,0.78,23.225,72.7045
+grid_4_8,Unnamed Road,2026,low,0.957,23.225,72.7175
+grid_4_8,Unnamed Road,2027,low,0.785,23.225,72.7175
+grid_4_8,Unnamed Road,2028,medium,0.55,23.225,72.7175
+grid_4_8,Unnamed Road,2029,medium,0.594,23.225,72.7175
+grid_4_8,Unnamed Road,2030,medium,0.588,23.225,72.7175
+grid_4_9,Chiloda,2026,high,0.956,23.225,72.7305
+grid_4_9,Chiloda,2027,high,0.958,23.225,72.7305
+grid_4_9,Chiloda,2028,high,0.96,23.225,72.7305
+grid_4_9,Chiloda,2029,high,0.96,23.225,72.7305
+grid_4_9,Chiloda,2030,high,0.961,23.225,72.7305
+grid_5_0,Sector 16,2026,medium,0.992,23.235,72.6135
+grid_5_0,Sector 16,2027,medium,0.996,23.235,72.6135
+grid_5_0,Sector 16,2028,medium,0.994,23.235,72.6135
+grid_5_0,Sector 16,2029,medium,0.988,23.235,72.6135
+grid_5_0,Sector 16,2030,medium,0.982,23.235,72.6135
+grid_5_1,Vavol,2026,high,0.995,23.235,72.6265
+grid_5_1,Vavol,2027,high,0.995,23.235,72.6265
+grid_5_1,Vavol,2028,high,0.995,23.235,72.6265
+grid_5_1,Vavol,2029,high,0.995,23.235,72.6265
+grid_5_1,Vavol,2030,high,0.995,23.235,72.6265
+grid_5_2,Sports Authority of India,2026,high,0.996,23.235,72.6395
+grid_5_2,Sports Authority of India,2027,high,0.996,23.235,72.6395
+grid_5_2,Sports Authority of India,2028,high,0.995,23.235,72.6395
+grid_5_2,Sports Authority of India,2029,high,0.995,23.235,72.6395
+grid_5_2,Sports Authority of India,2030,high,0.995,23.235,72.6395
+grid_5_3,Sector 22,2026,high,0.995,23.235,72.6525
+grid_5_3,Sector 22,2027,high,0.995,23.235,72.6525
+grid_5_3,Sector 22,2028,high,0.995,23.235,72.6525
+grid_5_3,Sector 22,2029,high,0.995,23.235,72.6525
+grid_5_3,Sector 22,2030,high,0.995,23.235,72.6525
+grid_5_4,Sarvodaynagar Society,2026,high,0.995,23.235,72.6655
+grid_5_4,Sarvodaynagar Society,2027,high,0.995,23.235,72.6655
+grid_5_4,Sarvodaynagar Society,2028,high,0.995,23.235,72.6655
+grid_5_4,Sarvodaynagar Society,2029,high,0.995,23.235,72.6655
+grid_5_4,Sarvodaynagar Society,2030,high,0.995,23.235,72.6655
+grid_5_5,Borij,2026,high,0.996,23.235,72.6785
+grid_5_5,Borij,2027,high,0.996,23.235,72.6785
+grid_5_5,Borij,2028,high,0.996,23.235,72.6785
+grid_5_5,Borij,2029,high,0.996,23.235,72.6785
+grid_5_5,Borij,2030,high,0.996,23.235,72.6785
+grid_5_6,Unnamed Road,2026,low,0.77,23.235,72.6915
+grid_5_6,Unnamed Road,2027,low,0.74,23.235,72.6915
+grid_5_6,Unnamed Road,2028,low,0.737,23.235,72.6915
+grid_5_6,Unnamed Road,2029,low,0.707,23.235,72.6915
+grid_5_6,Unnamed Road,2030,low,0.673,23.235,72.6915
+grid_5_7,Unnamed Road,2026,medium,0.834,23.235,72.7045
+grid_5_7,Unnamed Road,2027,medium,0.793,23.235,72.7045
+grid_5_7,Unnamed Road,2028,medium,0.825,23.235,72.7045
+grid_5_7,Unnamed Road,2029,medium,0.847,23.235,72.7045
+grid_5_7,Unnamed Road,2030,medium,0.845,23.235,72.7045
+grid_5_8,Nana Chiloda Gam,2026,high,0.68,23.235,72.7175
+grid_5_8,Nana Chiloda Gam,2027,high,0.95,23.235,72.7175
+grid_5_8,Nana Chiloda Gam,2028,high,0.951,23.235,72.7175
+grid_5_8,Nana Chiloda Gam,2029,high,0.951,23.235,72.7175
+grid_5_8,Nana Chiloda Gam,2030,high,0.951,23.235,72.7175
+grid_5_9,Unnamed Road,2026,medium,0.902,23.235,72.7305
+grid_5_9,Unnamed Road,2027,medium,0.821,23.235,72.7305
+grid_5_9,Unnamed Road,2028,medium,0.483,23.235,72.7305
+grid_5_9,Unnamed Road,2029,high,0.947,23.235,72.7305
+grid_5_9,Unnamed Road,2030,high,0.946,23.235,72.7305
+grid_6_0,Vavol,2026,low,0.996,23.245,72.6135
+grid_6_0,Vavol,2027,low,0.997,23.245,72.6135
+grid_6_0,Vavol,2028,low,0.997,23.245,72.6135
+grid_6_0,Vavol,2029,low,0.991,23.245,72.6135
+grid_6_0,Vavol,2030,low,0.987,23.245,72.6135
+grid_6_1,GIDC Electronic Estate,2026,high,0.996,23.245,72.6265
+grid_6_1,GIDC Electronic Estate,2027,high,0.996,23.245,72.6265
+grid_6_1,GIDC Electronic Estate,2028,high,0.995,23.245,72.6265
+grid_6_1,GIDC Electronic Estate,2029,high,0.995,23.245,72.6265
+grid_6_1,GIDC Electronic Estate,2030,high,0.995,23.245,72.6265
+grid_6_2,Sector 25,2026,high,0.997,23.245,72.6395
+grid_6_2,Sector 25,2027,high,0.997,23.245,72.6395
+grid_6_2,Sector 25,2028,high,0.997,23.245,72.6395
+grid_6_2,Sector 25,2029,high,0.995,23.245,72.6395
+grid_6_2,Sector 25,2030,high,0.995,23.245,72.6395
+grid_6_3,Sector 28,2026,high,0.997,23.245,72.6525
+grid_6_3,Sector 28,2027,high,0.997,23.245,72.6525
+grid_6_3,Sector 28,2028,high,0.996,23.245,72.6525
+grid_6_3,Sector 28,2029,high,0.996,23.245,72.6525
+grid_6_3,Sector 28,2030,high,0.996,23.245,72.6525
+grid_6_4,Sector 29,2026,high,0.996,23.245,72.6655
+grid_6_4,Sector 29,2027,high,0.996,23.245,72.6655
+grid_6_4,Sector 29,2028,high,0.996,23.245,72.6655
+grid_6_4,Sector 29,2029,high,0.996,23.245,72.6655
+grid_6_4,Sector 29,2030,high,0.996,23.245,72.6655
+grid_6_5,Thermal Power Plant Area,2026,high,0.943,23.245,72.6785
+grid_6_5,Thermal Power Plant Area,2027,high,0.94,23.245,72.6785
+grid_6_5,Thermal Power Plant Area,2028,high,0.947,23.245,72.6785
+grid_6_5,Thermal Power Plant Area,2029,high,0.959,23.245,72.6785
+grid_6_5,Thermal Power Plant Area,2030,high,0.972,23.245,72.6785
+grid_6_6,Unnamed Road,2026,high,0.979,23.245,72.6915
+grid_6_6,Unnamed Road,2027,high,0.981,23.245,72.6915
+grid_6_6,Unnamed Road,2028,high,0.979,23.245,72.6915
+grid_6_6,Unnamed Road,2029,high,0.98,23.245,72.6915
+grid_6_6,Unnamed Road,2030,high,0.98,23.245,72.6915
+grid_6_7,Unnamed Road,2026,high,0.945,23.245,72.7045
+grid_6_7,Unnamed Road,2027,high,0.949,23.245,72.7045
+grid_6_7,Unnamed Road,2028,high,0.948,23.245,72.7045
+grid_6_7,Unnamed Road,2029,high,0.948,23.245,72.7045
+grid_6_7,Unnamed Road,2030,high,0.949,23.245,72.7045
+grid_6_8,Unnamed Road,2026,low,0.991,23.245,72.7175
+grid_6_8,Unnamed Road,2027,low,0.97,23.245,72.7175
+grid_6_8,Unnamed Road,2028,low,0.958,23.245,72.7175
+grid_6_8,Unnamed Road,2029,low,0.522,23.245,72.7175
+grid_6_8,Unnamed Road,2030,medium,0.57,23.245,72.7175
+grid_6_9,Shiholi-Dashela Road,2026,high,0.933,23.245,72.7305
+grid_6_9,Shiholi-Dashela Road,2027,high,0.936,23.245,72.7305
+grid_6_9,Shiholi-Dashela Road,2028,high,0.933,23.245,72.7305
+grid_6_9,Shiholi-Dashela Road,2029,high,0.938,23.245,72.7305
+grid_6_9,Shiholi-Dashela Road,2030,high,0.943,23.245,72.7305
+grid_7_0,Unnamed Road,2026,medium,0.582,23.255,72.6135
+grid_7_0,Unnamed Road,2027,high,0.771,23.255,72.6135
+grid_7_0,Unnamed Road,2028,high,0.761,23.255,72.6135
+grid_7_0,Unnamed Road,2029,high,0.964,23.255,72.6135
+grid_7_0,Unnamed Road,2030,high,0.964,23.255,72.6135
+grid_7_1,Unnamed Road,2026,high,0.974,23.255,72.6265
+grid_7_1,Unnamed Road,2027,high,0.976,23.255,72.6265
+grid_7_1,Unnamed Road,2028,high,0.974,23.255,72.6265
+grid_7_1,Unnamed Road,2029,high,0.975,23.255,72.6265
+grid_7_1,Unnamed Road,2030,high,0.975,23.255,72.6265
+grid_7_2,Green City,2026,high,0.995,23.255,72.6395
+grid_7_2,Green City,2027,high,0.995,23.255,72.6395
+grid_7_2,Green City,2028,high,0.996,23.255,72.6395
+grid_7_2,Green City,2029,high,0.996,23.255,72.6395
+grid_7_2,Green City,2030,high,0.996,23.255,72.6395
+grid_7_3,Sector 28 GIDC,2026,high,0.996,23.255,72.6525
+grid_7_3,Sector 28 GIDC,2027,high,0.996,23.255,72.6525
+grid_7_3,Sector 28 GIDC,2028,high,0.996,23.255,72.6525
+grid_7_3,Sector 28 GIDC,2029,high,0.996,23.255,72.6525
+grid_7_3,Sector 28 GIDC,2030,high,0.996,23.255,72.6525
+grid_7_4,GEB Colony,2026,high,0.996,23.255,72.6655
+grid_7_4,GEB Colony,2027,high,0.994,23.255,72.6655
+grid_7_4,GEB Colony,2028,high,0.994,23.255,72.6655
+grid_7_4,GEB Colony,2029,high,0.994,23.255,72.6655
+grid_7_4,GEB Colony,2030,high,0.994,23.255,72.6655
+grid_7_5,GEB Colony,2026,high,0.996,23.255,72.6785
+grid_7_5,GEB Colony,2027,high,0.996,23.255,72.6785
+grid_7_5,GEB Colony,2028,high,0.996,23.255,72.6785
+grid_7_5,GEB Colony,2029,high,0.996,23.255,72.6785
+grid_7_5,GEB Colony,2030,high,0.996,23.255,72.6785
+grid_7_6,Unnamed Road,2026,high,0.881,23.255,72.6915
+grid_7_6,Unnamed Road,2027,high,0.973,23.255,72.6915
+grid_7_6,Unnamed Road,2028,high,0.973,23.255,72.6915
+grid_7_6,Unnamed Road,2029,high,0.973,23.255,72.6915
+grid_7_6,Unnamed Road,2030,high,0.973,23.255,72.6915
+grid_7_7,Unnamed Road,2026,medium,0.602,23.255,72.7045
+grid_7_7,Unnamed Road,2027,medium,0.666,23.255,72.7045
+grid_7_7,Unnamed Road,2028,medium,0.639,23.255,72.7045
+grid_7_7,Unnamed Road,2029,medium,0.651,23.255,72.7045
+grid_7_7,Unnamed Road,2030,medium,0.804,23.255,72.7045
+grid_7_8,Unnamed Road,2026,low,0.998,23.255,72.7175
+grid_7_8,Unnamed Road,2027,low,0.996,23.255,72.7175
+grid_7_8,Unnamed Road,2028,low,0.981,23.255,72.7175
+grid_7_8,Unnamed Road,2029,low,0.946,23.255,72.7175
+grid_7_8,Unnamed Road,2030,low,0.909,23.255,72.7175
+grid_7_9,Gam,2026,low,0.999,23.255,72.7305
+grid_7_9,Gam,2027,low,0.999,23.255,72.7305
+grid_7_9,Gam,2028,low,0.999,23.255,72.7305
+grid_7_9,Gam,2029,low,0.999,23.255,72.7305
+grid_7_9,Gam,2030,low,0.999,23.255,72.7305
+grid_8_0,Sector 28,2026,high,0.956,23.265,72.6135
+grid_8_0,Sector 28,2027,high,0.961,23.265,72.6135
+grid_8_0,Sector 28,2028,high,0.954,23.265,72.6135
+grid_8_0,Sector 28,2029,high,0.954,23.265,72.6135
+grid_8_0,Sector 28,2030,high,0.953,23.265,72.6135
+grid_8_1,Sector 28,2026,low,0.993,23.265,72.6265
+grid_8_1,Sector 28,2027,low,0.995,23.265,72.6265
+grid_8_1,Sector 28,2028,low,0.995,23.265,72.6265
+grid_8_1,Sector 28,2029,low,0.994,23.265,72.6265
+grid_8_1,Sector 28,2030,low,0.994,23.265,72.6265
+grid_8_2,Sector 26,2026,medium,0.835,23.265,72.6395
+grid_8_2,Sector 26,2027,medium,0.781,23.265,72.6395
+grid_8_2,Sector 26,2028,high,0.665,23.265,72.6395
+grid_8_2,Sector 26,2029,high,0.837,23.265,72.6395
+grid_8_2,Sector 26,2030,high,0.973,23.265,72.6395
+grid_8_3,Pethapur,2026,medium,0.971,23.265,72.6525
+grid_8_3,Pethapur,2027,medium,0.956,23.265,72.6525
+grid_8_3,Pethapur,2028,medium,0.96,23.265,72.6525
+grid_8_3,Pethapur,2029,medium,0.951,23.265,72.6525
+grid_8_3,Pethapur,2030,medium,0.931,23.265,72.6525
+grid_8_4,Pethapur,2026,high,0.996,23.265,72.6655
+grid_8_4,Pethapur,2027,high,0.996,23.265,72.6655
+grid_8_4,Pethapur,2028,high,0.995,23.265,72.6655
+grid_8_4,Pethapur,2029,high,0.995,23.265,72.6655
+grid_8_4,Pethapur,2030,high,0.995,23.265,72.6655
+grid_8_5,Pethapur,2026,high,0.995,23.265,72.6785
+grid_8_5,Pethapur,2027,high,0.995,23.265,72.6785
+grid_8_5,Pethapur,2028,high,0.995,23.265,72.6785
+grid_8_5,Pethapur,2029,high,0.995,23.265,72.6785
+grid_8_5,Pethapur,2030,high,0.995,23.265,72.6785
+grid_8_6,Unnamed Road,2026,medium,0.967,23.265,72.6915
+grid_8_6,Unnamed Road,2027,medium,0.958,23.265,72.6915
+grid_8_6,Unnamed Road,2028,medium,0.958,23.265,72.6915
+grid_8_6,Unnamed Road,2029,medium,0.913,23.265,72.6915
+grid_8_6,Unnamed Road,2030,medium,0.845,23.265,72.6915
+grid_8_7,Lekawada to Bhundiya Road,2026,low,1.0,23.265,72.7045
+grid_8_7,Lekawada to Bhundiya Road,2027,low,0.999,23.265,72.7045
+grid_8_7,Lekawada to Bhundiya Road,2028,low,1.0,23.265,72.7045
+grid_8_7,Lekawada to Bhundiya Road,2029,low,1.0,23.265,72.7045
+grid_8_7,Lekawada to Bhundiya Road,2030,low,1.0,23.265,72.7045
+grid_8_8,Unnamed Road,2026,low,1.0,23.265,72.7175
+grid_8_8,Unnamed Road,2027,low,1.0,23.265,72.7175
+grid_8_8,Unnamed Road,2028,low,1.0,23.265,72.7175
+grid_8_8,Unnamed Road,2029,low,1.0,23.265,72.7175
+grid_8_8,Unnamed Road,2030,low,1.0,23.265,72.7175
+grid_8_9,NH-8,2026,low,0.691,23.265,72.7305
+grid_8_9,NH-8,2027,medium,0.644,23.265,72.7305
+grid_8_9,NH-8,2028,medium,0.705,23.265,72.7305
+grid_8_9,NH-8,2029,medium,0.711,23.265,72.7305
+grid_8_9,NH-8,2030,medium,0.713,23.265,72.7305
+grid_9_0,Unnamed Road,2026,low,0.999,23.275,72.6135
+grid_9_0,Unnamed Road,2027,low,0.999,23.275,72.6135
+grid_9_0,Unnamed Road,2028,low,0.999,23.275,72.6135
+grid_9_0,Unnamed Road,2029,low,0.998,23.275,72.6135
+grid_9_0,Unnamed Road,2030,low,0.997,23.275,72.6135
+grid_9_1,Kolavda-Randheja Road,2026,low,0.999,23.275,72.6265
+grid_9_1,Kolavda-Randheja Road,2027,low,0.999,23.275,72.6265
+grid_9_1,Kolavda-Randheja Road,2028,low,0.999,23.275,72.6265
+grid_9_1,Kolavda-Randheja Road,2029,low,0.999,23.275,72.6265
+grid_9_1,Kolavda-Randheja Road,2030,low,0.999,23.275,72.6265
+grid_9_2,Unnamed Road,2026,medium,0.902,23.275,72.6395
+grid_9_2,Unnamed Road,2027,medium,0.931,23.275,72.6395
+grid_9_2,Unnamed Road,2028,medium,0.946,23.275,72.6395
+grid_9_2,Unnamed Road,2029,medium,0.95,23.275,72.6395
+grid_9_2,Unnamed Road,2030,medium,0.956,23.275,72.6395
+grid_9_3,Modheshwari Bhavan,2026,medium,0.974,23.275,72.6525
+grid_9_3,Modheshwari Bhavan,2027,medium,0.976,23.275,72.6525
+grid_9_3,Modheshwari Bhavan,2028,medium,0.97,23.275,72.6525
+grid_9_3,Modheshwari Bhavan,2029,medium,0.965,23.275,72.6525
+grid_9_3,Modheshwari Bhavan,2030,medium,0.921,23.275,72.6525
+grid_9_4,Unnamed Road,2026,medium,0.657,23.275,72.6655
+grid_9_4,Unnamed Road,2027,high,0.654,23.275,72.6655
+grid_9_4,Unnamed Road,2028,high,0.971,23.275,72.6655
+grid_9_4,Unnamed Road,2029,high,0.971,23.275,72.6655
+grid_9_4,Unnamed Road,2030,high,0.971,23.275,72.6655
+grid_9_5,Unnamed Road,2026,medium,0.981,23.275,72.6785
+grid_9_5,Unnamed Road,2027,medium,0.916,23.275,72.6785
+grid_9_5,Unnamed Road,2028,medium,0.893,23.275,72.6785
+grid_9_5,Unnamed Road,2029,medium,0.759,23.275,72.6785
+grid_9_5,Unnamed Road,2030,medium,0.755,23.275,72.6785
+grid_9_6,Unnamed Road,2026,low,0.999,23.275,72.6915
+grid_9_6,Unnamed Road,2027,low,0.999,23.275,72.6915
+grid_9_6,Unnamed Road,2028,low,0.998,23.275,72.6915
+grid_9_6,Unnamed Road,2029,low,0.998,23.275,72.6915
+grid_9_6,Unnamed Road,2030,low,0.998,23.275,72.6915
+grid_9_7,Lekawada to Bhundiya Road,2026,medium,0.789,23.275,72.7045
+grid_9_7,Lekawada to Bhundiya Road,2027,medium,0.88,23.275,72.7045
+grid_9_7,Lekawada to Bhundiya Road,2028,medium,0.854,23.275,72.7045
+grid_9_7,Lekawada to Bhundiya Road,2029,medium,0.849,23.275,72.7045
+grid_9_7,Lekawada to Bhundiya Road,2030,medium,0.914,23.275,72.7045
+grid_9_8,Dashela to Bhundiya Road,2026,low,1.0,23.275,72.7175
+grid_9_8,Dashela to Bhundiya Road,2027,low,1.0,23.275,72.7175
+grid_9_8,Dashela to Bhundiya Road,2028,low,1.0,23.275,72.7175
+grid_9_8,Dashela to Bhundiya Road,2029,low,1.0,23.275,72.7175
+grid_9_8,Dashela to Bhundiya Road,2030,low,1.0,23.275,72.7175
+grid_9_9,New Indiranagar,2026,low,0.709,23.275,72.7305
+grid_9_9,New Indiranagar,2027,medium,0.635,23.275,72.7305
+grid_9_9,New Indiranagar,2028,medium,0.644,23.275,72.7305
+grid_9_9,New Indiranagar,2029,medium,0.641,23.275,72.7305
+grid_9_9,New Indiranagar,2030,medium,0.667,23.275,72.7305
+grid_0_0,Sargasan,2025,high,0.991,23.185,72.6135
+grid_0_1,Kudasan,2025,high,0.994,23.185,72.6265
+grid_0_2,Randesan,2025,high,0.992,23.185,72.6395
+grid_0_3,Randesan,2025,medium,0.878,23.185,72.6525
+grid_0_4,Gujarat International Finance Tec-City,2025,medium,0.901,23.185,72.6655
+grid_0_5,Gandhinagar Bypass Road,2025,medium,0.756,23.185,72.6785
+grid_0_6,Ratanpur Road,2025,low,0.997,23.185,72.6915
+grid_0_7,Block-2,2025,medium,0.983,23.185,72.7045
+grid_0_8,Unnamed Road,2025,low,0.973,23.185,72.7175
+grid_0_9,kalyanpura,2025,low,0.577,23.185,72.7305
+grid_1_0,somnath park society,2025,high,0.993,23.195,72.6135
+grid_1_1,Infocity,2025,high,0.949,23.195,72.6265
+grid_1_2,Infocity,2025,high,0.994,23.195,72.6395
+grid_1_3,Dholakuva,2025,medium,0.985,23.195,72.6525
+grid_1_4,Indroda,2025,low,0.994,23.195,72.6655
+grid_1_5,Unnamed Road,2025,low,0.998,23.195,72.6785
+grid_1_6,Unnamed Road,2025,low,0.999,23.195,72.6915
+grid_1_7,Unnamed Road,2025,low,0.998,23.195,72.7045
+grid_1_8,Unnamed Road,2025,medium,0.98,23.195,72.7175
+grid_1_9,Unnamed Road,2025,low,0.9,23.195,72.7305
+grid_2_0,Sargasan,2025,high,0.991,23.205,72.6135
+grid_2_1,Sector 3B,2025,high,0.995,23.205,72.6265
+grid_2_2,Block D,2025,high,0.994,23.205,72.6395
+grid_2_3,Sector 8,2025,high,0.995,23.205,72.6525
+grid_2_4,Sector 7,2025,medium,0.94,23.205,72.6655
+grid_2_5,Unnamed Road,2025,medium,0.99,23.205,72.6785
+grid_2_6,Unnamed Road,2025,low,0.967,23.205,72.6915
+grid_2_7,Unnamed Road,2025,low,0.999,23.205,72.7045
+grid_2_8,Golden Quadrilateral,2025,medium,0.965,23.205,72.7175
+grid_2_9,Unnamed Road,2025,low,0.996,23.205,72.7305
+grid_3_0,Sector 16,2025,medium,0.968,23.215,72.6135
+grid_3_1,Sector 5A,2025,high,0.998,23.215,72.6265
+grid_3_2,Sector 7/B,2025,high,0.996,23.215,72.6395
+grid_3_3,Sector 10A,2025,high,0.994,23.215,72.6525
+grid_3_4,Sector 18,2025,medium,0.966,23.215,72.6655
+grid_3_5,6M8H+29,2025,medium,0.893,23.215,72.6785
+grid_3_6,Diversion Road,2025,high,0.975,23.215,72.6915
+grid_3_7,Unnamed Road,2025,low,0.997,23.215,72.7045
+grid_3_8,Chiloda,2025,low,0.987,23.215,72.7175
+grid_3_9,Unnamed Road,2025,medium,0.875,23.215,72.7305
+grid_4_0,Vavol,2025,high,0.994,23.225,72.6135
+grid_4_1,Sector 13B,2025,high,0.997,23.225,72.6265
+grid_4_2,Sector 12B,2025,high,0.997,23.225,72.6395
+grid_4_3,Sector 13,2025,high,0.995,23.225,72.6525
+grid_4_4,Sector 19,2025,high,0.995,23.225,72.6655
+grid_4_5,Borij,2025,high,0.996,23.225,72.6785
+grid_4_6,Mahakali Temple,2025,medium,0.913,23.225,72.6915
+grid_4_7,Unnamed Road,2025,low,0.523,23.225,72.7045
+grid_4_8,Unnamed Road,2025,low,0.988,23.225,72.7175
+grid_4_9,Chiloda,2025,high,0.958,23.225,72.7305
+grid_5_0,Sector 16,2025,medium,0.986,23.235,72.6135
+grid_5_1,Vavol,2025,high,0.997,23.235,72.6265
+grid_5_2,Sports Authority of India,2025,high,0.997,23.235,72.6395
+grid_5_3,Sector 22,2025,high,0.995,23.235,72.6525
+grid_5_4,Sarvodaynagar Society,2025,high,0.995,23.235,72.6655
+grid_5_5,Borij,2025,high,0.996,23.235,72.6785
+grid_5_6,Unnamed Road,2025,low,0.778,23.235,72.6915
+grid_5_7,Unnamed Road,2025,medium,0.642,23.235,72.7045
+grid_5_8,Nana Chiloda Gam,2025,high,0.745,23.235,72.7175
+grid_5_9,Unnamed Road,2025,medium,0.921,23.235,72.7305
+grid_6_0,Vavol,2025,low,0.994,23.245,72.6135
+grid_6_1,GIDC Electronic Estate,2025,high,0.997,23.245,72.6265
+grid_6_2,Sector 25,2025,high,0.999,23.245,72.6395
+grid_6_3,Sector 28,2025,high,0.998,23.245,72.6525
+grid_6_4,Sector 29,2025,high,0.997,23.245,72.6655
+grid_6_5,Thermal Power Plant Area,2025,high,0.93,23.245,72.6785
+grid_6_6,Unnamed Road,2025,high,0.979,23.245,72.6915
+grid_6_7,Unnamed Road,2025,high,0.931,23.245,72.7045
+grid_6_8,Unnamed Road,2025,low,0.995,23.245,72.7175
+grid_6_9,Shiholi-Dashela Road,2025,high,0.592,23.245,72.7305
+grid_7_0,Unnamed Road,2025,medium,0.724,23.255,72.6135
+grid_7_1,Unnamed Road,2025,high,0.974,23.255,72.6265
+grid_7_2,Green City,2025,high,0.996,23.255,72.6395
+grid_7_3,Sector 28 GIDC,2025,high,0.996,23.255,72.6525
+grid_7_4,GEB Colony,2025,high,0.996,23.255,72.6655
+grid_7_5,GEB Colony,2025,high,0.996,23.255,72.6785
+grid_7_6,Unnamed Road,2025,high,0.534,23.255,72.6915
+grid_7_7,Unnamed Road,2025,low,0.936,23.255,72.7045
+grid_7_8,Unnamed Road,2025,low,0.999,23.255,72.7175
+grid_7_9,Gam,2025,low,0.999,23.255,72.7305
+grid_8_0,Sector 28,2025,high,0.693,23.265,72.6135
+grid_8_1,Sector 28,2025,low,0.995,23.265,72.6265
+grid_8_2,Sector 26,2025,medium,0.969,23.265,72.6395
+grid_8_3,Pethapur,2025,medium,0.718,23.265,72.6525
+grid_8_4,Pethapur,2025,high,0.996,23.265,72.6655
+grid_8_5,Pethapur,2025,high,0.995,23.265,72.6785
+grid_8_6,Unnamed Road,2025,medium,0.971,23.265,72.6915
+grid_8_7,Lekawada to Bhundiya Road,2025,low,1.0,23.265,72.7045
+grid_8_8,Unnamed Road,2025,low,1.0,23.265,72.7175
+grid_8_9,NH-8,2025,low,0.978,23.265,72.7305
+grid_9_0,Unnamed Road,2025,low,0.999,23.275,72.6135
+grid_9_1,Kolavda-Randheja Road,2025,low,0.999,23.275,72.6265
+grid_9_2,Unnamed Road,2025,low,0.679,23.275,72.6395
+grid_9_3,Modheshwari Bhavan,2025,medium,0.916,23.275,72.6525
+grid_9_4,Unnamed Road,2025,medium,0.789,23.275,72.6655
+grid_9_5,Unnamed Road,2025,medium,0.988,23.275,72.6785
+grid_9_6,Unnamed Road,2025,low,0.999,23.275,72.6915
+grid_9_7,Lekawada to Bhundiya Road,2025,medium,0.721,23.275,72.7045
+grid_9_8,Dashela to Bhundiya Road,2025,low,1.0,23.275,72.7175
+grid_9_9,New Indiranagar,2025,low,0.952,23.275,72.7305

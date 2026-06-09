@@ -1,0 +1,39 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Sector 20",
+        "source": "grid_centroid_derived"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              72.698,
+              23.2395
+            ],
+            [
+              72.711,
+              23.2395
+            ],
+            [
+              72.711,
+              23.250500000000002
+            ],
+            [
+              72.698,
+              23.250500000000002
+            ],
+            [
+              72.698,
+              23.2395
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
