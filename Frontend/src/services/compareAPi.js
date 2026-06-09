@@ -1,6 +1,6 @@
 export async function fetchAiComparison(payload) {
   const res = await fetch(
-    "http://localhost:8000/compare-summary",
+    "https://urbangrowth.onrender.com",
     {
       method: "POST",
       headers: {

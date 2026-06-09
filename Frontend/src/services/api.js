@@ -1,5 +1,5 @@
-const BASE = 'http://127.0.0.1:8000'
-export const API_URL = "http://localhost:8000"
+const BASE = 'https://urbangrowth.onrender.com'
+export const API_URL = "https://urbangrowth.onrender.com"
 // ── Core fetch helper ──────────────────────────────────
 async function get(path) {
   try {
