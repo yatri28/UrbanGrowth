@@ -2,8 +2,6 @@ import os
 from urllib import response
 
 from fastapi import FastAPI
-from flask import app
-from matplotlib import lines
 import pandas as pd
 from scipy import stats
 from fastapi.middleware.cors import CORSMiddleware
