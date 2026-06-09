@@ -1,5 +1,5 @@
-@import "tailwindcss";
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800;900&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap');
+@import "tailwindcss";
 
 :root {
   --cream:       #FAF7F2;
@@ -135,18 +135,21 @@ body {
   border: 1px solid var(--border-med); border-radius: 4px;
   padding: 2px 6px;
 }
+.badge-blue {
+  background: rgba(26,75,140,0.1);
+  color: var(--blue);
+  border: 1px solid rgba(26,75,140,0.2);
+}
 
-/* ── Blue ── */
-.badge-blue { background: rgba(26,75,140,0.1); color: var(--blue); border: 1px solid rgba(26,75,140,0.2); }
+/* =====================================================
    GeoJSON Boundary Styles
    Premium GIS-style polygon rendering with glow
-══════════════════════════════════════════════════ */
+===================================================== */
 
 /* Base boundary polygon */
 .area-boundary path {
   transition: fill-opacity 0.2s ease, stroke-width 0.2s ease;
 }
-
 /* Glow effect — rendered as a blurred duplicate via SVG filter */
 .leaflet-overlay-pane svg {
   overflow: visible;
