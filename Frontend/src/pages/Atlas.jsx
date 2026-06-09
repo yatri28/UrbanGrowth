@@ -545,7 +545,7 @@ export default function Atlas() {
                   </div>
                 )}
                 <div style={{ marginTop: 10, fontSize: 10, color: 'var(--ink-muted)', fontStyle: 'italic' }}>
-                  AI-generated area summary.
+                  Summary generated from past data.
                 </div>
               </div>
 
