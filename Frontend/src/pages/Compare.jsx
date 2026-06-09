@@ -89,7 +89,7 @@ export default function ComparePage() {
             </Link>
           </div>
         ) : (
-          <>
+           <>
             {/* Selected areas chips */}
             <div style={{ display: 'flex', flexWrap: 'wrap', gap: 10, marginBottom: 28 }}>
               {compareAreas.map((a, i) => (
