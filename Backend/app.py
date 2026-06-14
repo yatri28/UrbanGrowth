@@ -9,9 +9,6 @@ from routes.history import router as history_router
 import google.generativeai as genai
 from dotenv import load_dotenv
 
-@app.get("/health")
-def health():
-    return {"status": "ok"}
 
 load_dotenv()
 
@@ -25,6 +22,9 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+@app.get("/health")
+def health():
+    return {"status": "ok"}
 app.include_router(history_router)
 
 genai.configure(
