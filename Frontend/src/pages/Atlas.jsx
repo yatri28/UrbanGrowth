@@ -191,7 +191,7 @@ export default function Atlas() {
   // ── Overview load ──
   useEffect(() => {
     if (!selected?.area_name) { setOverview(null); return }
-    fetch(`http://urbangrowth.onrender.com/area-overview?area_name=${encodeURIComponent(selected.area_name)}&year=${year}`)
+    fetch(`https://urbangrowth.onrender.com/area-overview?area_name=${encodeURIComponent(selected.area_name)}&year=${year}`)
       .then(r => r.json())
       .then(data => {
         console.log('Overview:', data)
