@@ -1,6 +1,6 @@
 export async function fetchAiComparison(payload) {
   const res = await fetch(
-    "https://urbangrowth.onrender.com",
+    "https://urbangrowth.onrender.com/compare-summary",
     {
       method: "POST",
       headers: {

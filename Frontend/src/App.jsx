@@ -10,6 +10,14 @@ import { CompareProvider } from './hooks/useCompare'
 import { YearProvider } from './hooks/useYear'
 import Riverfront from './pages/Riverfront'
 
+import { useEffect } from 'react'
+
+// inside App():
+useEffect(() => {
+  // Wake up Render backend on first page load
+  fetch('https://urbangrowth.onrender.com/health').catch(() => {})
+}, [])
+
 export default function App() {
   return (
     <BrowserRouter>

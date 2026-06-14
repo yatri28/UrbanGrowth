@@ -1,4 +1,6 @@
 import { useState, useEffect } from 'react'
+import matrixImg from '../assets/matrix.png'
+import correlationImg from '../assets/correlation.png'
 import { BarChart, Bar, LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, ResponsiveContainer, Cell, ReferenceLine, Area, AreaChart } from 'recharts'
 import { cityApi } from '../services/api'
 
@@ -259,7 +261,7 @@ export default function Model() {
 
       <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 24, alignItems: 'start' }}>
         <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 12, padding: 20, textAlign: 'center' }}>
-          <img src="/src/assets/matrix.png" alt="Confusion Matrix" style={{ width: '100%', borderRadius: 8, border: '1px solid var(--border)' }} />
+          <img src="{matrixImg}" alt="Confusion Matrix" style={{ width: '100%', borderRadius: 8, border: '1px solid var(--border)' }} />
           <div style={{ fontSize: 11, color: 'var(--ink-faint)', marginTop: 10 }}>Left: Raw counts · Right: Normalised (0–1)</div>
         </div>
 
@@ -339,7 +341,7 @@ export default function Model() {
         </div>
 
         <div style={{ background: '#fff', border: '1px solid var(--border)', borderRadius: 12, padding: 20, textAlign: 'center' }}>
-          <img src="/src/assets/correlation.png" alt="Correlation Matrix" style={{ width: '100%', borderRadius: 8, border: '1px solid var(--border)' }} />
+          <img src="{correlationImg}" alt="Correlation Matrix" style={{ width: '100%', borderRadius: 8, border: '1px solid var(--border)' }} />
           <div style={{ fontSize: 11, color: 'var(--ink-faint)', marginTop: 10 }}>Darker red = strong positive · Darker blue = strong negative</div>
         </div>
       </div>
