@@ -53,7 +53,7 @@ function buildRadarData(scatter) {
   const classes = ['high', 'medium', 'low']
   const metrics = [
     { key: 'built_percent',  label: 'Built-up',    max: 100 },
-    { key: 'nighttime_norm', label: 'Night Light',  max: 100 },
+    { key: 'nighttime_mean', label: 'Night Light',  max: 100 },
     { key: 'ndvi_mean',      label: 'Vegetation',   max: 100, invert: true },
   ]
   return metrics.map(m => {
