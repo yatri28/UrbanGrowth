@@ -232,7 +232,7 @@ function HistoricalCharts({ compareAreas}) {
     position: "insideBottom",
     offset: -5
   }} />
-          <YAxis domain={[0, 0.6]} {...axisStyle} tickFormatter={v => v.toFixed(2)} label={{
+          <YAxis domain={['auto', 'auto']} {...axisStyle} tickFormatter={v => v.toFixed(2)} label={{
     value: "Green Space",
     angle: -90,
     position: "insideLeft"
@@ -254,7 +254,7 @@ function HistoricalCharts({ compareAreas}) {
     position: "insideBottom",
     offset: -5
   }}/>
-          <YAxis domain={[0, 1]} {...axisStyle} tickFormatter={v => `${(v*100).toFixed(0)}%`}    label={{
+          <YAxis domain={['auto', 'auto']} {...axisStyle} tickFormatter={v => `${(v*100).toFixed(0)}%`}    label={{
     value: "Construction",
     angle: -90,
     position: "insideLeft"
@@ -289,7 +289,7 @@ function HistoricalCharts({ compareAreas}) {
     />
 
     <YAxis
-      domain={[0, 100]}
+      domain={['auto', 'auto']}
       {...axisStyle}
       tickFormatter={(v) => `${v}`}
       label={{

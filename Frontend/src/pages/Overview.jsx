@@ -389,6 +389,7 @@ export default function Overview() {
             }}
             axisLine={false}
             tickLine={false}
+            domain={['auto', 'auto']}
             label={{
               value: 'Urban Growth Indicators',
               angle: -90,
