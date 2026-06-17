@@ -54,7 +54,6 @@ export default function Overview() {
 
 const builtStart = earliest?.built ?? null
 const builtEnd = latest?.built ?? null
-const nightGrowth = latest && earliest ? (latest.night - earliest.night).toFixed(1) : null
 
   // Merge history + preds for stacked area chart
   const combined = [
@@ -170,8 +169,8 @@ BUILT-UP LAND COVERAGE            </span>
                 color: "var(--ink-muted)",
               }}
             >
-Built-up land coverage increased from
-{builtStart?.toFixed(1)}% in 2016 to
+Built-up land coverage increased from{" "}
+{builtStart?.toFixed(1)}% in 2016 to{" "}
 {builtEnd?.toFixed(1)}% in 2024.
             </div>
           </div>
@@ -227,7 +226,7 @@ Built-up land coverage increased from
                       paddingBottom: 12,
                     }}
                   >
-                    2040 (Model Prediction)
+2040 Forecast
                   </th>
                 </tr>
               </thead>
@@ -296,7 +295,7 @@ Built-up land coverage increased from
                     style={{
                       textAlign: "center",
                       fontWeight: 700,
-                      color: "var(----ink-muted)",
+                      color: "var(--ink-muted)",
                     }}
                   >
                     {earliest?.low ?? "—"}
@@ -306,7 +305,7 @@ Built-up land coverage increased from
                     style={{
                       textAlign: "center",
                       fontWeight: 700,
-                      color: "var(----ink-muted)",
+                      color: "var(--ink-muted)",
                     }}
                   >
                     {lastPred?.low ?? "—"}
@@ -428,7 +427,7 @@ Built-up land coverage increased from
             type="monotone"
             dataKey="built"
             name="Buildings & Roads"
-            stroke="var(--red)"
+            stroke="var(--green)"
             strokeWidth={2.5}
             dot={{ r: 3 }}
             activeDot={{ r: 5 }}
@@ -474,7 +473,7 @@ Built-up land coverage increased from
         What do these lines mean?
       </strong>
       <br />
-      🔴 Buildings & Roads = Areas covered by construction and development
+      🏗️ Buildings & Roads = Areas covered by construction and development
       <br />
       🟢 Green Spaces = Green areas and vegetation
       <br />
@@ -587,7 +586,7 @@ Built-up land coverage increased from
                           (a.change / 30) * 100,
                           100
                         )}%`,
-                        background: 'var(--red)',
+                        background: 'var(--green)',
                       }}
                     />
                   </div>
@@ -600,7 +599,7 @@ Built-up land coverage increased from
                   style={{
                     fontSize: 13,
                     fontWeight: 700,
-                    color: 'var(--red)',
+                    color: 'var(--green)',
                   }}
                 >
 {a.built_2016?.toFixed(1)}% → {a.built_2024?.toFixed(1)}%             
@@ -721,7 +720,7 @@ Areas with the largest increase appear at the top.
                       className="bar-fill"
                       style={{
                         width: `${a.built_percent}%`,
-                        background: 'var(--red)',
+                        background: 'var(--green)',
                       }}
                     />
                   </div>
@@ -738,7 +737,7 @@ Areas with the largest increase appear at the top.
                   style={{
                     fontSize: 13,
                     fontWeight: 700,
-                    color: 'var(--red)',
+                    color: 'var(--green)',
                   }}
                 >
                   {a.built_percent?.toFixed(1)}%
