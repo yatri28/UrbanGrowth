@@ -427,7 +427,7 @@ Built-up land coverage increased from{" "}
             type="monotone"
             dataKey="built"
             name="Buildings & Roads"
-            stroke="var(--green)"
+            stroke="var(--orange)"
             strokeWidth={2.5}
             dot={{ r: 3 }}
             activeDot={{ r: 5 }}
