@@ -52,8 +52,9 @@ export default function Overview() {
   const earliest = history?.[0]
   const lastPred = preds?.[preds.length - 1]
 
-  const builtGrowth = latest && earliest ? (latest.built - earliest.built).toFixed(1) : null
-  const nightGrowth = latest && earliest ? (latest.night - earliest.night).toFixed(1) : null
+const builtStart = earliest?.built ?? null
+const builtEnd = latest?.built ?? null
+const nightGrowth = latest && earliest ? (latest.night - earliest.night).toFixed(1) : null
 
   // Merge history + preds for stacked area chart
   const combined = [
@@ -115,17 +116,21 @@ export default function Overview() {
                 fontFamily: "IBM Plex Mono",
               }}
             >
-              NEW DEVELOPMENT SINCE 2016
-            </span>
+BUILT-UP LAND COVERAGE            </span>
 
             <span
-              title={
-                earliest && latest
-                  ? `2016: ${earliest.built.toFixed(1)}%
-          2024: ${latest.built.toFixed(1)}%
-          Increase: ${(latest.built - earliest.built).toFixed(1)}%`
-                  : ""
-              }
+             title={
+  earliest && latest
+    ? [
+        `2016: ${earliest.built.toFixed(1)}%`,
+        `2024: ${latest.built.toFixed(1)}%`,
+        `Change: ${(latest.built - earliest.built).toFixed(1)} percentage points`,
+        `Relative Growth: ${(
+          ((latest.built - earliest.built) / earliest.built) * 100
+        ).toFixed(1)}%`
+      ].join("\n")
+    : ""
+}
               style={{
                 width: 18,
                 height: 18,
@@ -147,17 +152,16 @@ export default function Overview() {
           
 
             <div
-              className="serif"
-              style={{
-                fontSize: 52,
-                fontWeight: 900,
-                color: "var(--red)",
-                lineHeight: 1,
-              }}
-            >
-              +{builtGrowth}%
-            </div>
-
+  className="serif"
+  style={{
+    fontSize: 42,
+    fontWeight: 900,
+    color: "var(--ink)",
+    lineHeight: 1,
+  }}
+>
+  {builtStart?.toFixed(1)}% → {builtEnd?.toFixed(1)}%
+</div>
             <div
               style={{
                 marginTop: 12,
@@ -166,7 +170,9 @@ export default function Overview() {
                 color: "var(--ink-muted)",
               }}
             >
-              Buildings, roads and developed land have increased since 2016.
+Built-up land coverage increased from
+{builtStart?.toFixed(1)}% in 2016 to
+{builtEnd?.toFixed(1)}% in 2024.
             </div>
           </div>
 
@@ -317,8 +323,7 @@ export default function Overview() {
                 lineHeight: 1.6,
               }}
             >
-              Compare how different parts of Gandhinagar were growing in 2016 and
-              how they are expected to grow by 2040.
+              Number of areas classified into High, Moderate and Low Growth categories in 2016 and projected for 2040.
             </div>
 
           </div>
@@ -391,7 +396,7 @@ export default function Overview() {
             tickLine={false}
             domain={['auto', 'auto']}
             label={{
-              value: 'Urban Growth Indicators',
+              value: 'Average Indicator Value',
               angle: -90,
               position: 'insideLeft',
               style: {
@@ -597,8 +602,8 @@ export default function Overview() {
                     color: 'var(--red)',
                   }}
                 >
-                  +{a.change?.toFixed(1)}%
-                </div>
+{a.built_2016?.toFixed(1)}% → {a.built_2024?.toFixed(1)}%             
+   </div>
 
               </div>
             </div>
@@ -620,8 +625,9 @@ export default function Overview() {
         How is this calculated?
       </strong>
       <br />
-     Example: If an area had 20% building coverage in 2016 and 48% in 2024,
-its increase would be +28%.
+   Each area shows its built-up land coverage in 2016 and 2024.
+
+Areas with the largest increase in coverage are ranked highest.
 
 Areas with the largest increase appear at the top.
     </div>
@@ -721,8 +727,12 @@ Areas with the largest increase appear at the top.
                 </div>
               </div>
 
-              <div style={{ textAlign: 'right' }}>
-                <div
+<div
+  style={{
+    textAlign: 'right',
+    minWidth: 110
+  }}
+>                <div
                   className="mono"
                   style={{
                     fontSize: 13,

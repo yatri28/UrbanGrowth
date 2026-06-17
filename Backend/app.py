@@ -333,31 +333,52 @@ def get_top_growing(n: int = 8):
     common = df_first.index.intersection(df_last.index)
 
     result = df_last.loc[common].copy()
+    result["built_2016"] = (
+    df_first.loc[common, "built_percent"] * 100
+).round(1)
+
+    result["built_2024"] = (
+    df_last.loc[common, "built_percent"] * 100
+).round(1)
 
     result["change"] = (
+    (
         (
             df_last.loc[common, "built_percent"]
             - df_first.loc[common, "built_percent"]
-        ) * 100
-    ).round(2)
+        )
+        / df_first.loc[common, "built_percent"]
+    ) * 100
+).round(2)
 
     # Remove duplicate area names
     result = (
         result.reset_index()
         .groupby("area_name", as_index=False)
         .agg({
-            "grid_id": "first",
-            "built_percent": "mean",
-            "ndvi_mean": "mean",
-            "growth_class": "first",
-            "change": "max"
-        })
+    "grid_id": "first",
+    "built_percent": "mean",
+    "ndvi_mean": "mean",
+    "growth_class": "first",
+    "change": "max",
+    "built_2016": "first",
+    "built_2024": "first"
+})
     )
 
     top = (
-        result.nlargest(n, "change")
-        [["grid_id", "area_name", "built_percent", "ndvi_mean", "growth_class", "change"]]
-    )
+    result.nlargest(n, "change")
+    [[
+        "grid_id",
+        "area_name",
+        "built_percent",
+        "ndvi_mean",
+        "growth_class",
+        "change",
+        "built_2016",
+        "built_2024"
+    ]]
+)
 
     top["built_percent"] = (
         top["built_percent"] * 100
