@@ -236,14 +236,15 @@ Built-up land coverage increased from
 
                 <tr>
                   <td style={{ padding: "14px 0" }}>
-                    🔴 High Growth Areas
+                     🟢 High Growth Areas
+
                   </td>
 
                                     <td
                     style={{
                       textAlign: "center",
                       fontWeight: 700,
-                      color: "var(--red)",
+                      color: "var(--green)",
                     }}
                   >
                     {earliest?.high ?? "—"}
@@ -253,7 +254,7 @@ Built-up land coverage increased from
                     style={{
                       textAlign: "center",
                       fontWeight: 700,
-                      color: "var(--red)",
+                      color: "var(--green)",
                     }}
                   >
                     {lastPred?.high ?? "—"}
@@ -288,14 +289,14 @@ Built-up land coverage increased from
 
                 <tr>
                   <td style={{ padding: "14px 0" }}>
-                    🟢 Low Growth Areas
+                    🔘  Low Growth Areas
                   </td>
 
                                     <td
                     style={{
                       textAlign: "center",
                       fontWeight: 700,
-                      color: "var(--green)",
+                      color: "var(----ink-muted)",
                     }}
                   >
                     {earliest?.low ?? "—"}
@@ -305,7 +306,7 @@ Built-up land coverage increased from
                     style={{
                       textAlign: "center",
                       fontWeight: 700,
-                      color: "var(--green)",
+                      color: "var(----ink-muted)",
                     }}
                   >
                     {lastPred?.low ?? "—"}
