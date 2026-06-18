@@ -9,19 +9,43 @@ import FitBounds from '../components/map/FitBounds'
 import { Search, X, GitCompare, Layers } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
-const YEARS      = [2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2035,2040]
-const colors     = { high: '#C0392B', medium: '#D4570C', low: '#1A6B45' }
-const classLabel = { high: 'High Growth', medium: 'Moderate Growth', low: 'Stable' }
-const classBg    = { high: '#fdf1f0', medium: '#fdf4ee', low: '#f0f7f3' }
+const YEARS = [2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2035,2040]
 
-// ── Metric colours per spec ──
-const METRIC_COLORS = {
-  built: '#E07B2A',   // orange
-  green: '#2A7B45',   // green
-  night: '#2A5FC0',   // blue
+// ── Growth class color system (FIXED) ──────────────────
+// High   = Green  (positive signal — rapid urbanisation)
+// Medium = Orange (transitional)
+// Low    = Grey   (neutral — stable/minimal development)
+const CLASS_COLORS = {
+  high:   '#1E7A4A',   // green
+  medium: '#C06A1A',   // orange
+  low:    '#6B7280',   // neutral grey
+}
+const CLASS_BG = {
+  high:   '#f0f7f2',
+  medium: '#fdf4ee',
+  low:    '#f5f6f7',
+}
+const CLASS_LABEL = {
+  high:   'High Growth',
+  medium: 'Moderate Growth',
+  low:    'Stable',
 }
 
-/* ── fly to center point ── */
+// ── Satellite metric colours ───────────────────────────
+const M = {
+  built: '#D4730E',   // orange
+  green: '#1E7A4A',   // green
+  night: '#2457B3',   // blue
+}
+
+// ── Scaling contract (enforced here for clarity) ───────
+// Backend sends built_percent  already ×100  → display as X.X%
+// Backend sends ndvi_mean      already ×100  → display as X.X%
+// Backend sends nighttime_mean as raw nW/cm²/sr
+// Backend sends confidence     already ×100  → display as X.X%
+// NO further multiplication in this file.
+
+/* ── Fly to area centroid ── */
 function FlyTo({ area }) {
   const map = useMap()
   useEffect(() => {
@@ -30,76 +54,86 @@ function FlyTo({ area }) {
   return null
 }
 
-/* ── Metric card in right panel ── */
-function MetricCard({ label, value, unit = '%', color, description, barMax = 100 }) {
-  const numVal = typeof value === 'number' ? value : parseFloat(value)
-  const barWidth = isNaN(numVal) ? 0 : Math.min((Math.abs(numVal) / barMax) * 100, 100)
-
+/* ── KPI chip: compact single-stat card ── */
+function KpiChip({ label, value, unit = '%', color }) {
+  const num = parseFloat(value)
+  const display = isNaN(num) ? '—' : `${num.toFixed(1)}${unit}`
   return (
     <div style={{
-      padding: '14px 16px',
-      borderRadius: 10,
+      flex: 1, minWidth: 0,
+      padding: '10px 12px',
+      borderRadius: 8,
       background: 'var(--paper)',
       border: '1px solid var(--border)',
-      marginBottom: 10,
     }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
-        <span style={{ fontSize: 11, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', fontWeight: 600 }}>
-          {label}
-        </span>
-        <span style={{ fontSize: 22, fontWeight: 900, color, fontFamily: 'IBM Plex Mono', lineHeight: 1 }}>
-          {value != null && !isNaN(numVal)
-            ? `${numVal.toFixed(1)}${unit}`
-            : '—'}
-        </span>
+      <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-faint)', marginBottom: 5 }}>
+        {label}
       </div>
-
-      {/* Progress bar */}
-      <div style={{ height: 4, background: `${color}22`, borderRadius: 99, marginBottom: 8, overflow: 'hidden' }}>
-        <div style={{
-          height: '100%',
-          width: `${barWidth}%`,
-          background: color,
-          borderRadius: 99,
-          transition: 'width 0.6s ease',
-        }} />
-      </div>
-
-      <div style={{ fontSize: 11, color: 'var(--ink-muted)', lineHeight: 1.5 }}>
-        {description}
+      <div style={{ fontSize: 20, fontWeight: 900, color, fontFamily: 'IBM Plex Mono', lineHeight: 1 }}>
+        {display}
       </div>
     </div>
   )
 }
 
-/* ── Growth class badge ── */
-function GrowthBadge({ growthClass, confidence }) {
-  const color = colors[growthClass] ?? '#888'
-  const bg    = classBg[growthClass] ?? 'var(--paper)'
-  const label = classLabel[growthClass] ?? growthClass
+/* ── Metric row: label + bar + value ── */
+function MetricRow({ label, value, unit = '%', color, note, barMax = 100 }) {
+  const num      = parseFloat(value)
+  const barWidth = isNaN(num) ? 0 : Math.min((Math.abs(num) / barMax) * 100, 100)
+  const display  = isNaN(num) ? '—' : `${num.toFixed(1)}${unit}`
+
+  return (
+    <div style={{ marginBottom: 14 }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'baseline', marginBottom: 5 }}>
+        <span style={{ fontSize: 11, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.07em', color: 'var(--ink-muted)', fontWeight: 600 }}>
+          {label}
+        </span>
+        <span style={{ fontSize: 17, fontWeight: 900, color, fontFamily: 'IBM Plex Mono', lineHeight: 1 }}>
+          {display}
+        </span>
+      </div>
+      <div style={{ height: 3, background: `${color}20`, borderRadius: 99, overflow: 'hidden', marginBottom: 4 }}>
+        <div style={{ height: '100%', width: `${barWidth}%`, background: color, borderRadius: 99, transition: 'width 0.55s ease' }} />
+      </div>
+      {note && (
+        <div style={{ fontSize: 10, color: 'var(--ink-faint)', lineHeight: 1.5 }}>{note}</div>
+      )}
+    </div>
+  )
+}
+
+/* ── Growth class pill ── */
+function ClassPill({ growthClass, confidence, year }) {
+  const color = CLASS_COLORS[growthClass] ?? '#888'
+  const bg    = CLASS_BG[growthClass]    ?? 'var(--paper)'
+  const label = CLASS_LABEL[growthClass] ?? growthClass
 
   return (
     <div style={{
-      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-      padding: '12px 16px', borderRadius: 10,
-      background: bg, border: `1.5px solid ${color}44`,
-      marginBottom: 12,
+      padding: '12px 14px',
+      borderRadius: 10,
+      background: bg,
+      border: `1.5px solid ${color}50`,
+      marginBottom: 14,
+      display: 'flex',
+      alignItems: 'center',
+      justifyContent: 'space-between',
     }}>
       <div>
-        <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', marginBottom: 3 }}>
-          Growth Class
+        <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-faint)', marginBottom: 4 }}>
+          Growth Class · {year}
         </div>
-        <div style={{ fontSize: 16, fontWeight: 800, color, fontFamily: 'IBM Plex Sans' }}>
+        <div style={{ fontSize: 17, fontWeight: 800, color, letterSpacing: '-0.01em' }}>
           {label}
         </div>
       </div>
       {confidence != null && (
         <div style={{ textAlign: 'right' }}>
-          <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', marginBottom: 3 }}>
+          <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-faint)', marginBottom: 4 }}>
             Confidence
           </div>
-          <div style={{ fontSize: 16, fontWeight: 800, color: 'var(--ink)', fontFamily: 'IBM Plex Mono' }}>
-            {typeof confidence === 'number' ? confidence.toFixed(0) : confidence}%
+          <div style={{ fontSize: 17, fontWeight: 800, fontFamily: 'IBM Plex Mono', color: 'var(--ink)' }}>
+            {parseFloat(confidence).toFixed(0)}%
           </div>
         </div>
       )}
@@ -108,20 +142,9 @@ function GrowthBadge({ growthClass, confidence }) {
 }
 
 /* ══════════════════════════════════════════════════════
-   INNER MAP
+   MAP INNER CONTENT
 ══════════════════════════════════════════════════════ */
-function MapContent({
-  filteredAreas,
-  selected,
-  setSelected,
-  compareAreas,
-  compareMode,
-  activeBoundary,
-  activeBounds,
-  compareBoundaries,
-  loadingBoundary,
-  noBoundaryArea,
-}) {
+function MapContent({ selected, compareMode, activeBoundary, activeBounds, compareBoundaries }) {
   return (
     <>
       <TileLayer
@@ -157,7 +180,7 @@ function MapContent({
 }
 
 /* ══════════════════════════════════════════════════════
-   MAIN
+   MAIN ATLAS
 ══════════════════════════════════════════════════════ */
 export default function Atlas() {
   const [year, setYear]         = useState(2024)
@@ -170,16 +193,16 @@ export default function Atlas() {
   const [overviewLoading, setOverviewLoading] = useState(false)
   const [compareMode, setCompareMode] = useState(false)
 
-  const [activeBoundary, setActiveBoundary]   = useState(null)
-  const [activeBounds, setActiveBounds]       = useState(null)
+  const [activeBoundary, setActiveBoundary]     = useState(null)
+  const [activeBounds, setActiveBounds]         = useState(null)
   const [compareBoundaries, setCompareBoundaries] = useState([])
-  const [noBoundaryArea, setNoBoundaryArea]   = useState(null)
+  const [noBoundaryArea, setNoBoundaryArea]     = useState(null)
   const noBoundaryTimer = useRef(null)
 
   const { compareAreas, toggleCompareArea } = useCompare()
   const { getBoundary, getMultipleBoundaries, loading: loadingBoundary } = useGeoJSON()
 
-  // ── Load areas (area-level from /areas/{year}) ──
+  // ── Load areas — backend returns 70 area-level rows ──
   useEffect(() => {
     setLoading(true)
     api.areas(year).then(d => {
@@ -188,7 +211,7 @@ export default function Atlas() {
     })
   }, [year])
 
-  // ── Load boundary on area select ──
+  // ── Boundary for selected area ──
   useEffect(() => {
     if (!selected || compareMode) {
       setActiveBoundary(null); setActiveBounds(null); return
@@ -205,7 +228,7 @@ export default function Atlas() {
     })
   }, [selected?.area_name, compareMode])
 
-  // ── Compare boundaries ──
+  // ── Boundaries for compare mode ──
   useEffect(() => {
     if (!compareMode || !compareAreas.length) {
       setCompareBoundaries([]); setActiveBounds(null); return
@@ -227,20 +250,19 @@ export default function Atlas() {
     })
   }, [compareMode, compareAreas.map(a => a.area_name).join(',')])
 
-  // ── Area overview from v4 CSVs ──
+  // ── Area summary from v4 CSV via backend ──
   useEffect(() => {
     if (!selected?.area_name) { setOverview(null); return }
     setOverviewLoading(true)
     fetch(`https://urbangrowth.onrender.com/area-overview?area_name=${encodeURIComponent(selected.area_name)}&year=${year}`)
       .then(r => r.json())
-      .then(data => { setOverview(data); setOverviewLoading(false) })
+      .then(d => { setOverview(d); setOverviewLoading(false) })
       .catch(() => { setOverview(null); setOverviewLoading(false) })
   }, [year, selected?.area_name])
 
-  const handleSelectArea = useCallback((area) => setSelected(area), [])
+  const handleSelectArea = useCallback(area => setSelected(area), [])
 
-  // ── Derived ──
-  // Areas are already area-level (one row per area_name) from the backend
+  // ── Filter & counts ──
   const filtered = areas.filter(a => {
     const matchClass  = filter === 'all' || a.growth_class?.toLowerCase() === filter
     const matchSearch = !search || a.area_name?.toLowerCase().includes(search.toLowerCase())
@@ -252,18 +274,22 @@ export default function Atlas() {
   const medCount  = filtered.filter(a => a.growth_class?.toLowerCase() === 'medium').length
   const lowCount  = filtered.filter(a => a.growth_class?.toLowerCase() === 'low').length
 
-  // Find selected area from the current area list
+  // ── Selected area values ──
+  // currentArea is the matching row from the backend's area-level response.
+  // Scaling: backend already sends built_percent, ndvi_mean, confidence ×100.
+  // We just parseFloat — no further multiplication.
   const currentArea = selected
     ? areas.find(a => a.area_name?.trim().toLowerCase() === selected.area_name?.trim().toLowerCase())
     : null
 
-  // All values are already area-level averages from the backend
-  // backend returns built_percent already multiplied by 100
-  const builtVal  = currentArea?.built_percent   != null ? parseFloat(currentArea.built_percent)   : null
-  const ndviVal   = currentArea?.ndvi_mean       != null ? parseFloat(currentArea.ndvi_mean)        : null
-  const nightVal  = currentArea?.nighttime_mean  != null ? parseFloat(currentArea.nighttime_mean)   : null
-  const confVal   = currentArea?.confidence      != null ? parseFloat(currentArea.confidence)       : null
+  const builtVal  = currentArea?.built_percent   != null ? parseFloat(currentArea.built_percent)  : null
+  const ndviVal   = currentArea?.ndvi_mean       != null ? parseFloat(currentArea.ndvi_mean)       : null
+  const nightVal  = currentArea?.nighttime_mean  != null ? parseFloat(currentArea.nighttime_mean)  : null
+  const confVal   = currentArea?.confidence      != null ? parseFloat(currentArea.confidence)      : null
   const growthCls = (currentArea?.growth_class ?? selected?.growth_class)?.toLowerCase()
+
+  // Night activity qualitative label
+  const nightLabel = nightVal == null ? '' : nightVal > 20 ? 'high urban activity' : nightVal > 8 ? 'moderate activity' : 'low activity'
 
   return (
     <div style={{ display: 'flex', height: '100vh', flexDirection: 'column' }}>
@@ -280,12 +306,12 @@ export default function Atlas() {
             Gandhinagar Area Explorer
           </h1>
           <div style={{ fontSize: 12, color: 'var(--ink-muted)', marginTop: 2 }}>
-            {isPred ? `Predicted data for ${year}` : `Historical data — ${year}`} · {filtered.length} areas
+            {isPred ? `Predicted · ${year}` : `Historical · ${year}`} · {filtered.length} areas
           </div>
         </div>
         <div style={{ flex: 1 }} />
 
-        {/* Compare mode toggle */}
+        {/* Compare toggle */}
         <button
           onClick={() => setCompareMode(v => !v)}
           style={{
@@ -324,6 +350,7 @@ export default function Atlas() {
           </Link>
         )}
 
+        {/* Year selector */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
           <span style={{ fontSize: 11, color: 'var(--ink-muted)', fontFamily: 'IBM Plex Mono', textTransform: 'uppercase' }}>Year</span>
           <select
@@ -349,8 +376,10 @@ export default function Atlas() {
       {/* ── Three-panel body ── */}
       <div style={{ flex: 1, display: 'flex', overflow: 'hidden' }}>
 
-        {/* LEFT: Area list */}
+        {/* ── LEFT: Area list ── */}
         <div style={{ width: 270, flexShrink: 0, background: '#fff', borderRight: '1px solid var(--border)', display: 'flex', flexDirection: 'column', overflow: 'hidden' }}>
+
+          {/* Search + filters */}
           <div style={{ padding: '12px 14px', borderBottom: '1px solid var(--border)', flexShrink: 0 }}>
             <div style={{ position: 'relative', marginBottom: 9 }}>
               <Search size={12} style={{ position: 'absolute', left: 9, top: '50%', transform: 'translateY(-50%)', color: 'var(--ink-faint)' }} />
@@ -368,6 +397,7 @@ export default function Atlas() {
                 </button>
               )}
             </div>
+            {/* Filter pills — use CLASS_COLORS for dots */}
             <div style={{ display: 'flex', gap: 4 }}>
               {['all','high','medium','low'].map(f => (
                 <button key={f} onClick={() => setFilter(f)} style={{
@@ -384,6 +414,7 @@ export default function Atlas() {
             </div>
           </div>
 
+          {/* Area rows */}
           <div style={{ flex: 1, overflowY: 'auto', padding: '6px 0' }}>
             {loading
               ? [1,2,3,4,5,6].map(i => (
@@ -391,7 +422,7 @@ export default function Atlas() {
                 ))
               : filtered.map(area => {
                   const t      = area.growth_class?.toLowerCase()
-                  const col    = colors[t] || '#888'
+                  const col    = CLASS_COLORS[t] || '#888'   // FIXED: green/orange/grey
                   const isSel  = selected?.area_name === area.area_name
                   const inCmp  = compareAreas.some(c => c.area_name === area.area_name)
                   const hasGeo = !!AREA_BOUNDARIES[area.area_name]
@@ -402,26 +433,39 @@ export default function Atlas() {
                       onClick={() => handleSelectArea(area)}
                       style={{
                         margin: '2px 8px', padding: '9px 11px', borderRadius: 8, cursor: 'pointer',
-                        background: isSel ? (classBg[t] ?? 'var(--paper)') : 'transparent',
+                        background: isSel ? (CLASS_BG[t] ?? 'var(--paper)') : 'transparent',
                         border: '1px solid ' + (isSel ? col + '55' : 'transparent'),
                         display: 'flex', alignItems: 'center', gap: 9, transition: 'all 0.12s',
                       }}
                       onMouseEnter={e => { if (!isSel) e.currentTarget.style.background = 'var(--cream)' }}
                       onMouseLeave={e => { if (!isSel) e.currentTarget.style.background = 'transparent' }}
                     >
-                      <div style={{ width: 7, height: 7, borderRadius: '50%', background: col, flexShrink: 0, boxShadow: `0 0 0 2px ${col}33` }} />
+                      {/* Class dot — FIXED color */}
+                      <div style={{ width: 7, height: 7, borderRadius: '50%', background: col, flexShrink: 0, boxShadow: `0 0 0 2px ${col}30` }} />
+
                       <div style={{ flex: 1, minWidth: 0 }}>
                         <div style={{ fontSize: 12, fontWeight: isSel ? 700 : 500, color: 'var(--ink)', whiteSpace: 'nowrap', overflow: 'hidden', textOverflow: 'ellipsis' }}>
                           {area.area_name}
                         </div>
                         <div style={{ fontSize: 10, color: 'var(--ink-muted)', marginTop: 1, fontFamily: 'IBM Plex Mono', display: 'flex', gap: 5, alignItems: 'center' }}>
+                          {/* built_percent already ×100 from backend */}
                           {area.built_percent != null ? `${parseFloat(area.built_percent).toFixed(0)}% built` : ''}
                           {area.confidence    != null ? ` · ${parseFloat(area.confidence).toFixed(0)}% conf` : ''}
-                          {hasGeo && <span title="GeoJSON boundary available" style={{ color: 'var(--green)', fontSize: 9, opacity: 0.7 }}>⬡</span>}
+                          {hasGeo && <span title="GeoJSON available" style={{ color: CLASS_COLORS.high, fontSize: 9, opacity: 0.6 }}>⬡</span>}
                         </div>
                       </div>
+
                       <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                        <span className={`badge badge-${t}`} style={{ fontSize: 9 }}>{t?.charAt(0)?.toUpperCase()}</span>
+                        {/* Class badge — FIXED color */}
+                        <span style={{
+                          fontSize: 9, fontFamily: 'IBM Plex Mono', fontWeight: 700,
+                          padding: '2px 5px', borderRadius: 4,
+                          background: CLASS_BG[t] ?? '#f0f0f0',
+                          color: col,
+                          border: `1px solid ${col}40`,
+                        }}>
+                          {t?.charAt(0)?.toUpperCase()}
+                        </span>
                         <button
                           onClick={e => { e.stopPropagation(); toggleCompareArea(area) }}
                           title={inCmp ? 'Remove from compare' : 'Add to compare'}
@@ -443,7 +487,7 @@ export default function Atlas() {
           </div>
         </div>
 
-        {/* CENTER: Map */}
+        {/* ── CENTER: Map ── */}
         <div style={{ flex: 1, position: 'relative' }}>
           {loading && (
             <div style={{ position: 'absolute', inset: 0, zIndex: 10, display: 'flex', alignItems: 'center', justifyContent: 'center', background: 'rgba(250,247,242,0.85)' }}>
@@ -464,7 +508,7 @@ export default function Atlas() {
           {compareMode && compareBoundaries.length > 0 && (
             <div style={{
               position: 'absolute', bottom: 20, left: 12, zIndex: 500,
-              background: 'rgba(26,22,20,0.85)', backdropFilter: 'blur(8px)',
+              background: 'rgba(26,22,20,0.88)', backdropFilter: 'blur(8px)',
               borderRadius: 10, padding: '10px 14px',
               border: '1px solid rgba(255,255,255,0.08)',
             }}>
@@ -479,162 +523,154 @@ export default function Atlas() {
               ))}
             </div>
           )}
-          <MapContainer
-            center={[23.2156, 72.6369]}
-            zoom={12}
-            zoomControl={true}
-            style={{ width: '100%', height: '100%' }}
-          >
+          <MapContainer center={[23.2156, 72.6369]} zoom={12} zoomControl style={{ width: '100%', height: '100%' }}>
             <MapContent
-              filteredAreas={filtered}
               selected={selected}
-              setSelected={handleSelectArea}
-              compareAreas={compareAreas}
               compareMode={compareMode}
               activeBoundary={activeBoundary}
               activeBounds={activeBounds}
               compareBoundaries={compareBoundaries}
-              loadingBoundary={loadingBoundary}
-              noBoundaryArea={noBoundaryArea}
             />
           </MapContainer>
         </div>
 
-        {/* RIGHT: Info panel */}
-        <div style={{ width: 290, flexShrink: 0, background: '#fff', borderLeft: '1px solid var(--border)', overflowY: 'auto' }}>
+        {/* ── RIGHT: Info panel ── */}
+        <div style={{ width: 288, flexShrink: 0, background: '#fff', borderLeft: '1px solid var(--border)', overflowY: 'auto' }}>
           {!selected ? (
-            <div style={{ padding: '56px 24px', textAlign: 'center' }}>
-              <div style={{ fontSize: 36, marginBottom: 14, opacity: 0.2 }}>📍</div>
-              <div style={{ fontSize: 13, color: 'var(--ink-muted)', lineHeight: 1.8 }}>
-                Select an area from the list to explore its satellite metrics and growth forecast.
+            <div style={{ padding: '60px 24px', textAlign: 'center' }}>
+              <div style={{ fontSize: 32, marginBottom: 12, opacity: 0.18 }}>📍</div>
+              <div style={{ fontSize: 12, color: 'var(--ink-muted)', lineHeight: 1.8 }}>
+                Select an area from the list to view satellite metrics and growth forecast.
               </div>
             </div>
           ) : (
-            <div style={{ padding: '20px 16px' }}>
+            <div style={{ padding: '18px 16px' }}>
 
-              {/* ── Area header ── */}
-              <div style={{ marginBottom: 16, paddingBottom: 14, borderBottom: '1px solid var(--border)' }}>
-                <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-muted)', marginBottom: 6 }}>
+              {/* ── Area name header ── */}
+              <div style={{ marginBottom: 14, paddingBottom: 13, borderBottom: '1px solid var(--border)' }}>
+                <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--ink-faint)', marginBottom: 5 }}>
                   Selected Area
                 </div>
-                <h2 className="serif" style={{ fontSize: 22, fontWeight: 900, color: 'var(--ink)', lineHeight: 1.1, marginBottom: 4 }}>
+                <h2 className="serif" style={{ fontSize: 21, fontWeight: 900, color: 'var(--ink)', lineHeight: 1.1, margin: 0 }}>
                   {selected.area_name}
                 </h2>
-                <div style={{ fontSize: 11, color: 'var(--ink-muted)', fontFamily: 'IBM Plex Mono' }}>
-                  {isPred ? `Forecast · ${year}` : `Historical · ${year}`}
-                </div>
               </div>
 
-              {/* ── Growth class badge ── */}
-              <GrowthBadge growthClass={growthCls} confidence={isPred ? confVal : null} />
+              {/* ── Growth class pill ── */}
+              <ClassPill growthClass={growthCls} confidence={isPred ? confVal : null} year={year} />
 
-              {/* ── Satellite metrics (historical years only) ── */}
+              {/* ── Satellite KPIs (historical only — 3 chips in a row) ── */}
+              {!isPred && builtVal != null && (
+                <div style={{ display: 'flex', gap: 6, marginBottom: 16 }}>
+                  <KpiChip label="Built-up"     value={builtVal}  unit="%" color={M.built} />
+                  <KpiChip label="Green"         value={ndviVal}   unit="%" color={M.green} />
+                  <KpiChip label="Night"         value={nightVal}  unit=""  color={M.night} />
+                </div>
+              )}
+
+              {/* ── Detailed metric rows (historical only) ── */}
               {!isPred && (
-                <div style={{ marginBottom: 16 }}>
-                  <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', fontWeight: 600, marginBottom: 10 }}>
+                <div style={{
+                  padding: '14px 14px 10px',
+                  borderRadius: 10,
+                  background: 'var(--paper)',
+                  border: '1px solid var(--border)',
+                  marginBottom: 14,
+                }}>
+                  <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-faint)', marginBottom: 12 }}>
                     Satellite Metrics · {year}
                   </div>
 
-                  <MetricCard
+                  <MetricRow
                     label="Built-up Area"
                     value={builtVal}
                     unit="%"
-                    color={METRIC_COLORS.built}
-                    description={
-                      builtVal != null
-                        ? `${builtVal.toFixed(0)}% of ${selected.area_name} is covered by buildings and roads.`
-                        : 'No data available.'
-                    }
+                    color={M.built}
+                    note={builtVal != null ? `${builtVal.toFixed(0)}% of land covered by buildings & roads` : 'No data'}
                     barMax={100}
                   />
-
-                  <MetricCard
+                  <MetricRow
                     label="Green Space"
                     value={ndviVal}
                     unit="%"
-                    color={METRIC_COLORS.green}
-                    description={
-                      ndviVal != null
-                        ? `NDVI vegetation index: ${ndviVal.toFixed(0)}% indicates ${ndviVal > 40 ? 'healthy green cover' : ndviVal > 20 ? 'moderate vegetation' : 'sparse vegetation'}.`
-                        : 'No data available.'
-                    }
+                    color={M.green}
+                    note={ndviVal != null ? `NDVI ${ndviVal.toFixed(0)}% — ${ndviVal > 40 ? 'healthy green cover' : ndviVal > 20 ? 'moderate vegetation' : 'sparse vegetation'}` : 'No data'}
                     barMax={100}
                   />
-
-                  <MetricCard
+                  <MetricRow
                     label="Night Activity"
                     value={nightVal}
                     unit=""
-                    color={METRIC_COLORS.night}
-                    description={
-                      nightVal != null
-                        ? `Night light intensity: ${nightVal.toFixed(1)} nW/cm²/sr — ${nightVal > 20 ? 'high urban activity' : nightVal > 8 ? 'moderate activity' : 'low activity'}.`
-                        : 'No data available.'
-                    }
+                    color={M.night}
+                    note={nightVal != null ? `${nightVal.toFixed(1)} nW/cm²/sr — ${nightLabel}` : 'No data'}
                     barMax={50}
                   />
                 </div>
               )}
 
-              {/* ── Predicted year confidence note ── */}
+              {/* ── Predicted year — confidence note ── */}
               {isPred && confVal != null && (
                 <div style={{
-                  padding: '10px 14px', borderRadius: 8, marginBottom: 14,
-                  background: 'var(--orange-soft)', border: '1px solid var(--orange)33',
-                  fontSize: 11, color: 'var(--ink)', lineHeight: 1.6,
+                  padding: '10px 13px', borderRadius: 8, marginBottom: 14,
+                  background: '#f5f9ff', border: '1px solid #2457B320',
+                  fontSize: 11, color: 'var(--ink)', lineHeight: 1.65,
                 }}>
-                  XGBoost model confidence for {selected.area_name} in {year}: <strong>{confVal.toFixed(0)}%</strong>.<br />
-                  Based on area-averaged predictions across all grid cells.
+                  <span style={{ fontFamily: 'IBM Plex Mono', fontWeight: 700, color: M.night }}>
+                    {confVal.toFixed(0)}%
+                  </span>{' '}
+                  XGBoost confidence for {selected.area_name} in {year}.<br />
+                  <span style={{ color: 'var(--ink-muted)', fontSize: 10 }}>Area-averaged across all grid cells.</span>
                 </div>
               )}
 
-              {/* ── Area summary from v4 CSV ── */}
-              <div style={{ padding: '14px 16px', borderRadius: 10, background: 'var(--paper)', border: '1px solid var(--border)' }}>
-                <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', fontWeight: 600, marginBottom: 10 }}>
-                  {isPred ? 'Growth Outlook' : 'Area Summary'} · {year}
+              {/* ── Area summary / growth outlook ── */}
+              <div style={{
+                borderRadius: 10,
+                background: 'var(--paper)',
+                border: '1px solid var(--border)',
+                overflow: 'hidden',
+              }}>
+                <div style={{ padding: '11px 14px 10px', borderBottom: '1px solid var(--border)' }}>
+                  <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-faint)' }}>
+                    {isPred ? 'Growth Outlook' : 'Area Summary'} · {year}
+                  </div>
                 </div>
 
-                {overviewLoading ? (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                    {[1,2,3].map(i => (
-                      <div key={i} style={{ height: 40, borderRadius: 7, background: 'var(--canvas)', animation: 'pulse 1.5s infinite' }} />
-                    ))}
-                  </div>
-                ) : overview?.points?.length ? (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                    {overview.points.map((p, i) => (
-                      <div
-                        key={i}
-                        style={{
-                          display: 'flex', alignItems: 'flex-start', gap: 8,
-                          padding: '8px 10px', borderRadius: 8,
-                          background: 'rgba(255,255,255,0.6)',
-                          borderLeft: `3px solid ${isPred ? METRIC_COLORS.built : 'var(--ink-muted)'}`,
-                          fontSize: 12, lineHeight: 1.7, color: 'var(--ink)',
-                        }}
-                      >
-                        <span style={{ color: isPred ? METRIC_COLORS.built : 'var(--ink-muted)', fontWeight: 700, marginTop: 1, flexShrink: 0 }}>•</span>
-                        <span
-                          dangerouslySetInnerHTML={{
+                <div style={{ padding: '12px 14px' }}>
+                  {overviewLoading ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
+                      {[80,100,70].map((w,i) => (
+                        <div key={i} style={{ height: 12, width: `${w}%`, borderRadius: 4, background: 'var(--canvas)', animation: 'pulse 1.5s infinite' }} />
+                      ))}
+                    </div>
+                  ) : overview?.points?.length ? (
+                    <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
+                      {overview.points.map((p, i) => (
+                        <div key={i} style={{
+                          display: 'flex', alignItems: 'flex-start', gap: 7,
+                          fontSize: 12, lineHeight: 1.65, color: 'var(--ink)',
+                          paddingBottom: i < overview.points.length - 1 ? 7 : 0,
+                          borderBottom: i < overview.points.length - 1 ? '1px solid var(--border)' : 'none',
+                        }}>
+                          <span style={{ color: isPred ? M.built : CLASS_COLORS[growthCls] ?? 'var(--ink-muted)', fontWeight: 700, flexShrink: 0, marginTop: 1 }}>•</span>
+                          <span dangerouslySetInnerHTML={{
                             __html: p.replace(
-                              /(\+?\d+(\.\d+)?%?|\(\d+(\.\d+)?\))/g,
-                              `<span style="color: ${METRIC_COLORS.built}; font-weight: 700;">$1</span>`
+                              /(\+?\d+(\.\d+)?%?)/g,
+                              `<span style="color:${M.built};font-weight:700">$1</span>`
                             )
-                          }}
-                        />
-                      </div>
-                    ))}
-                  </div>
-                ) : (
-                  <div style={{ fontSize: 12, color: 'var(--ink-muted)', fontStyle: 'italic' }}>
-                    No summary available for this area and year.
-                  </div>
-                )}
+                          }} />
+                        </div>
+                      ))}
+                    </div>
+                  ) : (
+                    <div style={{ fontSize: 12, color: 'var(--ink-faint)', fontStyle: 'italic' }}>
+                      No summary available.
+                    </div>
+                  )}
+                </div>
 
-                <div style={{ marginTop: 10, fontSize: 10, color: 'var(--ink-faint)', fontStyle: 'italic' }}>
-                  {isPred
-                    ? 'AI-generated outlook from model predictions.'
-                    : 'Summary derived from satellite observations.'}
+                <div style={{ padding: '8px 14px', borderTop: '1px solid var(--border)', fontSize: 10, color: 'var(--ink-faint)', fontStyle: 'italic' }}>
+                  {isPred ? 'From model predictions · v4 dataset' : 'From satellite observations · v4 dataset'}
                 </div>
               </div>
 
