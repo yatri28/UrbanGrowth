@@ -195,6 +195,7 @@ function HistoricalCharts({ compareAreas}) {
       try {
         const results = await Promise.all(compareAreas.map(a => fetchHistory(a.grid_id)))
         setRows(results)
+        console.log("COMPARE RESULTS", results)
       } catch (e) { console.error(e) }
       finally { setLoading(false) }
     }
