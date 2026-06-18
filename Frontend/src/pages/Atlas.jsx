@@ -1,4 +1,4 @@
-import { useState, useEffect, useCallback, useRef } from 'react'
+import { useState, useEffect, useCallback, useRef, useMemo } from 'react'
 import { MapContainer, TileLayer, useMap } from 'react-leaflet'
 import 'leaflet/dist/leaflet.css'
 import { api } from '../services/api'
@@ -162,6 +162,29 @@ function MapContent({ selected, compareMode, activeBoundary, activeBounds, compa
   )
 }
 
+// ── Isolated compare button — owns its own subscription to compareAreas ──────
+// This component re-renders independently when compareAreas changes, so even if
+// the parent list doesn't re-render, the button always reflects current state.
+function CompareButton({ area, compareAreas, toggleCompareArea }) {
+  const inCmp = compareAreas.some(c => c.area_name === area.area_name)
+  return (
+    <button
+      onClick={e => { e.stopPropagation(); toggleCompareArea(area) }}
+      title={inCmp ? 'Remove from compare' : 'Add to compare'}
+      style={{
+        width: 20, height: 20, borderRadius: 4,
+        border: `1px solid ${inCmp ? '#D4730E' : 'var(--border)'}`,
+        background: inCmp ? '#FEF0E6' : 'transparent',
+        cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
+        color: inCmp ? '#D4730E' : 'var(--ink-faint)',
+        transition: 'all 0.12s', flexShrink: 0,
+      }}
+    >
+      <GitCompare size={9} />
+    </button>
+  )
+}
+
 export default function Atlas() {
   const [year, setYear]         = useState(2024)
   const [areas, setAreas]       = useState([])
@@ -181,6 +204,13 @@ export default function Atlas() {
 
   const { compareAreas, toggleCompareArea } = useCompare()
   const { getBoundary, getMultipleBoundaries, loading: loadingBoundary } = useGeoJSON()
+
+  // ── Derive a stable Set of compared area names for O(1) lookup + reactivity ──
+  // Recomputes only when compareAreas array identity changes.
+  const compareNameSet = useMemo(
+    () => new Set(compareAreas.map(a => a.area_name)),
+    [compareAreas]
+  )
 
   // ── Load areas ──
   useEffect(() => {
@@ -248,7 +278,7 @@ export default function Atlas() {
 
   const handleSelectArea = useCallback(area => setSelected(area), [])
 
-  // ── Filter, sort (High → Medium → Low, then built_percent desc), counts ──
+  // ── Filter + sort ──
   const filtered = areas
     .filter(a => {
       const matchClass  = filter === 'all' || a.growth_class?.toLowerCase() === filter
@@ -267,7 +297,6 @@ export default function Atlas() {
   const medCount  = filtered.filter(a => a.growth_class?.toLowerCase() === 'medium').length
   const lowCount  = filtered.filter(a => a.growth_class?.toLowerCase() === 'low').length
 
-  // ── Selected area values ──
   const currentArea = selected
     ? areas.find(a => a.area_name?.trim().toLowerCase() === selected.area_name?.trim().toLowerCase())
     : null
@@ -386,7 +415,6 @@ export default function Atlas() {
                 </button>
               )}
             </div>
-            {/* Filter pills */}
             <div style={{ display: 'flex', gap: 4 }}>
               {['all','high','medium','low'].map(f => (
                 <button key={f} onClick={() => setFilter(f)} style={{
@@ -413,8 +441,10 @@ export default function Atlas() {
                   const t      = area.growth_class?.toLowerCase()
                   const col    = CLASS_COLORS[t] || '#888'
                   const isSel  = selected?.area_name === area.area_name
-                  // FIX: compare purely by area_name — no grid_id dependency
-                  const inCmp  = compareAreas.some(c => c.area_name === area.area_name)
+                  // ── KEY FIX: read from the memoised Set, not compareAreas.some() ──
+                  // compareNameSet is a new Set() reference every time compareAreas changes,
+                  // so this correctly re-renders each row when the compare list changes.
+                  const inCmp  = compareNameSet.has(area.area_name)
                   const hasGeo = !!AREA_BOUNDARIES[area.area_name]
 
                   return (
@@ -453,21 +483,13 @@ export default function Atlas() {
                         }}>
                           {t?.charAt(0)?.toUpperCase()}
                         </span>
-                        {/* FIX: inline styles must be computed — use a variable, not JSX ternary inside style prop for border/background */}
-                        <button
-                          onClick={e => { e.stopPropagation(); toggleCompareArea(area) }}
-                          title={inCmp ? 'Remove from compare' : 'Add to compare'}
-                          style={{
-                            width: 20, height: 20, borderRadius: 4,
-                            border: `1px solid ${inCmp ? 'var(--orange)' : 'var(--border)'}`,
-                            background: inCmp ? 'var(--orange-soft)' : 'transparent',
-                            cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            color: inCmp ? 'var(--orange)' : 'var(--ink-faint)',
-                            transition: 'all 0.12s', flexShrink: 0,
-                          }}
-                        >
-                          <GitCompare size={9} />
-                        </button>
+
+                        {/* ── Uses inCmp from compareNameSet.has() — always fresh ── */}
+                        <CompareButton
+                          area={area}
+                          compareAreas={compareAreas}
+                          toggleCompareArea={toggleCompareArea}
+                        />
                       </div>
                     </div>
                   )
@@ -535,7 +557,6 @@ export default function Atlas() {
           ) : (
             <div style={{ padding: '18px 16px' }}>
 
-              {/* ── Area name header ── */}
               <div style={{ marginBottom: 14, paddingBottom: 13, borderBottom: '1px solid var(--border)' }}>
                 <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.12em', color: 'var(--ink-faint)', marginBottom: 5 }}>
                   Selected Area
@@ -545,10 +566,8 @@ export default function Atlas() {
                 </h2>
               </div>
 
-              {/* ── Growth class pill ── */}
               <ClassPill growthClass={growthCls} confidence={isPred ? confVal : null} year={year} />
 
-              {/* ── Satellite KPIs (historical only) ── */}
               {!isPred && builtVal != null && (
                 <div style={{ display: 'flex', gap: 6, marginBottom: 16 }}>
                   <KpiChip label="Built-up" value={builtVal} unit="%" color={M.built} />
@@ -557,7 +576,6 @@ export default function Atlas() {
                 </div>
               )}
 
-              {/* ── Detailed metric rows (historical only) ── */}
               {!isPred && (
                 <div style={{
                   padding: '14px 14px 10px',
@@ -569,34 +587,15 @@ export default function Atlas() {
                   <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-faint)', marginBottom: 12 }}>
                     Satellite Metrics · {year}
                   </div>
-                  <MetricRow
-                    label="Built-up Area"
-                    value={builtVal}
-                    unit="%"
-                    color={M.built}
-                    note={builtVal != null ? `${builtVal.toFixed(0)}% of land covered by buildings & roads` : 'No data'}
-                    barMax={100}
-                  />
-                  <MetricRow
-                    label="Green Space"
-                    value={ndviVal}
-                    unit="%"
-                    color={M.green}
-                    note={ndviVal != null ? `NDVI ${ndviVal.toFixed(0)}% — ${ndviVal > 40 ? 'healthy green cover' : ndviVal > 20 ? 'moderate vegetation' : 'sparse vegetation'}` : 'No data'}
-                    barMax={100}
-                  />
-                  <MetricRow
-                    label="Night Activity"
-                    value={nightVal}
-                    unit=""
-                    color={M.night}
-                    note={nightVal != null ? `${nightVal.toFixed(1)} nW/cm²/sr — ${nightLabel}` : 'No data'}
-                    barMax={50}
-                  />
+                  <MetricRow label="Built-up Area" value={builtVal} unit="%" color={M.built}
+                    note={builtVal != null ? `${builtVal.toFixed(0)}% of land covered by buildings & roads` : 'No data'} barMax={100} />
+                  <MetricRow label="Green Space" value={ndviVal} unit="%" color={M.green}
+                    note={ndviVal != null ? `NDVI ${ndviVal.toFixed(0)}% — ${ndviVal > 40 ? 'healthy green cover' : ndviVal > 20 ? 'moderate vegetation' : 'sparse vegetation'}` : 'No data'} barMax={100} />
+                  <MetricRow label="Night Activity" value={nightVal} unit="" color={M.night}
+                    note={nightVal != null ? `${nightVal.toFixed(1)} nW/cm²/sr — ${nightLabel}` : 'No data'} barMax={50} />
                 </div>
               )}
 
-              {/* ── Predicted year — confidence note ── */}
               {isPred && confVal != null && (
                 <div style={{
                   padding: '10px 13px', borderRadius: 8, marginBottom: 14,
@@ -611,19 +610,12 @@ export default function Atlas() {
                 </div>
               )}
 
-              {/* ── Area summary / growth outlook ── */}
-              <div style={{
-                borderRadius: 10,
-                background: 'var(--paper)',
-                border: '1px solid var(--border)',
-                overflow: 'hidden',
-              }}>
+              <div style={{ borderRadius: 10, background: 'var(--paper)', border: '1px solid var(--border)', overflow: 'hidden' }}>
                 <div style={{ padding: '11px 14px 10px', borderBottom: '1px solid var(--border)' }}>
                   <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-faint)' }}>
                     {isPred ? 'Growth Outlook' : 'Area Summary'} · {year}
                   </div>
                 </div>
-
                 <div style={{ padding: '12px 14px' }}>
                   {overviewLoading ? (
                     <div style={{ display: 'flex', flexDirection: 'column', gap: 7 }}>
@@ -651,12 +643,9 @@ export default function Atlas() {
                       ))}
                     </div>
                   ) : (
-                    <div style={{ fontSize: 12, color: 'var(--ink-faint)', fontStyle: 'italic' }}>
-                      No summary available.
-                    </div>
+                    <div style={{ fontSize: 12, color: 'var(--ink-faint)', fontStyle: 'italic' }}>No summary available.</div>
                   )}
                 </div>
-
                 <div style={{ padding: '8px 14px', borderTop: '1px solid var(--border)', fontSize: 10, color: 'var(--ink-faint)', fontStyle: 'italic' }}>
                   {isPred ? 'From model predictions · v4 dataset' : 'From satellite observations · v4 dataset'}
                 </div>
