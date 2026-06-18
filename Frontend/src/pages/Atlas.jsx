@@ -11,14 +11,10 @@ import { Link } from 'react-router-dom'
 
 const YEARS = [2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2035,2040]
 
-// ── Growth class color system (FIXED) ──────────────────
-// High   = Green  (positive signal — rapid urbanisation)
-// Medium = Orange (transitional)
-// Low    = Grey   (neutral — stable/minimal development)
 const CLASS_COLORS = {
-  high:   '#1E7A4A',   // green
-  medium: '#C06A1A',   // orange
-  low:    '#6B7280',   // neutral grey
+  high:   '#1E7A4A',
+  medium: '#C06A1A',
+  low:    '#6B7280',
 }
 const CLASS_BG = {
   high:   '#f0f7f2',
@@ -31,21 +27,14 @@ const CLASS_LABEL = {
   low:    'Stable',
 }
 
-// ── Satellite metric colours ───────────────────────────
 const M = {
-  built: '#D4730E',   // orange
-  green: '#1E7A4A',   // green
-  night: '#2457B3',   // blue
+  built: '#D4730E',
+  green: '#1E7A4A',
+  night: '#2457B3',
 }
 
-// ── Scaling contract (enforced here for clarity) ───────
-// Backend sends built_percent  already ×100  → display as X.X%
-// Backend sends ndvi_mean      already ×100  → display as X.X%
-// Backend sends nighttime_mean as raw nW/cm²/sr
-// Backend sends confidence     already ×100  → display as X.X%
-// NO further multiplication in this file.
+const CLASS_ORDER = { high: 0, medium: 1, low: 2 }
 
-/* ── Fly to area centroid ── */
 function FlyTo({ area }) {
   const map = useMap()
   useEffect(() => {
@@ -54,7 +43,6 @@ function FlyTo({ area }) {
   return null
 }
 
-/* ── KPI chip: compact single-stat card ── */
 function KpiChip({ label, value, unit = '%', color }) {
   const num = parseFloat(value)
   const display = isNaN(num) ? '—' : `${num.toFixed(1)}${unit}`
@@ -76,7 +64,6 @@ function KpiChip({ label, value, unit = '%', color }) {
   )
 }
 
-/* ── Metric row: label + bar + value ── */
 function MetricRow({ label, value, unit = '%', color, note, barMax = 100 }) {
   const num      = parseFloat(value)
   const barWidth = isNaN(num) ? 0 : Math.min((Math.abs(num) / barMax) * 100, 100)
@@ -102,7 +89,6 @@ function MetricRow({ label, value, unit = '%', color, note, barMax = 100 }) {
   )
 }
 
-/* ── Growth class pill ── */
 function ClassPill({ growthClass, confidence, year }) {
   const color = CLASS_COLORS[growthClass] ?? '#888'
   const bg    = CLASS_BG[growthClass]    ?? 'var(--paper)'
@@ -141,9 +127,6 @@ function ClassPill({ growthClass, confidence, year }) {
   )
 }
 
-/* ══════════════════════════════════════════════════════
-   MAP INNER CONTENT
-══════════════════════════════════════════════════════ */
 function MapContent({ selected, compareMode, activeBoundary, activeBounds, compareBoundaries }) {
   return (
     <>
@@ -179,9 +162,6 @@ function MapContent({ selected, compareMode, activeBoundary, activeBounds, compa
   )
 }
 
-/* ══════════════════════════════════════════════════════
-   MAIN ATLAS
-══════════════════════════════════════════════════════ */
 export default function Atlas() {
   const [year, setYear]         = useState(2024)
   const [areas, setAreas]       = useState([])
@@ -193,16 +173,16 @@ export default function Atlas() {
   const [overviewLoading, setOverviewLoading] = useState(false)
   const [compareMode, setCompareMode] = useState(false)
 
-  const [activeBoundary, setActiveBoundary]     = useState(null)
-  const [activeBounds, setActiveBounds]         = useState(null)
+  const [activeBoundary, setActiveBoundary]       = useState(null)
+  const [activeBounds, setActiveBounds]           = useState(null)
   const [compareBoundaries, setCompareBoundaries] = useState([])
-  const [noBoundaryArea, setNoBoundaryArea]     = useState(null)
+  const [noBoundaryArea, setNoBoundaryArea]       = useState(null)
   const noBoundaryTimer = useRef(null)
 
   const { compareAreas, toggleCompareArea } = useCompare()
   const { getBoundary, getMultipleBoundaries, loading: loadingBoundary } = useGeoJSON()
 
-  // ── Load areas — backend returns 70 area-level rows ──
+  // ── Load areas ──
   useEffect(() => {
     setLoading(true)
     api.areas(year).then(d => {
@@ -250,24 +230,37 @@ export default function Atlas() {
     })
   }, [compareMode, compareAreas.map(a => a.area_name).join(',')])
 
-  // ── Area summary from v4 CSV via backend ──
+  // ── Area summary ──
   useEffect(() => {
     if (!selected?.area_name) { setOverview(null); return }
+    const controller = new AbortController()
+    setOverview(null)
     setOverviewLoading(true)
-    fetch(`https://urbangrowth.onrender.com/area-overview?area_name=${encodeURIComponent(selected.area_name)}&year=${year}`)
-      .then(r => r.json())
+    fetch(
+      `https://urbangrowth.onrender.com/area-overview?area_name=${encodeURIComponent(selected.area_name)}&year=${year}`,
+      { signal: controller.signal }
+    )
+      .then(r => { if (!r.ok) throw new Error(r.status); return r.json() })
       .then(d => { setOverview(d); setOverviewLoading(false) })
-      .catch(() => { setOverview(null); setOverviewLoading(false) })
+      .catch(err => { if (err.name !== 'AbortError') { setOverview(null); setOverviewLoading(false) } })
+    return () => controller.abort()
   }, [year, selected?.area_name])
 
   const handleSelectArea = useCallback(area => setSelected(area), [])
 
-  // ── Filter & counts ──
-  const filtered = areas.filter(a => {
-    const matchClass  = filter === 'all' || a.growth_class?.toLowerCase() === filter
-    const matchSearch = !search || a.area_name?.toLowerCase().includes(search.toLowerCase())
-    return matchClass && matchSearch
-  })
+  // ── Filter, sort (High → Medium → Low, then built_percent desc), counts ──
+  const filtered = areas
+    .filter(a => {
+      const matchClass  = filter === 'all' || a.growth_class?.toLowerCase() === filter
+      const matchSearch = !search || a.area_name?.toLowerCase().includes(search.toLowerCase())
+      return matchClass && matchSearch
+    })
+    .sort((a, b) => {
+      const ca = CLASS_ORDER[a.growth_class?.toLowerCase()] ?? 99
+      const cb = CLASS_ORDER[b.growth_class?.toLowerCase()] ?? 99
+      if (ca !== cb) return ca - cb
+      return (parseFloat(b.built_percent) || 0) - (parseFloat(a.built_percent) || 0)
+    })
 
   const isPred    = year > 2024
   const highCount = filtered.filter(a => a.growth_class?.toLowerCase() === 'high').length
@@ -275,9 +268,6 @@ export default function Atlas() {
   const lowCount  = filtered.filter(a => a.growth_class?.toLowerCase() === 'low').length
 
   // ── Selected area values ──
-  // currentArea is the matching row from the backend's area-level response.
-  // Scaling: backend already sends built_percent, ndvi_mean, confidence ×100.
-  // We just parseFloat — no further multiplication.
   const currentArea = selected
     ? areas.find(a => a.area_name?.trim().toLowerCase() === selected.area_name?.trim().toLowerCase())
     : null
@@ -288,7 +278,6 @@ export default function Atlas() {
   const confVal   = currentArea?.confidence      != null ? parseFloat(currentArea.confidence)      : null
   const growthCls = (currentArea?.growth_class ?? selected?.growth_class)?.toLowerCase()
 
-  // Night activity qualitative label
   const nightLabel = nightVal == null ? '' : nightVal > 20 ? 'high urban activity' : nightVal > 8 ? 'moderate activity' : 'low activity'
 
   return (
@@ -397,7 +386,7 @@ export default function Atlas() {
                 </button>
               )}
             </div>
-            {/* Filter pills — use CLASS_COLORS for dots */}
+            {/* Filter pills */}
             <div style={{ display: 'flex', gap: 4 }}>
               {['all','high','medium','low'].map(f => (
                 <button key={f} onClick={() => setFilter(f)} style={{
@@ -422,7 +411,7 @@ export default function Atlas() {
                 ))
               : filtered.map(area => {
                   const t      = area.growth_class?.toLowerCase()
-                  const col    = CLASS_COLORS[t] || '#888'   // FIXED: green/orange/grey
+                  const col    = CLASS_COLORS[t] || '#888'
                   const isSel  = selected?.area_name === area.area_name
                   const inCmp  = compareAreas.some(c => c.area_name === area.area_name)
                   const hasGeo = !!AREA_BOUNDARIES[area.area_name]
@@ -440,7 +429,6 @@ export default function Atlas() {
                       onMouseEnter={e => { if (!isSel) e.currentTarget.style.background = 'var(--cream)' }}
                       onMouseLeave={e => { if (!isSel) e.currentTarget.style.background = 'transparent' }}
                     >
-                      {/* Class dot — FIXED color */}
                       <div style={{ width: 7, height: 7, borderRadius: '50%', background: col, flexShrink: 0, boxShadow: `0 0 0 2px ${col}30` }} />
 
                       <div style={{ flex: 1, minWidth: 0 }}>
@@ -448,7 +436,6 @@ export default function Atlas() {
                           {area.area_name}
                         </div>
                         <div style={{ fontSize: 10, color: 'var(--ink-muted)', marginTop: 1, fontFamily: 'IBM Plex Mono', display: 'flex', gap: 5, alignItems: 'center' }}>
-                          {/* built_percent already ×100 from backend */}
                           {area.built_percent != null ? `${parseFloat(area.built_percent).toFixed(0)}% built` : ''}
                           {area.confidence    != null ? ` · ${parseFloat(area.confidence).toFixed(0)}% conf` : ''}
                           {hasGeo && <span title="GeoJSON available" style={{ color: CLASS_COLORS.high, fontSize: 9, opacity: 0.6 }}>⬡</span>}
@@ -456,7 +443,6 @@ export default function Atlas() {
                       </div>
 
                       <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
-                        {/* Class badge — FIXED color */}
                         <span style={{
                           fontSize: 9, fontFamily: 'IBM Plex Mono', fontWeight: 700,
                           padding: '2px 5px', borderRadius: 4,
@@ -559,12 +545,12 @@ export default function Atlas() {
               {/* ── Growth class pill ── */}
               <ClassPill growthClass={growthCls} confidence={isPred ? confVal : null} year={year} />
 
-              {/* ── Satellite KPIs (historical only — 3 chips in a row) ── */}
+              {/* ── Satellite KPIs (historical only) ── */}
               {!isPred && builtVal != null && (
                 <div style={{ display: 'flex', gap: 6, marginBottom: 16 }}>
-                  <KpiChip label="Built-up"     value={builtVal}  unit="%" color={M.built} />
-                  <KpiChip label="Green"         value={ndviVal}   unit="%" color={M.green} />
-                  <KpiChip label="Night"         value={nightVal}  unit=""  color={M.night} />
+                  <KpiChip label="Built-up" value={builtVal} unit="%" color={M.built} />
+                  <KpiChip label="Green"    value={ndviVal}  unit="%" color={M.green} />
+                  <KpiChip label="Night"    value={nightVal} unit=""  color={M.night} />
                 </div>
               )}
 
@@ -580,7 +566,6 @@ export default function Atlas() {
                   <div style={{ fontSize: 9, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-faint)', marginBottom: 12 }}>
                     Satellite Metrics · {year}
                   </div>
-
                   <MetricRow
                     label="Built-up Area"
                     value={builtVal}
