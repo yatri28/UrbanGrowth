@@ -203,7 +203,7 @@ def get_prediction_stats(year: int):
 @app.get("/city-history")
 def get_city_history():
     agg = (
-        pred_area
+        historical_df
         .groupby("year")
         .agg(
             built =("built_percent",  "mean"),
@@ -217,7 +217,7 @@ def get_city_history():
     agg["night"] = agg["night"].round(1)
 
     gc_counts = (
-        pred_area
+        historical_df   
         .groupby(["year", "growth_class"])
         .size()
         .unstack(fill_value=0)
