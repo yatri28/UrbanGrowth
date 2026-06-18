@@ -6,7 +6,7 @@ import { useCompare } from '../hooks/useCompare'
 import { useGeoJSON, AREA_BOUNDARIES, COMPARE_COLORS } from '../hooks/useGeoJSON'
 import AreaBoundary from '../components/map/AreaBoundary'
 import FitBounds from '../components/map/FitBounds'
-import { Search, X, GitCompare, Layers, MapPin } from 'lucide-react'
+import { Search, X, GitCompare, Layers } from 'lucide-react'
 import { Link } from 'react-router-dom'
 
 const YEARS      = [2016,2017,2018,2019,2020,2021,2022,2023,2024,2025,2026,2027,2028,2029,2030,2035,2040]
@@ -14,41 +14,101 @@ const colors     = { high: '#C0392B', medium: '#D4570C', low: '#1A6B45' }
 const classLabel = { high: 'High Growth', medium: 'Moderate Growth', low: 'Stable' }
 const classBg    = { high: '#fdf1f0', medium: '#fdf4ee', low: '#f0f7f3' }
 
-/* ── fly to center point (fallback when no GeoJSON bounds available) ── */
+// ── Metric colours per spec ──
+const METRIC_COLORS = {
+  built: '#E07B2A',   // orange
+  green: '#2A7B45',   // green
+  night: '#2A5FC0',   // blue
+}
+
+/* ── fly to center point ── */
 function FlyTo({ area }) {
   const map = useMap()
   useEffect(() => {
     if (area?.center_lat) map.flyTo([area.center_lat, area.center_lon], 15, { duration: 1.2 })
-  }, [area?.grid_id])
+  }, [area?.area_name])
   return null
 }
 
-/* ── metric row in right panel ── */
-function MetricRow({ emoji, label, value, unit = '%', color, plain }) {
+/* ── Metric card in right panel ── */
+function MetricCard({ label, value, unit = '%', color, description, barMax = 100 }) {
+  const numVal = typeof value === 'number' ? value : parseFloat(value)
+  const barWidth = isNaN(numVal) ? 0 : Math.min((Math.abs(numVal) / barMax) * 100, 100)
+
   return (
-    <div style={{ marginBottom: 16 }}>
-      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 5 }}>
-        <span style={{ fontSize: 12, color: 'var(--ink)', fontWeight: 600 }}>
-          {emoji} {label}
+    <div style={{
+      padding: '14px 16px',
+      borderRadius: 10,
+      background: 'var(--paper)',
+      border: '1px solid var(--border)',
+      marginBottom: 10,
+    }}>
+      <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
+        <span style={{ fontSize: 11, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', fontWeight: 600 }}>
+          {label}
         </span>
-        <span style={{ fontSize: 16, fontWeight: 900, color, fontFamily: 'IBM Plex Mono' }}>
-          {value != null ? `${typeof value === 'number' ? value.toFixed(1) : value}${unit}` : '—'}
+        <span style={{ fontSize: 22, fontWeight: 900, color, fontFamily: 'IBM Plex Mono', lineHeight: 1 }}>
+          {value != null && !isNaN(numVal)
+            ? `${numVal.toFixed(1)}${unit}`
+            : '—'}
         </span>
       </div>
-      <div style={{ height: 3, background: 'var(--canvas)', borderRadius: 99 }}>
+
+      {/* Progress bar */}
+      <div style={{ height: 4, background: `${color}22`, borderRadius: 99, marginBottom: 8, overflow: 'hidden' }}>
         <div style={{
           height: '100%',
-          width: `${Math.min(Math.abs(parseFloat(value) || 0), 100)}%`,
-          background: color, borderRadius: 99, transition: 'width 0.5s ease'
+          width: `${barWidth}%`,
+          background: color,
+          borderRadius: 99,
+          transition: 'width 0.6s ease',
         }} />
       </div>
-      <div style={{ fontSize: 11, color: 'var(--ink-faint)', marginTop: 3 }}>{plain}</div>
+
+      <div style={{ fontSize: 11, color: 'var(--ink-muted)', lineHeight: 1.5 }}>
+        {description}
+      </div>
+    </div>
+  )
+}
+
+/* ── Growth class badge ── */
+function GrowthBadge({ growthClass, confidence }) {
+  const color = colors[growthClass] ?? '#888'
+  const bg    = classBg[growthClass] ?? 'var(--paper)'
+  const label = classLabel[growthClass] ?? growthClass
+
+  return (
+    <div style={{
+      display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+      padding: '12px 16px', borderRadius: 10,
+      background: bg, border: `1.5px solid ${color}44`,
+      marginBottom: 12,
+    }}>
+      <div>
+        <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', marginBottom: 3 }}>
+          Growth Class
+        </div>
+        <div style={{ fontSize: 16, fontWeight: 800, color, fontFamily: 'IBM Plex Sans' }}>
+          {label}
+        </div>
+      </div>
+      {confidence != null && (
+        <div style={{ textAlign: 'right' }}>
+          <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', marginBottom: 3 }}>
+            Confidence
+          </div>
+          <div style={{ fontSize: 16, fontWeight: 800, color: 'var(--ink)', fontFamily: 'IBM Plex Mono' }}>
+            {typeof confidence === 'number' ? confidence.toFixed(0) : confidence}%
+          </div>
+        </div>
+      )}
     </div>
   )
 }
 
 /* ══════════════════════════════════════════════════════
-   INNER MAP — all Leaflet hooks live here
+   INNER MAP
 ══════════════════════════════════════════════════════ */
 function MapContent({
   filteredAreas,
@@ -62,23 +122,16 @@ function MapContent({
   loadingBoundary,
   noBoundaryArea,
 }) {
-  const selClass = selected?.growth_class?.toLowerCase()
-  const selColor = colors[selClass] ?? '#888'
-
   return (
     <>
       <TileLayer
         url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
         attribution="&copy; OpenStreetMap"
       />
-
-      {/* Fit to GeoJSON bounds (if available), else fly to centroid */}
       {activeBounds
         ? <FitBounds bounds={activeBounds} />
         : <FlyTo area={selected} />
       }
-
-      {/* SINGLE SELECTED boundary */}
       {!compareMode && activeBoundary && selected && (
         <AreaBoundary
           key={`boundary-${selected.area_name}`}
@@ -89,8 +142,6 @@ function MapContent({
           builtPercent={selected.built_percent}
         />
       )}
-
-      {/* COMPARE MODE — multiple boundaries */}
       {compareMode && compareBoundaries.map(({ areaName, boundary, growthClass, compareIndex }) => (
         <AreaBoundary
           key={`compare-${areaName}`}
@@ -116,9 +167,9 @@ export default function Atlas() {
   const [search, setSearch]     = useState('')
   const [selected, setSelected] = useState(null)
   const [overview, setOverview] = useState(null)
+  const [overviewLoading, setOverviewLoading] = useState(false)
   const [compareMode, setCompareMode] = useState(false)
 
-  // Boundary state
   const [activeBoundary, setActiveBoundary]   = useState(null)
   const [activeBounds, setActiveBounds]       = useState(null)
   const [compareBoundaries, setCompareBoundaries] = useState([])
@@ -128,7 +179,7 @@ export default function Atlas() {
   const { compareAreas, toggleCompareArea } = useCompare()
   const { getBoundary, getMultipleBoundaries, loading: loadingBoundary } = useGeoJSON()
 
-  // ── Load areas ──
+  // ── Load areas (area-level from /areas/{year}) ──
   useEffect(() => {
     setLoading(true)
     api.areas(year).then(d => {
@@ -140,20 +191,13 @@ export default function Atlas() {
   // ── Load boundary on area select ──
   useEffect(() => {
     if (!selected || compareMode) {
-      setActiveBoundary(null)
-      setActiveBounds(null)
-      return
+      setActiveBoundary(null); setActiveBounds(null); return
     }
-
-    setActiveBoundary(null)
-    setActiveBounds(null)
-
+    setActiveBoundary(null); setActiveBounds(null)
     getBoundary(selected.area_name).then(result => {
       if (result) {
-        setActiveBoundary(result)
-        setActiveBounds(result.bounds)
+        setActiveBoundary(result); setActiveBounds(result.bounds)
       } else {
-        // No boundary found — show brief notice, then fallback to centroid fly
         clearTimeout(noBoundaryTimer.current)
         setNoBoundaryArea(selected.area_name)
         noBoundaryTimer.current = setTimeout(() => setNoBoundaryArea(null), 3500)
@@ -161,23 +205,18 @@ export default function Atlas() {
     })
   }, [selected?.area_name, compareMode])
 
-  // ── Load compare boundaries ──
+  // ── Compare boundaries ──
   useEffect(() => {
     if (!compareMode || !compareAreas.length) {
-      setCompareBoundaries([])
-      setActiveBounds(null)
-      return
+      setCompareBoundaries([]); setActiveBounds(null); return
     }
-
     getMultipleBoundaries(compareAreas.map(a => a.area_name)).then(results => {
       const withIndex = results.map((r, i) => ({
         ...r,
-        growthClass: compareAreas.find(a => a.area_name === r.areaName)?.growth_class?.toLowerCase(),
+        growthClass:  compareAreas.find(a => a.area_name === r.areaName)?.growth_class?.toLowerCase(),
         compareIndex: i,
       }))
       setCompareBoundaries(withIndex)
-
-      // Combined bounds
       if (withIndex.length > 0) {
         const allBounds = withIndex.map(r => r.boundary.bounds).filter(Boolean)
         if (allBounds.length) {
@@ -188,62 +227,43 @@ export default function Atlas() {
     })
   }, [compareMode, compareAreas.map(a => a.area_name).join(',')])
 
-  // ── Overview load ──
+  // ── Area overview from v4 CSVs ──
   useEffect(() => {
     if (!selected?.area_name) { setOverview(null); return }
+    setOverviewLoading(true)
     fetch(`https://urbangrowth.onrender.com/area-overview?area_name=${encodeURIComponent(selected.area_name)}&year=${year}`)
       .then(r => r.json())
-      .then(data => {
-        console.log('Overview:', data)
-        setOverview(data)
-      })
-      .catch(err => {
-        console.error('Overview error:', err)
-        setOverview(null)
-      })
+      .then(data => { setOverview(data); setOverviewLoading(false) })
+      .catch(() => { setOverview(null); setOverviewLoading(false) })
   }, [year, selected?.area_name])
 
-  const handleSelectArea = useCallback((area) => {
-    setSelected(area)
-  }, [])
+  const handleSelectArea = useCallback((area) => setSelected(area), [])
 
   // ── Derived ──
+  // Areas are already area-level (one row per area_name) from the backend
   const filtered = areas.filter(a => {
     const matchClass  = filter === 'all' || a.growth_class?.toLowerCase() === filter
     const matchSearch = !search || a.area_name?.toLowerCase().includes(search.toLowerCase())
     return matchClass && matchSearch
   })
 
-  const deduped = (() => {
-    const m = {}
-    filtered.forEach(a => {
-      const k = a.area_name?.trim().toLowerCase()
-      if (!k) return
-      if (!m[k]) m[k] = { ...a, grid_ids: [a.grid_id] }
-      else m[k].grid_ids.push(a.grid_id)
-    })
-    return Object.values(m)
-  })()
-
   const isPred    = year > 2024
-  const highCount = deduped.filter(a => a.growth_class?.toLowerCase() === 'high').length
-  const medCount  = deduped.filter(a => a.growth_class?.toLowerCase() === 'medium').length
-  const lowCount  = deduped.filter(a => a.growth_class?.toLowerCase() === 'low').length
+  const highCount = filtered.filter(a => a.growth_class?.toLowerCase() === 'high').length
+  const medCount  = filtered.filter(a => a.growth_class?.toLowerCase() === 'medium').length
+  const lowCount  = filtered.filter(a => a.growth_class?.toLowerCase() === 'low').length
 
-  const selClass = selected?.growth_class?.toLowerCase()
-  const selColor = colors[selClass] ?? '#888'
-  const selBg    = classBg[selClass] ?? 'var(--paper)'
-
-  const currentAreaData = selected
-    ? deduped.find(a => a.area_name?.trim().toLowerCase() === selected.area_name?.trim().toLowerCase())
+  // Find selected area from the current area list
+  const currentArea = selected
+    ? areas.find(a => a.area_name?.trim().toLowerCase() === selected.area_name?.trim().toLowerCase())
     : null
 
-  const builtVal  = currentAreaData?.built_percent   != null ? currentAreaData.built_percent * 100  : null
-  const ndviVal   = currentAreaData?.ndvi_mean       != null ? currentAreaData.ndvi_mean * 100       : null
-  const nightVal  = currentAreaData?.nighttime_mean  != null ? currentAreaData.nighttime_mean        : null
-  const confVal   = selected?.confidence             != null ? selected.confidence * 100             : null
-
-  const hasBoundary = selected ? !!AREA_BOUNDARIES[selected.area_name] : false
+  // All values are already area-level averages from the backend
+  // backend returns built_percent already multiplied by 100
+  const builtVal  = currentArea?.built_percent   != null ? parseFloat(currentArea.built_percent)   : null
+  const ndviVal   = currentArea?.ndvi_mean       != null ? parseFloat(currentArea.ndvi_mean)        : null
+  const nightVal  = currentArea?.nighttime_mean  != null ? parseFloat(currentArea.nighttime_mean)   : null
+  const confVal   = currentArea?.confidence      != null ? parseFloat(currentArea.confidence)       : null
+  const growthCls = (currentArea?.growth_class ?? selected?.growth_class)?.toLowerCase()
 
   return (
     <div style={{ display: 'flex', height: '100vh', flexDirection: 'column' }}>
@@ -260,7 +280,7 @@ export default function Atlas() {
             Gandhinagar Area Explorer
           </h1>
           <div style={{ fontSize: 12, color: 'var(--ink-muted)', marginTop: 2 }}>
-            Viewing {isPred ? 'predicted' : 'historical'} data for {year}
+            {isPred ? `Predicted data for ${year}` : `Historical data — ${year}`} · {filtered.length} areas
           </div>
         </div>
         <div style={{ flex: 1 }} />
@@ -308,7 +328,7 @@ export default function Atlas() {
           <span style={{ fontSize: 11, color: 'var(--ink-muted)', fontFamily: 'IBM Plex Mono', textTransform: 'uppercase' }}>Year</span>
           <select
             value={year}
-            onChange={e => setYear(Number(e.target.value))}
+            onChange={e => { setYear(Number(e.target.value)); setSelected(null) }}
             style={{ padding: '7px 11px', borderRadius: 7, border: '1px solid var(--border)', background: '#fff', fontSize: 13, fontFamily: 'IBM Plex Sans', color: 'var(--ink)', cursor: 'pointer', outline: 'none' }}
           >
             <optgroup label="Historical Data">
@@ -369,16 +389,16 @@ export default function Atlas() {
               ? [1,2,3,4,5,6].map(i => (
                   <div key={i} style={{ margin: '5px 10px', height: 50, borderRadius: 8, background: 'var(--canvas)', animation: 'pulse 1.5s infinite' }} />
                 ))
-              : deduped.map(area => {
-                  const t     = area.growth_class?.toLowerCase()
-                  const col   = colors[t] || '#888'
-                  const isSel = selected?.area_name === area.area_name
-                  const inCmp = compareAreas.some(c => c.grid_id === area.grid_id)
+              : filtered.map(area => {
+                  const t      = area.growth_class?.toLowerCase()
+                  const col    = colors[t] || '#888'
+                  const isSel  = selected?.area_name === area.area_name
+                  const inCmp  = compareAreas.some(c => c.area_name === area.area_name)
                   const hasGeo = !!AREA_BOUNDARIES[area.area_name]
 
                   return (
                     <div
-                      key={area.grid_id}
+                      key={area.area_name}
                       onClick={() => handleSelectArea(area)}
                       style={{
                         margin: '2px 8px', padding: '9px 11px', borderRadius: 8, cursor: 'pointer',
@@ -395,11 +415,9 @@ export default function Atlas() {
                           {area.area_name}
                         </div>
                         <div style={{ fontSize: 10, color: 'var(--ink-muted)', marginTop: 1, fontFamily: 'IBM Plex Mono', display: 'flex', gap: 5, alignItems: 'center' }}>
-                          {area.built_percent != null ? `${(area.built_percent * 100).toFixed(0)}% built` : ''}
-                          {area.confidence    != null ? ` · ${(area.confidence * 100).toFixed(0)}% conf` : ''}
-                          {hasGeo && (
-                            <span title="GeoJSON boundary available" style={{ color: 'var(--green)', fontSize: 9, opacity: 0.7 }}>⬡</span>
-                          )}
+                          {area.built_percent != null ? `${parseFloat(area.built_percent).toFixed(0)}% built` : ''}
+                          {area.confidence    != null ? ` · ${parseFloat(area.confidence).toFixed(0)}% conf` : ''}
+                          {hasGeo && <span title="GeoJSON boundary available" style={{ color: 'var(--green)', fontSize: 9, opacity: 0.7 }}>⬡</span>}
                         </div>
                       </div>
                       <div style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
@@ -432,23 +450,17 @@ export default function Atlas() {
               <div className="serif" style={{ fontSize: 18, color: 'var(--ink-muted)' }}>Loading {year}…</div>
             </div>
           )}
-
-          {/* Boundary loading indicator */}
           {loadingBoundary && (
             <div className="boundary-loading" style={{ position: 'absolute', top: 12, right: 12, zIndex: 500 }}>
               <div className="boundary-loading__dot" />
               <span>Loading boundary…</span>
             </div>
           )}
-
-          {/* No boundary fallback notice */}
           {noBoundaryArea && (
             <div key={noBoundaryArea} className="no-boundary-notice">
               No GeoJSON for {noBoundaryArea} — showing marker
             </div>
           )}
-
-          {/* Compare mode legend */}
           {compareMode && compareBoundaries.length > 0 && (
             <div style={{
               position: 'absolute', bottom: 20, left: 12, zIndex: 500,
@@ -467,7 +479,6 @@ export default function Atlas() {
               ))}
             </div>
           )}
-
           <MapContainer
             center={[23.2156, 72.6369]}
             zoom={12}
@@ -475,7 +486,7 @@ export default function Atlas() {
             style={{ width: '100%', height: '100%' }}
           >
             <MapContent
-              filteredAreas={deduped}
+              filteredAreas={filtered}
               selected={selected}
               setSelected={handleSelectArea}
               compareAreas={compareAreas}
@@ -489,80 +500,143 @@ export default function Atlas() {
           </MapContainer>
         </div>
 
-        {/* RIGHT: Insights panel */}
-        <div style={{ width: 270, flexShrink: 0, background: '#fff', borderLeft: '1px solid var(--border)', overflowY: 'auto' }}>
+        {/* RIGHT: Info panel */}
+        <div style={{ width: 290, flexShrink: 0, background: '#fff', borderLeft: '1px solid var(--border)', overflowY: 'auto' }}>
           {!selected ? (
-            <div style={{ padding: '48px 24px', textAlign: 'center' }}>
-              <div style={{ fontSize: 32, marginBottom: 12, opacity: 0.25 }}>📍</div>
-              <div style={{ fontSize: 13, color: 'var(--ink-muted)', lineHeight: 1.7 }}>
-                Select an area from the list on the left to see details here.
+            <div style={{ padding: '56px 24px', textAlign: 'center' }}>
+              <div style={{ fontSize: 36, marginBottom: 14, opacity: 0.2 }}>📍</div>
+              <div style={{ fontSize: 13, color: 'var(--ink-muted)', lineHeight: 1.8 }}>
+                Select an area from the list to explore its satellite metrics and growth forecast.
               </div>
             </div>
           ) : (
-            <div style={{ padding: '22px 18px' }}>
+            <div style={{ padding: '20px 16px' }}>
 
-              {/* Header */}
-              <div style={{ marginBottom: 20, paddingBottom: 16, borderBottom: '1px solid var(--border)' }}>
-                <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-muted)', marginBottom: 8 }}>
+              {/* ── Area header ── */}
+              <div style={{ marginBottom: 16, paddingBottom: 14, borderBottom: '1px solid var(--border)' }}>
+                <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-muted)', marginBottom: 6 }}>
                   Selected Area
                 </div>
-                <h2 className="serif" style={{ fontSize: 22, fontWeight: 900, color: 'var(--ink)', lineHeight: 1.1 }}>
+                <h2 className="serif" style={{ fontSize: 22, fontWeight: 900, color: 'var(--ink)', lineHeight: 1.1, marginBottom: 4 }}>
                   {selected.area_name}
                 </h2>
+                <div style={{ fontSize: 11, color: 'var(--ink-muted)', fontFamily: 'IBM Plex Mono' }}>
+                  {isPred ? `Forecast · ${year}` : `Historical · ${year}`}
+                </div>
               </div>
 
-              {/* Area Overview */}
-              <div style={{ padding: '14px 16px', borderRadius: 10, marginBottom: 20, background: 'var(--paper)', border: '1px solid var(--border)' }}>
-                <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-muted)', marginBottom: 12 }}>
-                  About This Area
+              {/* ── Growth class badge ── */}
+              <GrowthBadge growthClass={growthCls} confidence={isPred ? confVal : null} />
+
+              {/* ── Satellite metrics (historical years only) ── */}
+              {!isPred && (
+                <div style={{ marginBottom: 16 }}>
+                  <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', fontWeight: 600, marginBottom: 10 }}>
+                    Satellite Metrics · {year}
+                  </div>
+
+                  <MetricCard
+                    label="Built-up Area"
+                    value={builtVal}
+                    unit="%"
+                    color={METRIC_COLORS.built}
+                    description={
+                      builtVal != null
+                        ? `${builtVal.toFixed(0)}% of ${selected.area_name} is covered by buildings and roads.`
+                        : 'No data available.'
+                    }
+                    barMax={100}
+                  />
+
+                  <MetricCard
+                    label="Green Space"
+                    value={ndviVal}
+                    unit="%"
+                    color={METRIC_COLORS.green}
+                    description={
+                      ndviVal != null
+                        ? `NDVI vegetation index: ${ndviVal.toFixed(0)}% indicates ${ndviVal > 40 ? 'healthy green cover' : ndviVal > 20 ? 'moderate vegetation' : 'sparse vegetation'}.`
+                        : 'No data available.'
+                    }
+                    barMax={100}
+                  />
+
+                  <MetricCard
+                    label="Night Activity"
+                    value={nightVal}
+                    unit=""
+                    color={METRIC_COLORS.night}
+                    description={
+                      nightVal != null
+                        ? `Night light intensity: ${nightVal.toFixed(1)} nW/cm²/sr — ${nightVal > 20 ? 'high urban activity' : nightVal > 8 ? 'moderate activity' : 'low activity'}.`
+                        : 'No data available.'
+                    }
+                    barMax={50}
+                  />
                 </div>
-                {!overview ? (
-                  <div style={{ color: 'var(--ink-muted)', fontSize: 12 }}>Loading...</div>
-                ) : (
-                  <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                    {overview.points?.map((p, i) => (
+              )}
+
+              {/* ── Predicted year confidence note ── */}
+              {isPred && confVal != null && (
+                <div style={{
+                  padding: '10px 14px', borderRadius: 8, marginBottom: 14,
+                  background: 'var(--orange-soft)', border: '1px solid var(--orange)33',
+                  fontSize: 11, color: 'var(--ink)', lineHeight: 1.6,
+                }}>
+                  XGBoost model confidence for {selected.area_name} in {year}: <strong>{confVal.toFixed(0)}%</strong>.<br />
+                  Based on area-averaged predictions across all grid cells.
+                </div>
+              )}
+
+              {/* ── Area summary from v4 CSV ── */}
+              <div style={{ padding: '14px 16px', borderRadius: 10, background: 'var(--paper)', border: '1px solid var(--border)' }}>
+                <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', textTransform: 'uppercase', letterSpacing: '0.08em', color: 'var(--ink-muted)', fontWeight: 600, marginBottom: 10 }}>
+                  {isPred ? 'Growth Outlook' : 'Area Summary'} · {year}
+                </div>
+
+                {overviewLoading ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    {[1,2,3].map(i => (
+                      <div key={i} style={{ height: 40, borderRadius: 7, background: 'var(--canvas)', animation: 'pulse 1.5s infinite' }} />
+                    ))}
+                  </div>
+                ) : overview?.points?.length ? (
+                  <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
+                    {overview.points.map((p, i) => (
                       <div
                         key={i}
                         style={{
                           display: 'flex', alignItems: 'flex-start', gap: 8,
                           padding: '8px 10px', borderRadius: 8,
-                          background: 'rgba(255,255,255,0.55)',
-                          borderLeft: '3px solid var(--orange)',
+                          background: 'rgba(255,255,255,0.6)',
+                          borderLeft: `3px solid ${isPred ? METRIC_COLORS.built : 'var(--ink-muted)'}`,
                           fontSize: 12, lineHeight: 1.7, color: 'var(--ink)',
                         }}
                       >
-                        <span style={{ color: 'var(--orange)', fontWeight: 700, marginTop: 1 }}>•</span>
+                        <span style={{ color: isPred ? METRIC_COLORS.built : 'var(--ink-muted)', fontWeight: 700, marginTop: 1, flexShrink: 0 }}>•</span>
                         <span
                           dangerouslySetInnerHTML={{
                             __html: p.replace(
                               /(\+?\d+(\.\d+)?%?|\(\d+(\.\d+)?\))/g,
-                              '<span style="color: var(--orange); font-weight: 700;">$1</span>'
+                              `<span style="color: ${METRIC_COLORS.built}; font-weight: 700;">$1</span>`
                             )
                           }}
                         />
                       </div>
                     ))}
                   </div>
+                ) : (
+                  <div style={{ fontSize: 12, color: 'var(--ink-muted)', fontStyle: 'italic' }}>
+                    No summary available for this area and year.
+                  </div>
                 )}
-                <div style={{ marginTop: 10, fontSize: 10, color: 'var(--ink-muted)', fontStyle: 'italic' }}>
-                  Summary generated from past data.
+
+                <div style={{ marginTop: 10, fontSize: 10, color: 'var(--ink-faint)', fontStyle: 'italic' }}>
+                  {isPred
+                    ? 'AI-generated outlook from model predictions.'
+                    : 'Summary derived from satellite observations.'}
                 </div>
               </div>
-
-              {/* Key Facts — only for historical years */}
-              {year <= 2024 && (
-                <div style={{ marginBottom: 20 }}>
-                  <div style={{ fontSize: 10, fontFamily: 'IBM Plex Mono', fontWeight: 700, textTransform: 'uppercase', letterSpacing: '0.1em', color: 'var(--ink-muted)', marginBottom: 14 }}>
-                    Key Facts About This Area
-                  </div>
-                  <MetricRow emoji="🏗️" label="Development Level" value={builtVal} color="var(--red)"
-                    plain={builtVal != null ? `${builtVal.toFixed(0)}% of the area is covered by buildings and roads.` : 'No data available.'} />
-                  <MetricRow emoji="🌳" label="Green Space" value={ndviVal} color="var(--green)"
-                    plain={ndviVal != null ? `${ndviVal.toFixed(0)}% of the area contains vegetation and greenery.` : 'No data available.'} />
-                  <MetricRow emoji="🌃" label="Night Activity" value={nightVal} unit="" color="var(--blue)"
-                    plain={nightVal != null ? `Night Activity Index: ${nightVal.toFixed(0)}` : 'No data available.'} />
-                </div>
-              )}
 
             </div>
           )}
