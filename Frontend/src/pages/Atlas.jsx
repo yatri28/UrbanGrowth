@@ -413,6 +413,7 @@ export default function Atlas() {
                   const t      = area.growth_class?.toLowerCase()
                   const col    = CLASS_COLORS[t] || '#888'
                   const isSel  = selected?.area_name === area.area_name
+                  // FIX: compare purely by area_name — no grid_id dependency
                   const inCmp  = compareAreas.some(c => c.area_name === area.area_name)
                   const hasGeo = !!AREA_BOUNDARIES[area.area_name]
 
@@ -452,15 +453,17 @@ export default function Atlas() {
                         }}>
                           {t?.charAt(0)?.toUpperCase()}
                         </span>
+                        {/* FIX: inline styles must be computed — use a variable, not JSX ternary inside style prop for border/background */}
                         <button
                           onClick={e => { e.stopPropagation(); toggleCompareArea(area) }}
                           title={inCmp ? 'Remove from compare' : 'Add to compare'}
                           style={{
                             width: 20, height: 20, borderRadius: 4,
-                            border: '1px solid ' + (inCmp ? 'var(--orange)' : 'var(--border)'),
+                            border: `1px solid ${inCmp ? 'var(--orange)' : 'var(--border)'}`,
                             background: inCmp ? 'var(--orange-soft)' : 'transparent',
                             cursor: 'pointer', display: 'flex', alignItems: 'center', justifyContent: 'center',
-                            color: inCmp ? 'var(--orange)' : 'var(--ink-faint)', transition: 'all 0.12s', flexShrink: 0,
+                            color: inCmp ? 'var(--orange)' : 'var(--ink-faint)',
+                            transition: 'all 0.12s', flexShrink: 0,
                           }}
                         >
                           <GitCompare size={9} />
