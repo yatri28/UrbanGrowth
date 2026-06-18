@@ -1,34 +1,47 @@
-import { useState, useCallback } from 'react'
+import { createContext, useContext, useState, useCallback } from 'react'
 
 /**
- * useCompare — tracks which areas are selected for comparison.
+ * useCompare — Context-based compare state shared across all pages.
  *
- * KEY GUARANTEES:
- * 1. State is always a NEW array reference on every change → React re-renders all consumers.
- * 2. Deduplication and removal are both keyed on area_name (no grid_id needed).
- * 3. Never mutates the existing array — always spreads into a new one.
+ * Exports:
+ *   CompareProvider  — wrap App (or Router) with this
+ *   useCompare()     — returns { compareAreas, toggleCompareArea, clearCompare }
+ *
+ * Reactivity guarantee:
+ *   Every toggle returns a NEW array reference so React re-renders all consumers.
+ *   Deduplication keyed on area_name only — no grid_id needed.
  */
-export function useCompare() {
-  // Always a fresh array reference on every toggle → triggers re-renders everywhere
+
+const CompareContext = createContext(null)
+
+export function CompareProvider({ children }) {
   const [compareAreas, setCompareAreas] = useState([])
 
   const toggleCompareArea = useCallback((area) => {
     setCompareAreas(prev => {
       const exists = prev.some(a => a.area_name === area.area_name)
       if (exists) {
-        // Remove — return a new filtered array
+        // Return new filtered array — new reference triggers re-render
         return prev.filter(a => a.area_name !== area.area_name)
-      } else {
-        // Add (cap at 4) — return a new spread array
-        if (prev.length >= 4) return prev
-        return [...prev, area]
       }
+      // Cap at 4 areas
+      if (prev.length >= 4) return prev
+      // Spread into new array — new reference triggers re-render
+      return [...prev, area]
     })
   }, [])
 
-  const clearCompare = useCallback(() => {
-    setCompareAreas([])
-  }, [])
+  const clearCompare = useCallback(() => setCompareAreas([]), [])
 
-  return { compareAreas, toggleCompareArea, clearCompare }
+  return (
+    <CompareContext.Provider value={{ compareAreas, toggleCompareArea, clearCompare }}>
+      {children}
+    </CompareContext.Provider>
+  )
+}
+
+export function useCompare() {
+  const ctx = useContext(CompareContext)
+  if (!ctx) throw new Error('useCompare must be used inside <CompareProvider>')
+  return ctx
 }
